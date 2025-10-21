@@ -1,7 +1,49 @@
 import React from "react";
 
 const Feature: React.FC = () => {
-    return (<p>Hero</p>)
+    return (
+        <section className="feature">
+            <div className="container">
+                <div className="feature__grid">
+                    <article className="feature__card">
+                        <div className="feature__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2044 15.7837L10 20L8.79556 15.7837C8.48426 14.6946 7.90059 13.7028 7.09964 12.9018C6.29869 12.1009 5.30687 11.5172 4.21778 11.2059L0 10L4.2163 8.79556C5.30539 8.48426 6.29721 7.90059 7.09816 7.09964C7.89911 6.29869 8.48277 5.30687 8.79407 4.21778L10 0L11.2044 4.2163C11.5157 5.30539 12.0994 6.29721 12.9004 7.09816C13.7013 7.89911 14.6931 8.48277 15.7822 8.79407L20 10L15.7837 11.2044C14.6946 11.5157 13.7028 12.0994 12.9018 12.9004C12.1009 13.7013 11.5172 14.6931 11.2059 15.7822L11.2044 15.7837Z" fill="#FCF5FE"/>
+                            </svg>
+                        </div>
+                        <div className="feature__content">
+                            <h3 className="feature__title">Social Listening Agent</h3>
+                            <p className="feature__description">Quét tin tức đa nền tảng, sàng lọc chủ đề nóng, hot topic</p>
+                        </div>
+                    </article>
+
+                    <article className="feature__card">
+                        <div className="feature__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2044 15.7837L10 20L8.79556 15.7837C8.48426 14.6946 7.90059 13.7028 7.09964 12.9018C6.29869 12.1009 5.30687 11.5172 4.21778 11.2059L0 10L4.2163 8.79556C5.30539 8.48426 6.29721 7.90059 7.09816 7.09964C7.89911 6.29869 8.48277 5.30687 8.79407 4.21778L10 0L11.2044 4.2163C11.5157 5.30539 12.0994 6.29721 12.9004 7.09816C13.7013 7.89911 14.6931 8.48277 15.7822 8.79407L20 10L15.7837 11.2044C14.6946 11.5157 13.7028 12.0994 12.9018 12.9004C12.1009 13.7013 11.5172 14.6931 11.2059 15.7822L11.2044 15.7837Z" fill="#FCF5FE"/>
+                            </svg>
+                        </div>
+                        <div className="feature__content">
+                            <h3 className="feature__title">Social Listening Agent</h3>
+                            <p className="feature__description">Quét tin tức đa nền tảng, sàng lọc chủ đề nóng, hot topic</p>
+                        </div>
+                    </article>
+
+                    <article className="feature__card">
+                        <div className="feature__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2044 15.7837L10 20L8.79556 15.7837C8.48426 14.6946 7.90059 13.7028 7.09964 12.9018C6.29869 12.1009 5.30687 11.5172 4.21778 11.2059L0 10L4.2163 8.79556C5.30539 8.48426 6.29721 7.90059 7.09816 7.09964C7.89911 6.29869 8.48277 5.30687 8.79407 4.21778L10 0L11.2044 4.2163C11.5157 5.30539 12.0994 6.29721 12.9004 7.09816C13.7013 7.89911 14.6931 8.48277 15.7822 8.79407L20 10L15.7837 11.2044C14.6946 11.5157 13.7028 12.0994 12.9018 12.9004C12.1009 13.7013 11.5172 14.6931 11.2059 15.7822L11.2044 15.7837Z" fill="#FCF5FE"/>
+                            </svg>
+                        </div>
+                        <div className="feature__content">
+                            <h3 className="feature__title">Social Listening Agent</h3>
+                            <p className="feature__description">Quét tin tức đa nền tảng, sàng lọc chủ đề nóng, hot topic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    )
 }
 
 export default Feature;

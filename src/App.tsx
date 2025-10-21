@@ -1,15 +1,16 @@
 import NotFound from './pages/NotFound.tsx';
 import Header from './components/Header.tsx';
 import Footer from './components/Footer.tsx';
-import { Benefit, Customer, Diagram, Feature, GetStarted, Hero, Question, Unlock} from './components/landing-page/landing-page.ts'
+import { Benefit, Customer, Diagram, Feature, GetStarted, Hero, Question, Sponsor, Unlock} from './components/landing-page/landing-page.ts'
 import './styles/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function Home () {
   return (
     <div className='App'>
       <Header />
-      
+      <main>
         <Hero />
+        <Sponsor/>
         <Feature/>
         <Benefit />
         <Diagram />
@@ -17,6 +18,7 @@ function Home () {
         <Customer/>
         <Question/>
         <Unlock/>
+        </main>
       <Footer />
     </div>
   )
