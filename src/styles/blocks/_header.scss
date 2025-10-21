@@ -1,0 +1,97 @@
+.header-section {
+    &__container {
+          position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+z-index: 100;
+        border: solid red;
+        display: flex;
+width: 1440px;
+height: 100px;
+padding: 0 80px;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+flex-shrink: 0;
+flex-wrap: wrap;
+border-bottom: 1px solid rgba(68, 49, 73, 0.60);
+background: #010102;
+
+    }
+    &__icon-container {
+ display: flex;
+padding-right: 12.866px;
+align-items: center;
+gap: 9.577px;
+width: 192.9907px;
+height: 26px;
+img {
+    width: 192.9907px;
+height: 26px;
+object-fit: contain;
+}
+.icon {
+    display: flex;
+width: 39.13px;
+height: 26px;
+padding-left: 0;
+justify-content: flex-end;
+align-items: center;
+flex-shrink: 0;
+
+}
+.name {
+    display: flex;
+padding-right: 12.866px;
+align-items: center;
+gap: 9.577px;
+width: 131.417px;
+height: 20.516px;
+fill: var(--White, #FFF);
+}
+    }
+    &__link-container {
+        display: flex;
+align-items: center;
+gap: 32px;
+text-decoration: none;
+
+a {
+    color: white;
+}
+//text
+.text {
+color: #FFF;
+font-family: "SVN-Apparat";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+    }
+    &__demo-btn {
+        display: flex;
+height: 46px;
+padding: 0 20px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 6px;
+background: #FF37BB;
+box-shadow: 0 0 9px 1px #FF89D4 inset;
+.text {
+color: #FFF;
+font-family: (--font-apparat,"SVN-Apparat");
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+}
+.icon-container {
+    width: 16px;
+height: 16px;
+aspect-ratio: 1/1;
+}
+    }
+}

@@ -1,0 +1,80 @@
+.notfound__inner {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+}
+
+.notfound__illustration img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+}
+
+.notfound__title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1.1;
+  margin-bottom: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.notfound__description {
+  margin-top: 20px;
+  margin-bottom: 28px;
+  color: #475569;
+  font-size: 16px;
+}
+
+.button--primary {
+  display: inline-block;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+      background: linear-gradient(180deg, #5F71FF 0%, #0050FF 100%);
+}
+
+/* Utility: make a container fill available space and center its child */
+/* removed container--full-height min-height: we rely on page-level min-height:100vh and normal scrolling */
+
+/* Ensure the illustration + content sit centered vertically within the section when space allows */
+/* end of notfound styles */
+
+@media (min-width: 1025px) {
+  /* On wider screens increase spacing and ensure the visual center */
+  .notfound__inner {
+    gap: 60px;
+  }
+
+  .notfound__illustration img {
+    max-width: 520px;
+  }
+
+//   .notfound__title {
+//     font-size: 44px;
+//   }
+}
+
+@media screen and (max-width: 768px) {
+  .notfound__title {
+    font-size: 16px;
+  }
+  .notfound__inner {
+    gap: 40px;
+  }
+  .notfound__description {
+    font-size: 14px;
+  }
+  .button--primary {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}

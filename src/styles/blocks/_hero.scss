@@ -1,0 +1,18 @@
+.hero-section {
+    &__container {
+        display: flex;
+max-width: 1440px;
+width: 100%;
+height: 601px;
+padding: 164px 220px 60px 220px;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+background: url("../../../public/assets/Hero\ Elements.svg")  no-repeat ;
+border: solid red;
+.content {
+
+}    
+}
+
+}
