@@ -1,19 +1,126 @@
 .hero-section {
-    &__container {
-        margin-top: 100px;;
-        display: flex;
-//max-width: 1440px;
-width: 100%;
-height: 601px;
+  &__container {
+    margin-top: 100px;
+    display: flex;
+    width: 100vw; 
+    height: 601px;
 padding: 164px 220px 60px 220px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: url("../../../public/assets/Hero Elements.svg") no-repeat center/cover; // nền full luôn
+    background-size: auto;
+  }
+  &__content {
+    display: flex;
 flex-direction: column;
 align-items: center;
-gap: 20px;
-background: url("../../../public/assets/Hero\ Elements.svg")  no-repeat ;
-border: solid red;
-.content {
+gap: 32px;
+align-self: stretch;
+.newsroom {
+    display: flex;
+height: 32px;
+padding: 4px 6px;
+align-items: center;
+gap: 8px;
+border-radius: 122px;
+background: rgba(255, 255, 255, 0.10);
+.status {
+display: flex;
+height: 24px;
+padding: 2px 12px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 100px;
+background: #AF2ECB;
+box-shadow: 0 0 3px 0 #F1D2FC inset;
 
-}    
+.text {
+    color: #FFF;
+font-family: var(--font-apparat);
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+}
+.name {
+    color: #FFF;
+font-family: var(--font-apparat);
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+justify-content: center;
 }
 
+.arrow {
+    width: 14px;
+height: 14px;
+aspect-ratio: 1/1;
+text-align: center;
+justify-content: center;
+svg {
+        position: relative;
+    bottom: 4px;
+    right: 3px;
+}
+}
+}
+.title {
+    align-self: stretch;
+    text-align: center;
+font-family: var(--font-apparat);
+font-size: 70px;
+font-style: normal;
+font-weight: 450;
+line-height: 115%; /* 80.5px */
+letter-spacing: -3.5px;
+background: linear-gradient(92deg, #FFE9DA 38.15%, #FF77D1 91.81%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+height: 167px;
+}
+.subtitle {
+    color: #AFB3CA;
+text-align: center;
+font-family: var(--font-apparat);
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.4px;
+  width: 1000px;
+
+}
+.button {
+    width: 206px;
+    display: flex;
+height: 46px;
+padding: 0 40px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 6px;
+background: #FF89D2;
+box-shadow: 0 0 9px 1px #F1D2FC inset;
+
+.text {
+    color: #0E0A0F;
+font-family: var(--font-apparat);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.arrow {
+    width: 16px;
+height: 16px;
+aspect-ratio: 1/1;
+}
+  }
+}
 }

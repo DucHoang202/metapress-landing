@@ -8,24 +8,25 @@
 @use "blocks/customer";
 @use "blocks/question";
 @use "blocks/unlock";
+@use "blocks/sponsor";
+@use "blocks/vision";
+@use "blocks/footer";
 
-
-
-// variables
+// Variables
 :root {
-    // Colors
+  // Colors
   --brand: #1a2adf;
   --brand-2: #5c78ff;
   --success: #22c55e;
   --danger: #ef4444;
   --warning: #f59e0b;
   --surface: #f3f4f6;
-  --border: #e5e7eb;  
+  --border: #e5e7eb;
 
-  //Typography 
+  // Typography
   --font-sans: "Inter Display", system-ui, -apple-system, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    --font-display: "Inter Display", var(--font-sans);
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-display: "Inter Display", var(--font-sans);
   --font-apparat: "SVN-Apparat", var(--font-sans);
 
   // Layout
@@ -33,6 +34,46 @@
   // Header & Footer sizes used for viewport calculations (desktop)
   --header-h: 72px;
   --footer-h: 240px; // approximate footer height for desktop; adjusted via responsive rules
+}
+
+// Fonts loaded via public/fonts.css
+
+// Reset & Base styles
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  color: #111;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Ensure we can size the app to the viewport for full-height layouts */
+html, body, #root {
+  height: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 // Typography
@@ -70,6 +111,7 @@
   font-size: 14px;
   color: #6b7280;
 }
+
 // Layout
 .container {
   max-width: var(--container);
@@ -89,6 +131,8 @@
 
 .App main {
   flex: 1 1 auto;
+  background: #010102;
+  width: 100%;
 }
 
 /* NotFound page renders Header (fixed) + main + Footer inside its own wrapper
@@ -119,7 +163,396 @@
   color: #fff;
   font-family: var(--font-apparat);
 }
-main {
-  overflow-x: hidden;
-  overflow-y: hidden;
+
+.hero {
+  background: #eaf2ff;
+  padding-block: 80px;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-content,
+  .hero-image {
+    flex: 1;
+  }
+
+  .hero-image img {
+    border-radius: 24px;
+    width: 100%;
+    height: auto;
+  }
+
+  // Responsive adjustments for mobile
+  @media (max-width: 768px) {
+    padding-block: 40px;
+
+    .container {
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+    }
+
+    // Adjust absolute image for mobile
+    img[style*="position: absolute"] {
+      position: static !important;
+      width: 100% !important;
+      max-width: 400px !important;
+      margin: 0 auto !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-block: 24px;
+
+    .container {
+      gap: 24px;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+
+  &.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+// Custom Components
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 14px;
+
+  .dot {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--brand);
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &-primary {
+    background: var(--brand);
+    color: #fff;
+
+    &:hover {
+      background: #0e1a8f;
+    }
+  }
+
+  &-ghost {
+    background: transparent;
+    border: 1px solid var(--border);
+
+    &:hover {
+      background: var(--surface);
+    }
+  }
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--border);
+
+  &.soft {
+    border: none;
+    box-shadow: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.categories-slider {
+  position: relative;
+  padding: 24px 0;
+  margin: 0;
+
+  .swiper-slide {
+    width: 85vw;
+
+    @media (min-width: 640px) {
+      width: calc(50% - 12px);
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(25% - 18px);
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: var(--brand);
+
+    &::after {
+      font-size: 24px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: var(--brand);
+  }
+}
+
+// Custom pagination for Sports section
+.custom-pagination {
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    margin: 0 4px;
+
+    &.swiper-pagination-bullet-active {
+      background: #007AFF;
+      opacity: 1;
+    }
+  }
+}
+
+// Global Swiper performance optimizations
+.swiper {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+  .swiper-slide {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+// Prevent layout thrashing
+.swiper-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.cat-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 270/372;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+  }
+
+  .cat-chip {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    padding: 9px 6px;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    strong {
+      font-size: 16px;
+    }
+  }
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+
+  &.green {
+    background: rgba(34, 197, 94, 0.1);
+    color: var(--success);
+  }
+  &.purple {
+    background: rgba(168, 85, 247, 0.1);
+    color: #a855f7;
+  }
+  &.blue {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+  }
+}
+
+.coach-slider {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+
+  .track {
+    display: flex;
+    width: fit-content;
+    animation: marquee 30s linear infinite;
+    gap: 24px;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  .coach-container {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.coach-mini {
+  width: 300px;
+  flex-shrink: 0;
+  figure {
+    margin-bottom: 8px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    img {
+      aspect-ratio: 3/2;
+      object-fit: cover;
+    }
+  }
+
+  h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 13px;
+    color: #6b7280;
+  }
+}
+
+.benefit {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  .ico {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--brand);
+  }
+}
+
+.progress {
+  position: relative;
+  height: 4px;
+  background: var(--surface);
+  border-radius: 999px;
+  overflow: hidden;
+
+  .bar {
+    position: absolute;
+    inset: 0;
+    background: var(--brand);
+  }
+
+  .label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    font-size: 12px;
+    color: #6b7280;
+  }
+}
+
+.checklist {
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+
+    .tick::before {
+      content: "✓";
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: var(--success);
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 40px;
 }

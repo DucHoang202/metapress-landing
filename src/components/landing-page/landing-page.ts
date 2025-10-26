@@ -7,3 +7,4 @@ export { default as Question} from "./Question.tsx";
 export { default as Unlock} from "./Unlock.tsx";
 export { default as Feature} from "./Feature.tsx";
 export { default as Sponsor} from "./Sponsor.tsx";
+export { default as Vision} from "./Vision.tsx";

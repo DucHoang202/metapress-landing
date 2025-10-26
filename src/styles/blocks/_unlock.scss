@@ -1,0 +1,102 @@
+.unlock {
+  &__container {
+    display: flex;
+    width: 1440px;
+    height: 560px;
+    padding: 32px 110px 64px 110px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    display: flex;
+    padding: 54px 64px 38px 64px;
+    align-items: center;
+    gap: 36px;
+    flex: 1 0 0;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #130F14 20.69%, #443149 185.46%);
+  }
+
+  &__half {
+    display: flex;
+    width: 678px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    .category {
+      color: rgba(248, 233, 254, 0.8);
+        font-family: var(--font-apparat);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.32px;
+      align-self: stretch;
+    }
+
+    .title {
+        font-family: var(--font-apparat);
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 115%; /* 55.2px */
+      letter-spacing: -0.96px;
+      width: 582px;
+      background: linear-gradient(92deg, #fff 44.83%, rgba(228, 160, 247, 0.9) 92.6%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: rgba(248, 233, 254, 0.8);
+      font-family: SVN-Apparat;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.32px;
+      width: 582px;
+    }
+
+    .button {
+      display: flex;
+      height: 46px;
+      padding: 0 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 6px;
+      background: #af2ecb;
+      box-shadow: 0 0 9px 1px #dc7ff3 inset;
+      cursor: pointer;
+
+      .text {
+        color: #fff;
+        font-family: var(--font-apparat);
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .arrow {
+        width: 16px;
+        height: 16px;
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+  &__half-1 {
+  position: relative;
+  overflow: visible;
+  width: 400px;
+
+  }
+  &__glow-container {
+    position: relative;
+  }
+  .glow {
+    position: absolute;
+    right: -1214px;
+    bottom: -233px;
+z-index: 0;
+pointer-events: none;
+  }
+}

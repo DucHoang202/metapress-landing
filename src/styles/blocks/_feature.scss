@@ -1,101 +1,103 @@
 .feature {
-    padding: 80px 0;
-    background: #010102;
-
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 24px;
-
-        @media (min-width: 768px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media (min-width: 1024px) {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    &__card {
-        display: flex;
-        padding: 32px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 24px;
-        border-radius: 12px;
-        border: 1px solid rgba(78, 54, 86, 0.80);
-        background: linear-gradient(150deg, #0E0A0F 17.18%, #443149 227.36%);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-        &:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(158, 25, 112, 0.2);
-        }
-
-        @media (max-width: 767px) {
-            padding: 24px;
-            gap: 20px;
-        }
-    }
-
-    &__icon {
-        display: flex;
-        padding: 8px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 4px;
-        background: rgba(68, 49, 73, 0.36);
-        
-        svg {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 14px;
+    &__container {
         width: 100%;
-    }
+        display: flex;
+padding-top: 64px;
+padding-bottom: 64px;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+.title {
+    align-self: stretch;
+    text-align: center;
+font-family: var(--font-apparat);
+font-size: 3.3vw;
+font-style: normal;
+font-weight: 450;
+line-height: 115%; /* 55.2px */
+letter-spacing: -0.96px;
+background: linear-gradient(92deg, #FFE9DA 38.15%, #FF77D1 91.81%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.subtitle {
+    color: #F8E9FE;
+text-align: center;
+font-family: var(--font-apparat);
+font-size: 1.1vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.32px;
+width: 760px;
+}
+.body {
+    display: flex;
+padding: 32px 0;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+.row {
+    display: flex;
+align-items: flex-start;
+gap: 32px;
+.item {
+    aspect-ratio: 370/208;
+    max-width: 25.7vw;
+    display: flex;
+padding: 32px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start !important;
+border:  solid red;;
+text-align: left !important;
+border-radius: 12px;
+border: 1px solid rgba(78, 54, 86, 0.80);
+background: linear-gradient(150deg, #0E0A0F 17.18%, #443149 227.36%);
+  .title, .subtitle {
+    text-align: left; // overrides inherited center
+  }
+.star {
+    display: flex;
+padding: 8px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 4px;
+background: rgba(68, 49, 73, 0.36);
+}
+.title {
+    margin-top: 24px;
+    flex-direction: flex-start;
+   align-self: stretch; 
+   color: #FFF;
+font-family: var(--font-apparat);
+font-size: 1.25vw;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.36px;
+text-transform: uppercase;
+border: red;
+    max-width: 100%;
 
-    &__title {
-        align-self: stretch;
-        color: #FFF;
-        font-family: var(--font-apparat);
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.36px;
-        text-transform: uppercase;
-        margin: 0;
+}
+.subtitle {
+    margin-top: 14px;
+    max-width: 100%;
+    color: #AFB3CA;
+font-family: var(--font-apparat);
+font-size: 1vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border: red;
 
-        @media (max-width: 767px) {
-            font-size: 16px;
-            letter-spacing: -0.32px;
-        }
-    }
-
-    &__description {
-        max-width: 306px;
-        color: #AFB3CA;
-        font-family: var(--font-apparat);
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin: 0;
-
-        @media (max-width: 767px) {
-            font-size: 14px;
-            max-width: 100%;
-        }
+}
+}
+}
+}
     }
 }

@@ -1,0 +1,129 @@
+.customer {
+
+
+    &__container {
+        padding-top: 46px;
+display: flex;
+width: 100vw;
+padding-bottom: 64px;
+flex-direction: column;
+align-items: center;
+gap: 32px;
+ margin-left: auto;
+ margin-right: auto;
+    }
+    &__margin {
+        margin-right:  1px ;
+    }
+.customer__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.customer__title {
+  color: #FCF5FE;
+  font-family: var(--font-apparat);
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 160%;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  
+}
+
+    &__marquee {
+margin-right: 97.691px;
+        width: 100%;
+
+    }
+    &__line {
+                display: flex;
+        align-items: center;
+        gap: 97.691px;
+        justify-content: center;
+        width: auto;
+
+        // @media (max-width: 1024px) {
+        //     gap: 60px;
+        // }
+
+        // @media (max-width: 767px) {
+        //     gap: 40px;
+        // }
+    }
+    &__logo {
+    }
+    &__item {
+        display: flex;                              
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        padding: 0 20px;
+        // @media (max-width: 767px) {
+        //     padding: 0 10px;
+        // }
+    }
+
+    &__logo {
+        height: 80px;
+        width: auto;
+        object-fit: contain;
+        flex-shrink: 0;
+
+        &--large {
+            width: 276px;
+            height: 90px;
+
+            // @media (max-width: 1024px) {
+            //     width: 220px;
+            //     height: 72px;
+            // }
+
+            // @media (max-width: 767px) {
+            //     width: 180px;
+            //     height: 60px;
+            // }
+        }
+
+        &--saigon {
+            width: 198px;
+
+            // @media (max-width: 1024px) {
+            //     width: 160px;
+            // }
+
+            // @media (max-width: 767px) {
+            //     width: 130px;
+            // }
+        }
+
+        // @media (max-width: 1024px) {
+        //     height: 60px;
+        // }
+
+        // @media (max-width: 767px) {
+        //     height: 50px;
+        // }
+    }
+
+    &__star {
+        width: 56.986px;
+        height: 40.705px;
+        fill: #888;
+        flex-shrink: 0;
+
+        // @media (max-width: 1024px) {
+        //     width: 45px;
+        //     height: 32px;
+        // }
+
+        // @media (max-width: 767px) {
+        //     width: 35px;
+        //     height: 25px;
+        // }
+    }
+
+}
