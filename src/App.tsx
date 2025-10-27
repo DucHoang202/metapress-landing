@@ -1,7 +1,7 @@
 import NotFound from './pages/NotFound.tsx';
 import Header from './components/Header.tsx';
 import Footer from './components/Footer.tsx';
-import { Benefit, Customer, Diagram, Feature, GetStarted, Hero, Question, Sponsor, Unlock, Vision, HeroMobile} from './components/landing-page/landing-page.ts'
+import { Benefit, Customer, Diagram, Feature, GetStarted, Hero, Question, Sponsor, Unlock, Vision, HeroMobile, Diagram3} from './components/landing-page/landing-page.ts'
 import './styles/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
@@ -18,8 +18,7 @@ function Home () {
      <Sponsor/>
         <Feature/>
         <Benefit />
-        <Vision/>
-        <Diagram />
+        <Diagram3/>
         <GetStarted />
         <Customer/>
         <Question/>
