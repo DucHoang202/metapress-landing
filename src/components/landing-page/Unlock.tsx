@@ -6,18 +6,7 @@ const Unlock: React.FC = () => {
 
       <div className="unlock__container">
         <div className="unlock__content">
-                    <div className="unlock__glow-container">
-        <div className="glow"><svg width="499" height="157" viewBox="0 0 499 157" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse opacity="0.6" cx="358" cy="78.5" rx="358" ry="78.5" fill="url(#paint0_radial_3019_1202)"/>
-<defs>
-<radialGradient id="paint0_radial_3019_1202" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(358 78.5) scale(358 78.5)">
-<stop stop-color="#42074B"/>
-<stop offset="1" stop-color="#9323A8" stop-opacity="0"/>
-</radialGradient>
-</defs>
-</svg>
-</div>
-</div>
+
           <div className="unlock__half">
             <div className="category">SUMMER DEAL SALES</div>
             <div className="title">
@@ -50,6 +39,18 @@ const Unlock: React.FC = () => {
             </div>
           </div>
     <div className="unlock__half-1">
+                          <div className="unlock__glow-container">
+        <div className="glow"><svg width="499" height="157" viewBox="0 0 499 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse opacity="0.6" cx="358" cy="78.5" rx="358" ry="78.5" fill="url(#paint0_radial_3019_1202)"/>
+<defs>
+<radialGradient id="paint0_radial_3019_1202" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(358 78.5) scale(358 78.5)">
+<stop stop-color="#42074B"/>
+<stop offset="1" stop-color="#9323A8" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
+</div>
+</div>
           {/* Purple glow effect */}
 <div
   className="absolute right-0 bottom-0 w-[716px] h-[157px] opacity-60 pointer-events-none"

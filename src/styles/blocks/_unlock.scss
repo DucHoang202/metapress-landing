@@ -1,22 +1,58 @@
 .unlock {
+  // 💻 Desktop
+@media (min-width: 1025px) {
+  .container {
+  }
+}
+
+// 📱 Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+  .unlock__container {
+        padding-top: 32px;
+    padding-bottom: 64px;
+    width: 84.7vw;
+        aspect-ratio: 1440/560;
+  justify-content: center;
+    align-items: center;
+    margin-left: 7.6vw;
+  }
+}
+
+// 📱 Mobile
+@media (max-width: 767px) {
+  .unlock__container {
+display: none;
+  }
+}
+
   &__container {
     display: flex;
-    width: 1440px;
-    height: 560px;
-    padding: 32px 110px 64px 110px;
-    align-items: flex-start;
+    width: 1220px;
+    height: auto;
+    // padding: 32px 110px 64px 110px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     flex-shrink: 0;
+    aspect-ratio: 1440/560;
+    margin: 0 auto;
+
   }
 
   &__content {
     display: flex;
+    padding-top: 54px;
+    padding-bottom: 38px;
     padding: 54px 64px 38px 64px;
     align-items: center;
     gap: 36px;
     flex: 1 0 0;
     border-radius: 24px;
     background: linear-gradient(145deg, #130F14 20.69%, #443149 185.46%);
+    // margin-left: auto;
+    // margin-right: auto;
   }
 
   &__half {
@@ -29,7 +65,7 @@
     .category {
       color: rgba(248, 233, 254, 0.8);
         font-family: var(--font-apparat);
-      font-size: 16px;
+      font-size: 1.1vw;
       font-weight: 500;
       letter-spacing: -0.32px;
       align-self: stretch;
@@ -37,7 +73,7 @@
 
     .title {
         font-family: var(--font-apparat);
-      font-size: 48px;
+      font-size: 3.3vw;
       font-weight: 500;
       line-height: 115%; /* 55.2px */
       letter-spacing: -0.96px;
@@ -50,8 +86,8 @@
 
     .subtitle {
       color: rgba(248, 233, 254, 0.8);
-      font-family: SVN-Apparat;
-      font-size: 16px;
+      font-family: var(--font-apparat);
+      font-size: 1.1vw;
       font-weight: 500;
       letter-spacing: -0.32px;
       width: 582px;
@@ -84,19 +120,28 @@
     }
   }
   &__half-1 {
+    
   position: relative;
   overflow: visible;
   width: 400px;
-
+  // background-color: green !important;
+// 📱 Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+display: none;
+}
   }
   &__glow-container {
     position: relative;
   }
   .glow {
     position: absolute;
-    right: -1214px;
-    bottom: -233px;
+    right: -63px;
+    bottom: -450px;
 z-index: 0;
 pointer-events: none;
+  }
+  .chart {
+    // margin-left: auto;
+    // right: -123px;
   }
 }

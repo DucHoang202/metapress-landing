@@ -1,0 +1,114 @@
+.hero_mobile {
+    &__container {
+        margin-top: 101px;
+        height: 515px;
+        margin-left: 0;
+        width:100vw;
+       background-image: 
+      url("../../../src/assets/hero-top.svg"),
+      url("../../../src/assets/hero-bot.svg");
+    background-repeat: no-repeat;
+    background-position:  top center,   center calc(50% + 20px) ;
+    background-size: contain, contain;
+
+    }
+    &__background {
+        position: relative;
+        z-index: 0;
+        //   display: inline-block; // container ôm sát nội dung
+
+        .upper {
+    position: absolute;
+    top: 50px;
+    right: 1038px;
+            z-index: 0;
+
+// background-color: green !important;
+
+        }
+        .bottom {
+    position: absolute;
+    top: 250px;
+    right: 1038px;
+//background-color: red !important;
+
+        }
+    }
+    .content {
+    
+    .hero-mobile__content {
+        width: 335px;
+        height: 191px;
+              margin-left: auto;
+      margin-right: auto;
+        display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+
+.category {
+    margin-top: 213px;
+    display: flex;
+padding: 4px 6px;
+align-items: center;
+gap: 8px;
+border-radius: 122px;
+background: rgba(255, 255, 255, 0.10);
+margin-top: 93px;
+.new {
+    display: flex;
+padding: 2px 12px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 200px;
+background: #AF2ECB;
+box-shadow: 0 0 3px 0 #F1D2FC inset;
+color: #FFF;
+font-family: var(--font-apparat);
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.text {
+    color: #FFF;
+font-family: var(--font-apparat);
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+}
+.title {
+    width: 89vw;
+    text-align: center;
+font-family: var(--font-apparat);
+font-size: 32px;
+font-style: normal;
+font-weight: 450;
+line-height: 115%; /* 36.8px */
+letter-spacing: -1.6px;
+align-self: stretch;
+background: linear-gradient(92deg, #FFE9DA 38.15%, #FF77D1 91.81%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+height: 80px;
+}
+.subtitle {
+    width: 89vw;
+    color: #AFB3CA;
+text-align: center;
+font-family: var(--font-apparat);
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.26px;
+align-self: stretch;
+}
+    }
+}
+}

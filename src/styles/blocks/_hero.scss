@@ -73,7 +73,7 @@ svg {
     align-self: stretch;
     text-align: center;
 font-family: var(--font-apparat);
-font-size: 70px;
+font-size: 5vw;
 font-style: normal;
 font-weight: 450;
 line-height: 115%; /* 80.5px */
@@ -82,18 +82,18 @@ background: linear-gradient(92deg, #FFE9DA 38.15%, #FF77D1 91.81%);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-height: 167px;
+height: 11.7vw;
 }
 .subtitle {
     color: #AFB3CA;
 text-align: center;
 font-family: var(--font-apparat);
-font-size: 20px;
+font-size: 1.4vw;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.4px;
-  width: 1000px;
+  width: 70vw;
 
 }
 .button {
