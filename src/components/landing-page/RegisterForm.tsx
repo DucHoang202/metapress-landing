@@ -1,4 +1,8 @@
 const RegisterForm: React.FC = () => {
-return (<p></p>)
+return (
+    <section >
+
+    </section>
+)
 }
 export default RegisterForm;

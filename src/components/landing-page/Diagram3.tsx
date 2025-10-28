@@ -31,7 +31,7 @@ const Diagram3: React.FC = () => {
                             <div className="subtitle">Một nội dung – nhiều định dạng từ bài báo đến infographic, video hay dữ liệu mở rộng, lan tỏa đa kênh.</div>
                         </div>
                             <div className="img-container">
-<img className="diag-2-img" src="../../../public/assets/Diagram_1.svg"></img>
+<img className="diag-2-img" src="../../../assets/Diagram_1.svg"></img>
                     </div>
                     </div>
                                       <div className="item">
@@ -40,7 +40,7 @@ const Diagram3: React.FC = () => {
                             <div className="subtitle">Tự động hóa toàn bộ chuỗi sản xuất, mỗi bước đều có AI Agent chuyên trách, đảm bảo quy trình nhanh, chính xác và nhất quán.</div>
                         </div>
                         <div className="img-container">
-   <img src="../../../public/assets/Diagram_2.svg" ></img>
+   <img src="../../../assets/Diagram_2.svg" ></img>
    </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ Chúng tôi tự tin triển khai giải pháp tới khách hàng chỉ từ 2 -
                             </div>
                         </div>
                         <div className="right">
-                           <img className="diag-2-img" src="../../../public/assets/Diagram_3.svg"></img>
+                           <img className="diag-2-img" src="../../../assets/Diagram_3.svg"></img>
                         </div>
                     </div>
                 </div>
