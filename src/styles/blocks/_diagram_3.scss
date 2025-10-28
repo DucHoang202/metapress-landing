@@ -1,5 +1,6 @@
 .diagram3 {
-
+ width: 100%;
+ align-items: center;
   &__container {
     margin-top: 36px;
     display: flex;
@@ -20,6 +21,7 @@
     @media (min-width: 768px) and (max-width: 1224px) {
       width: 772px;
       gap: 24px;
+      margin: 0;
     }
   }
 
@@ -46,7 +48,7 @@ flex-direction: column;
     }
 
     @media (min-width: 768px) and (max-width: 1224px) {
-    width: 772px;
+    width: 100%;
     height: auto;
 
     }
@@ -100,7 +102,7 @@ flex-direction: column;
     .brand {
       position: relative;
       bottom: 151px;
-      right: -113px;
+      right: -246px;
 
       &__decoration {
         position: relative;

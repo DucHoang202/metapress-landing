@@ -65,28 +65,28 @@ Solutions
                 </a>
                                 <a className="item">
                     <div className="text">
-Solutions
+Pricing
                     </div>
       <div className="arrow">{arrow}</div>
 
                 </a>
                                 <a className="item">
                     <div className="text">
-Solutions
+Resources
                     </div>
       <div className="arrow">{arrow}</div>
 
                 </a>
                                 <a className="item">
                     <div className="text">
-Solutions
+About
                     </div>
       <div className="arrow">{arrow}</div>
 
                 </a>
                                 <a className="item">
                     <div className="text">
-Solutions
+Contact
                     </div>
       <div className="arrow">{arrow}</div>
 
@@ -95,39 +95,33 @@ Solutions
                         <div className="col">
                 <a className="item">
                     <div className="text">
-Solutions
+Instagram
                     </div>
       <div className="arrow">{arrow}</div>
 
                 </a>
                                 <a className="item">
                     <div className="text">
-Solutions
+YouTube
                     </div>
       <div className="arrow">{arrow}</div>
 
                 </a>
                                 <a className="item">
                     <div className="text">
-Solutions
+Twitter
                     </div>
       <div className="arrow">{arrow}</div>
 
                 </a>
                                 <a className="item">
                     <div className="text">
-Solutions
+Linkedln
                     </div>
       <div className="arrow">{arrow}</div>
 
                 </a>
-                                <a className="item">
-                    <div className="text">
-Solutions
-                    </div>
-      <div className="arrow">{arrow}</div>
 
-                </a>
             </div>
             <div className="col">
                          <div className="item">
