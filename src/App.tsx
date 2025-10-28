@@ -3,7 +3,7 @@ import Header from './components/Header.tsx';
 import Footer from './components/Footer.tsx';
 import FooterMobile from './components/FooterMobile.tsx';
 
-import { Benefit, Customer, Diagram, Feature, GetStarted, Hero, Question, Sponsor, Unlock, Vision, HeroMobile, Diagram3} from './components/landing-page/landing-page.ts'
+import { Benefit, Customer, Feature, GetStarted, Hero, Question, Sponsor, Unlock, HeroMobile, Diagram3} from './components/landing-page/landing-page.ts'
 import './styles/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';

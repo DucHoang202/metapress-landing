@@ -1,9 +1,5 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import KinhTeSaiGon from "../../assets/KinhTeSaiGon.svg";
-import WebTheThao from "../../assets/WebTheThao.png";
-import Kryptonomy from "../../assets/Kryptonomy.svg";
-import Tatler from "../../assets/Tatler.svg";
 import { useMediaQuery } from "react-responsive";
 
 

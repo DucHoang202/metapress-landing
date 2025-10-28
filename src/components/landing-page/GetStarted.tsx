@@ -1,5 +1,4 @@
 import React from "react";
-import GetStarted1 from "../../../src/assets/1.svg"
 const GetStarted: React.FC = () => {
    const statsData = [
   { title: "250+", subtitle: "Phóng viên, nhà báo sử dụng hàng ngày" },

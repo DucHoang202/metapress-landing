@@ -1,5 +1,4 @@
 import React from "react";
-import Star from "../../../public/assets/star.svg";
 import "../../styles/blocks/_feature.scss"
 import { useMediaQuery } from "react-responsive";const Feature: React.FC = () => {
       // 👉 Mảng item
@@ -55,7 +54,6 @@ icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http:/
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1199 });
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   let itemsPerRow = 3; // default desktop
   if (isTablet) itemsPerRow = 2;
