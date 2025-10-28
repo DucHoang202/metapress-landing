@@ -3,7 +3,6 @@ import React from "react";
 const Customer: React.FC = () => {
     return (
         <section className="testimonials">
-            <div className="container">
                 <div className="testimonials__header">
                     <h2 className="testimonials__title">
                         Niềm tin được xây dựng <br></br> từ hiệu quả vận hành thực tế
@@ -84,7 +83,7 @@ const Customer: React.FC = () => {
                         </article>
                     </div>
                 </div>
-            </div>
+         
         </section>
     )
 }

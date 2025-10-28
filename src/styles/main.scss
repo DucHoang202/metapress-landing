@@ -203,8 +203,9 @@ img {
 .App main {
   flex: 1 1 auto;
   background: #010102;
-  width: 100%;
-  overflow-x: hidden;
+ justify-content: center;
+ align-items: center;
+ 
 }
 
 /* NotFound page renders Header (fixed) + main + Footer inside its own wrapper

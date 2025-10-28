@@ -2,7 +2,6 @@
     background-color: black;
 // 📱 Tablet
 @media (min-width: 768px) and (max-width: 1024px) {
-    margin-left: auto;
     display: flex;
     flex-direction: column;
 align-items: flex-start;
@@ -10,15 +9,16 @@ flex-direction: column;
 }
     .upper {
 display: flex;
-width: auto;
+width: 91vw;
 height: 303px;
 // padding: 60px 64px 0 64px;
 padding-top: 64px;
 padding-bottom: 0;
-margin: 0 4.4vw;
-justify-content: center;
+margin-left: 4.5vw;
+margin-right: 4.5vw;
+//margin-right: 64px;
+justify-content: space-between;
 align-items: flex-start;
-gap: 14vw;
 flex-shrink: 0;
 // background: linear-gradient(180deg, rgba(68, 49, 73, 0.20) 0%, rgba(14, 10, 15, 0.00) 100%);
 .left {
@@ -98,6 +98,9 @@ background: linear-gradient(180deg, #714C7D 18%, rgba(14, 10, 15, 0.00) 89.29%);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+display: flex;
+justify-content: flex-start;
+margin-left: 0;
 }
 .end {
     display: flex;

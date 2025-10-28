@@ -1,25 +1,21 @@
 .question {
     .container {
-width: 100vw;
-    
+width: 1440px;    
     display: flex;
 width: 83.3vw;
 padding: 60px 0;
 justify-content: center;
 align-items: flex-start;
-  margin-left: 8.35vw;
-  margin-right: 8.35vw;
+
 @media (max-width: 767px) {
   flex-direction: column;
   gap: 24px;
-  margin-left: 8.35vw;
-  margin-right: 8.35vw;
+
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   flex-direction: column;
   gap: 24px;
-  margin-left: 8.35vw;
-  margin-right: 8.35vw;
+
 }
 .content {
     display: flex;
@@ -28,15 +24,13 @@ justify-content: center;
 align-items: flex-start;
 gap: 24px;
 flex: 1 0 0;
-width: 41.7vw;
+width: 600px;
 @media (max-width: 767px) {
   align-items: center;
-  width: 83.3vw;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
  align-items: center;
-   width: 83.3vw;
-
+ 
 }
 .title {
 color: #FFF;
@@ -50,16 +44,16 @@ letter-spacing: -0.96px;
 width: 247px;
 @media (max-width: 767px) {
   align-items: center;
-  width: 100vw;
+  width: 343px;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
  align-items: center;
-   width: 100vw;
+   width: 772px;
 
 }
 }
 .subtitle {
-    width: 26.7vw;
+    width: 385px;
     color: #F8E9FE;
 font-family: var(--font-apparat);
 font-size: 16px;
@@ -69,14 +63,14 @@ line-height: normal;
 letter-spacing: -0.32px;
 @media (max-width: 767px) {
   align-items: right;
-  width: 83.3vw;
+  width: 343px;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
  align-items: center;
-   width: 83.3vw;
+   width: 772px;
 
 }
 }
@@ -135,7 +129,7 @@ width: 83.3vw;
       text-align: left;
       width: max-content;
       @media (max-width: 767px) {
-width: 50vw;
+width: auto;
 font-size: 18px;
 
 }
@@ -156,8 +150,8 @@ font-size: 18px;
       width: 480px;
       transition: all 0.3s ease;
             @media (max-width: 767px) {
-width: 50vw;
-text-align: left;
+width: auto;
+              text-align: left;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
 }

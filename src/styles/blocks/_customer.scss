@@ -1,7 +1,15 @@
 .testimonials {
     padding: 60px 0;
     background: #010102;
-    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+        @media (max-width: 767px) {
+width: 343px;
+
+}
+@media (min-width: 768px) and (max-width: 1224px) {
+width: 772px;
+}
     &__header {
         display: flex;
         flex-direction: column;
@@ -10,6 +18,7 @@
         gap: 24px;
         margin-bottom: 24px;
         text-align: center;
+        width: 100%;
     }
 
     &__title {
@@ -21,16 +30,11 @@
         line-height: 115%;
         letter-spacing: -0.96px;
         margin: 0;
-
-        @media (max-width: 1024px) {
-            font-size: 40px;
-            letter-spacing: -0.8px;
-        }
-
-        @media (max-width: 768px) {
-            font-size: 32px;
-            letter-spacing: -0.64px;
-        }
+        @media (max-width: 767px) {
+font-size: 24px;
+}
+@media (min-width: 768px) and (max-width: 1224px) {
+}
     }
 
     &__subtitle {
@@ -43,11 +47,11 @@
         line-height: normal;
         letter-spacing: -0.32px;
         margin: 0;
-
-        @media (max-width: 768px) {
-            font-size: 15px;
-            letter-spacing: -0.3px;
-        }
+        @media (max-width: 767px) {
+font-size: 14px;
+}
+@media (min-width: 768px) and (max-width: 1224px) {
+}
     }
 
     &__grid {
@@ -60,17 +64,19 @@
         border-radius: 16px;
         background: rgba(68, 49, 73, 0.10);
         margin: 0 auto;
+        @media (max-width: 767px) {
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 0;
+}
+@media (min-width: 768px) and (max-width: 1224px) {
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 0;
+}
 
-        @media (max-width: 1024px) {
-            padding: 28px;
-            gap: 20px;
-        }
-
-        @media (max-width: 768px) {
-            flex-direction: column;
-            padding: 20px;
-            gap: 16px;
-        }
     }
 
     &__column {
@@ -80,10 +86,16 @@
         align-items: flex-start;
         gap: 24px;
         flex: 1;
+        @media (max-width: 767px) {
+margin-left: auto;
+margin-right: auto;
+width: 343px;
+}
+@media (min-width: 768px) and (max-width: 1224px) {
+    display: flex;
+flex-direction: column;
+}
 
-        @media (max-width: 768px) {
-            width: 100%;
-        }
     }
 
     &__card {
@@ -97,16 +109,13 @@
         border: 1px solid rgba(78, 54, 86, 0.80);
         background: linear-gradient(150deg, #0E0A0F 17.18%, #443149 227.36%);
         width: 100%;
-
-        @media (max-width: 1024px) {
-            padding: 40px 36px;
-            gap: 36px;
-        }
-
-        @media (max-width: 768px) {
-            padding: 32px 28px;
-            gap: 28px;
-        }
+    @media (max-width: 767px) {
+width: 343px;
+padding: 0;
+}
+@media (min-width: 768px) and (max-width: 1224px) {
+width: 772px;
+}
     }
 
     &__content {
@@ -118,9 +127,6 @@
         gap: 8px;
         width: 100%;
 
-        @media (max-width: 768px) {
-            max-width: 100%;
-        }
     }
 
     &__heading {
@@ -133,10 +139,7 @@
         letter-spacing: -0.4px;
         margin: 0;
 
-        @media (max-width: 768px) {
-            font-size: 18px;
-            letter-spacing: -0.36px;
-        }
+
     }
 
     &__quote {
@@ -149,16 +152,7 @@
         letter-spacing: -0.4px;
         margin: 0;
 
-        @media (max-width: 1024px) {
-            font-size: 18px;
-            letter-spacing: -0.36px;
-        }
 
-        @media (max-width: 768px) {
-            font-size: 16px;
-            letter-spacing: -0.32px;
-            line-height: 150%;
-        }
     }
 
     &__author {
@@ -167,9 +161,7 @@
         align-items: center;
         gap: 24px;
 
-        @media (max-width: 768px) {
-            gap: 16px;
-        }
+
     }
 
     &__avatar {
@@ -186,10 +178,7 @@
             object-fit: cover;
         }
 
-        @media (max-width: 768px) {
-            width: 56px;
-            height: 56px;
-        }
+ 
     }
 
     &__author-info {
@@ -209,10 +198,6 @@
         line-height: normal;
         letter-spacing: -0.32px;
 
-        @media (max-width: 768px) {
-            font-size: 15px;
-            letter-spacing: -0.3px;
-        }
     }
 
     &__position {
@@ -225,9 +210,6 @@
         letter-spacing: -0.32px;
         opacity: 0.8;
 
-        @media (max-width: 768px) {
-            font-size: 14px;
-            letter-spacing: -0.28px;
-        }
+
     }
 }
