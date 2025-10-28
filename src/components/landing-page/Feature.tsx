@@ -54,7 +54,7 @@ icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http:/
   ];
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1199 });
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   let itemsPerRow = 3; // default desktop

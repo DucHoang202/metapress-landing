@@ -60,8 +60,10 @@ background: url("../../../public/assets/benefit.png");
 }
     }
 &__image {
-  width: 1216px;
-  height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  width: 84.4vw;
+  height: 59vh;
   display: flex;
   padding: 10px;
   align-items: flex-end;
@@ -103,11 +105,14 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: -0.32px;
-    @media (max-width: 767px) {
+      @media (max-width: 767px) {
 font-size: 16px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
     font-size: 18px;
+}
+      @media (min-width: 1024px) {
+font-size: 16px;
 }
     }
 

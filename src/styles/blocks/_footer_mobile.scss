@@ -1,0 +1,130 @@
+.footer_mobile {
+    &__container {
+    display: flex;
+width: 100vw;
+padding: 24px 16px 0 16px;
+flex-direction: column;
+align-items: left;
+gap: 32px;
+height: 843px;
+background-color: black;
+    }
+    &__head {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch; 
+.r2{
+    color: #FFF;
+font-family: var(--font-display);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+align-self: stretch;
+}
+    }
+    &__contact {
+        text-align: left;
+        color: #FFF;
+font-family: SVN-Apparat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+    &__line {
+        height: 1px;
+align-self: stretch;
+background: rgba(255, 255, 255, 0.10);
+width: 91vw;
+    }
+    &__navigation {
+        display: flex;
+justify-content: space-between;
+align-items: flex-start;
+align-self: stretch;
+.col {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 32px;
+.row {
+    display: flex;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+
+.text {
+    color: #FFF;
+font-family: var(--font-apparat);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.arrow {
+    margin-bottom: 9px;
+    width: 12px;
+height: 12px;
+aspect-ratio: 1/1;
+}
+}}
+    }
+    &__policy-container {
+        display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 14px;
+.row {
+    display: flex;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+
+.text {
+   color: #888;
+font-family: var(--font-apparat);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.arrow {
+    margin-bottom: 9px;
+    width: 12px;
+height: 12px;
+aspect-ratio: 1/1;
+svg {
+stroke: #888;
+fill: #888;
+}
+}
+}}
+
+&__headline {
+    font-family: var(--font-apparat);
+font-size: 58.033px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: linear-gradient(180deg, #FF71C9 18%, rgba(14, 10, 15, 0.00) 89.29%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+&__company {
+   color: #888;
+font-family: var(--font-display);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+flex: 1 0 0;
+}
+}
+

@@ -9,7 +9,7 @@
             url("../../../src/assets/hero-bot.svg");
         background-repeat: no-repeat;
         background-position: top center, center calc(50% + 20px);
-        background-size: contain, contain;
+        background-size: 375px auto, 375px auto;
         padding-bottom: 0;
         height: auto;
     }
@@ -63,7 +63,8 @@
             }
             
             .title {
-                width: 89vw;
+                margin: 0;
+                width: auto;
                 text-align: center;
                 font-family: var(--font-apparat);
                 font-size: 32px;
@@ -80,7 +81,7 @@
             }
             
             .subtitle {
-                width: 89vw;
+                width: auto;
                 color: #AFB3CA;
                 text-align: center;
                 font-family: var(--font-apparat);

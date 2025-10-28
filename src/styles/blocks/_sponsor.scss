@@ -9,6 +9,19 @@ padding-bottom: 64px;
 flex-direction: column;
 align-items: center;
 gap: 32px;
+      @media (max-width: 767px) {
+display: flex;
+width: 100vw;
+padding: 0 16px 32px 16px;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+    }
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+      @media (min-width: 1024px) {
+font-size: 16px;
+}
 
     }
     .rfm-marquee-container {
@@ -17,6 +30,9 @@ gap: 32px;
     }
     &__margin {
         margin-right:  1px ;
+              @media (max-width: 767px) {
+margin-right: 24px;
+    }
     }
 .customer__title-container {
   display: flex;
@@ -34,13 +50,30 @@ gap: 32px;
   line-height: 160%;
   text-transform: uppercase;
   padding: 4px 12px;
-  
+      @media (max-width: 767px) {
+        color: rgba(252, 245, 254, 0.60);
+  font-family: var(--font-apparat);
+font-size: 15px;
+font-style: normal;
+font-weight: 450;
+line-height: 160%; /* 24px */
+text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+      @media (min-width: 1024px) {
+}
 }
 
     &__marquee {
 margin-right: 97.691px;
         width: 100%;
+        @media (max-width: 1024px) {
+            gap: 60px;
+        }
 
+        @media (max-width: 767px) {
+margin-right: 24px;        }
     }
     &__line {
                 display: flex;
@@ -49,68 +82,26 @@ margin-right: 97.691px;
         justify-content: center;
         width: auto;
 
-        // @media (max-width: 1024px) {
-        //     gap: 60px;
-        // }
+        @media (max-width: 1024px) {
+            gap: 60px;
+        }
 
-        // @media (max-width: 767px) {
-        //     gap: 40px;
-        // }
+        @media (max-width: 767px) {
+            gap: 24px;
+        }
     }
-    &__logo {
-    }
+
     &__item {
         display: flex;                              
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
         padding: 0 20px;
-        // @media (max-width: 767px) {
-        //     padding: 0 10px;
-        // }
+        @media (max-width: 767px) {
+            padding: 0;
+        }
     }
 
-    &__logo {
-        height: 80px;
-        width: auto;
-        object-fit: contain;
-        flex-shrink: 0;
-
-        &--large {
-            width: 276px;
-            height: 90px;
-
-            // @media (max-width: 1024px) {
-            //     width: 220px;
-            //     height: 72px;
-            // }
-
-            // @media (max-width: 767px) {
-            //     width: 180px;
-            //     height: 60px;
-            // }
-        }
-
-        &--saigon {
-            width: 198px;
-
-            // @media (max-width: 1024px) {
-            //     width: 160px;
-            // }
-
-            // @media (max-width: 767px) {
-            //     width: 130px;
-            // }
-        }
-
-        // @media (max-width: 1024px) {
-        //     height: 60px;
-        // }
-
-        // @media (max-width: 767px) {
-        //     height: 50px;
-        // }
-    }
 
     &__star {
         width: 56.986px;

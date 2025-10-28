@@ -9,7 +9,6 @@ align-items: flex-start;
 flex-direction: column;
 }
     .upper {
-        background-color: green !important;
 display: flex;
 width: auto;
 height: 303px;
@@ -81,14 +80,17 @@ aspect-ratio: 1/1;
 }
     }
     .bottom {
+        width: 100vw;
 height: 439px;
 padding: 0 56px 20px 56px;
-justify-content: center;
+justify-content: space-between;
 align-items: flex-end;
 align-self: stretch;
+display: flex;
+flex-direction: column;
 .headline {
             font-family: var(--font-apparat);
-font-size: 211.323px;
+font-size: 14.7vw;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -99,6 +101,7 @@ background-clip: text;
 }
 .end {
     display: flex;
+
 .company {
     color: #888;
 font-family: "Inter Display";
@@ -107,6 +110,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 flex: 1 0 0;
+margin-left: 0;
 }
 .policy {
     display: flex;
