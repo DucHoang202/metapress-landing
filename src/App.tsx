@@ -8,7 +8,7 @@ import './styles/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 function Home () {
-    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isMobile = useMediaQuery({ maxWidth: 812 });
 
   return (
     <div className='App'>

@@ -2,6 +2,7 @@ import React from "react";
 
 const Diagram3: React.FC = () => {
     return (<section className="diagram3">
+
         <div className="diagram3__container">
             <div className="diagram3__1">
                 <div className="left">

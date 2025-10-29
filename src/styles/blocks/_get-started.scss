@@ -60,7 +60,7 @@ background-size: 135% auto; // hoặc cover * 2 kích cỡ
       align-items: center;
       gap: calc(24 / 1440 * 100vw);
       text-align: center;
-          @media (max-width: 767px) {
+          @media (max-width: 812px) {
 max-width: 86.3vw;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -79,7 +79,7 @@ max-width: 86.3vw;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       width: 100%;
-          @media (max-width: 767px) {
+          @media (max-width: 812px) {
 text-align: center;
 font-family: var(--font-apparat);
 font-size: 18.242px;
@@ -142,7 +142,7 @@ margin-left: auto;
 margin-right: auto;
 gap: 24px;
 flex: 1 0 0;
-    @media (max-width: 767px) {
+    @media (max-width: 812px) {
 }
 @media (min-width: 768px) and (max-width: 1224px) {
 }
@@ -169,7 +169,7 @@ flex: 1 0 0;
       #0E0A0F 17.18%,
       #443149 227.36%
     );
-    @media (max-width: 767px) {
+    @media (max-width: 812px) {
 width: 343px;
 display: flex;
 padding: 24px;
@@ -192,7 +192,7 @@ background: linear-gradient(150deg, #0E0A0F 17.18%, #443149 227.36%);
   align-items: center;
   gap: clamp(10px, 5vw, 50px);
 
-  @media (max-width: 767px) {
+  @media (max-width: 812px) {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -219,7 +219,7 @@ background: linear-gradient(150deg, #0E0A0F 17.18%, #443149 227.36%);
       font-weight: 500;
       line-height: 120%;
       letter-spacing: -2.3px;
-          @media (max-width: 767px) {
+          @media (max-width: 812px) {
      font-size: 32px;
 
     }
@@ -233,14 +233,14 @@ background: linear-gradient(150deg, #0E0A0F 17.18%, #443149 227.36%);
       font-weight: 400;
       line-height: 29.843px;
       letter-spacing: -0.6px;
-          @media (max-width: 767px) {
+          @media (max-width: 812px) {
 font-size: 15px;
 
     }
     }
 
     // ✅ Center nội dung khi ở mobile
-    @media (max-width: 767px) {
+    @media (max-width: 812px) {
       align-items: center;
       text-align: center;
 
