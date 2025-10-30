@@ -36,8 +36,8 @@ function App() {
 <BrowserRouter>
 <Routes>
  <Route path="/" element={<Home />} />
-  <Route path="https://metapress.ai/form" element={<RegisterFormLink />} />
-    {/* <Route path="/form" element={<RegisterFormLink />} /> */}
+  {/* <Route path="https://metapress.ai/form" element={<RegisterFormLink />} /> */}
+    <Route path="/form" element={<RegisterFormLink />} />
  <Route path="/404" element={<NotFound/>}/>
  <Route path="*" element={<NotFound />} />
 </Routes>
