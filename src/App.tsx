@@ -4,19 +4,18 @@ import Footer from './components/Footer.tsx';
 import FooterMobile from './components/FooterMobile.tsx';
 
 import { Benefit, Customer, Feature, GetStarted, Hero, Question, Sponsor, Unlock, HeroMobile, Diagram3} from './components/landing-page/landing-page.ts'
+import RegisterFormLink from './components/RegisterForm.tsx';
 import './styles/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 function Home () {
-    const isMobile = useMediaQuery({ maxWidth: 812 });
-
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isTablet = useMediaQuery({ maxWidth: 1023});
   return (
     <div className='App'>
       <Header />
       <main>
 { isMobile ? <HeroMobile/> : <Hero/>}   
-
-
      <Sponsor/>
         <Feature/>
         <Benefit />
@@ -24,9 +23,9 @@ function Home () {
         <GetStarted />
         <Customer/>
         <Question/>
-        <Unlock/>
+{isTablet ? "" : <Unlock/>}
         </main>
-{ isMobile ? <FooterMobile/> : <Footer/>}
+{ isTablet ? <FooterMobile/> : <Footer/>}
     </div>
   )
 }
@@ -36,6 +35,7 @@ function App() {
 <BrowserRouter>
 <Routes>
  <Route path="/" element={<Home />} />
+  <Route path="/form" element={<RegisterFormLink />} />
  <Route path="/404" element={<NotFound/>}/>
  <Route path="*" element={<NotFound />} />
 </Routes>

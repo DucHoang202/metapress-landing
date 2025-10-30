@@ -7,8 +7,6 @@ const Header: React.FC = () => {
     
             <img src={Logo} alt="logo"></img>
 
-      
-        
      </div>
       <div className="header-section__link-container ">
         <a className="link">Giải pháp</a>
@@ -18,7 +16,7 @@ const Header: React.FC = () => {
 
         </div>
          <button className="header-section__demo-btn ">
-            <div className="text">
+            <div className="text" onClick={() => window.location.href = "/form"}>
                 Liên hệ demo
                   </div>
                 <span className="icon-container">

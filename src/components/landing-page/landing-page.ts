@@ -10,3 +10,4 @@ export { default as Sponsor} from "./Sponsor.tsx";
 export { default as Vision} from "./Vision.tsx";
 export { default as HeroMobile} from "./HeroMobile.tsx";
 export { default as Diagram3} from "./Diagram3.tsx";
+export { default as RegisterForm} from "./RegisterForm.tsx";

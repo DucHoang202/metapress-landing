@@ -55,13 +55,14 @@ background-size: 135% auto; // hoặc cover * 2 kích cỡ
 
     .get-started__content {
       margin: auto;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: calc(24 / 1440 * 100vw);
       text-align: center;
           @media (max-width: 812px) {
-max-width: 86.3vw;
+
 }
 @media (min-width: 768px) and (max-width: 1023px) {
     font-size: 48px;
@@ -79,7 +80,7 @@ max-width: 86.3vw;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       width: 100%;
-          @media (max-width: 812px) {
+          @media (max-width: 768px) {
 text-align: center;
 font-family: var(--font-apparat);
 font-size: 18.242px;
@@ -90,7 +91,6 @@ letter-spacing: -0.365px;
 width: 323.79px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-    font-size: 48px;
 }
     }
 
@@ -125,9 +125,17 @@ width: 323.79px;
       }
 
       .arrow {
-        width: calc(16 / 1440 * 100vw);
-        height: calc(16 / 1440 * 100vw);
-        margin-bottom: calc(2 / 1440 * 100vw);
+        width: 1.11vw; // 16px
+        height: 1.11vw;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
       }
     }
   }
@@ -142,6 +150,7 @@ margin-left: auto;
 margin-right: auto;
 gap: 24px;
 flex: 1 0 0;
+height:600px;
     @media (max-width: 812px) {
 }
 @media (min-width: 768px) and (max-width: 1224px) {
