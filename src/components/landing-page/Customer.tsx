@@ -22,7 +22,7 @@ const Customer: React.FC = () => {
                             </div>
                             <div className="testimonials__author">
                                 <div className="testimonials__avatar">
-                                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/72d3d630dffe2951c6de0afe937655069dfa301f?width=215" alt="Sarah Johnson" />
+                                    <img src="../../assets/customer.png" alt="Carlos Ramirez" />
                                 </div>
                                 <div className="testimonials__author-info">
                                     <div className="testimonials__name">Sarah Johnson</div>
@@ -39,7 +39,7 @@ const Customer: React.FC = () => {
                             </div>
                             <div className="testimonials__author">
                                 <div className="testimonials__avatar">
-                                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/23c958737023a4ba9ca2b2a50b02b9d006a936e8?width=188" alt="Priya Kumar" />
+                                    <img src="../../assets/customer.png" alt="Carlos Ramirez" />
                                 </div>
                                 <div className="testimonials__author-info">
                                     <div className="testimonials__name">Priya Kumar</div>
@@ -57,7 +57,7 @@ const Customer: React.FC = () => {
                             </div>
                             <div className="testimonials__author">
                                 <div className="testimonials__avatar">
-                                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/3801efdb56ecd4a46398e8da3af50f8354708b37?width=568" alt="Ms. Minh Thư" />
+                                    <img src="../../assets/customer.png" alt="Carlos Ramirez" />
                                 </div>
                                 <div className="testimonials__author-info">
                                     <div className="testimonials__name">Ms. Minh Thư</div>
@@ -74,7 +74,7 @@ const Customer: React.FC = () => {
                             </div>
                             <div className="testimonials__author">
                                 <div className="testimonials__avatar">
-                                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/5f024dbc10ad0cdfe50d28e9db9be9842b3fd358?width=320" alt="Carlos Ramirez" />
+                                    <img src="../../assets/customer.png" alt="Carlos Ramirez" />
                                 </div>
                                 <div className="testimonials__author-info">
                                     <div className="testimonials__name">Carlos Ramirez</div>

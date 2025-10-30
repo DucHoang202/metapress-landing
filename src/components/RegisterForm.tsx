@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import FooterMobile from "./FooterMobile";
 
 function RegisterFormLink() {
-    const isMobile = useMediaQuery({ maxWidth: 767 });
+    // const isMobile = useMediaQuery({ maxWidth: 767 });
     const isTablet = useMediaQuery({ maxWidth: 1023});
     return (
         <div className="App">
