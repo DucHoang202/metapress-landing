@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.svg";
+import Logo from "/assets/logo.svg";
 const Header: React.FC = () => {
  return (<section className="header-section">
  <div className="header-section__container ">

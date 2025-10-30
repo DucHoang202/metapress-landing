@@ -35,6 +35,8 @@ align-items: center;
 gap: 9.577px;
 width: 192.9907px;
 height: 26px;
+    cursor: pointer;
+
 img {
     width: 192.9907px;
 height: 26px;
@@ -66,6 +68,9 @@ align-items: center;
 gap: 32px;
 text-decoration: none;
 // 📱 Mobile
+.link {
+    cursor: pointer;
+}
 @media (max-width: 900px) {
 display: none;
 }
@@ -126,6 +131,9 @@ line-height: normal;
     width: 16px;
 height: 16px;
 aspect-ratio: 1/1;
+cursor: pointer;
+img {
+}
 // 📱 Mobile
 @media (max-width: 900px) {
 display: none;

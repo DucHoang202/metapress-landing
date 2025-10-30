@@ -27,7 +27,7 @@ Khi công nghệ giải quyết được vấn đề <br></br>của người là
             <div className="subtitle">
 Được thiết kế từ hiểu biết sâu sắc về nghiệp vụ báo chí, AI của MetaPress nắm bắt tư duy tòa soạn, <br></br>giúp bạn tinh gọn quy trình, tối ưu vận hành và nâng tầm chất lượng nội dung.
             </div>
-            <div className="button-container">
+            <div className="button-container" onClick={() => window.location.href = "/form"} >
             <div className="button">
                 <div className="text">
 Liên hệ Demo
