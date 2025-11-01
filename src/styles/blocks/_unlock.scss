@@ -1,9 +1,13 @@
 .unlock {
+      display: flex;
+    flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
   // 💻 Desktop
   @media (min-width: 1025px) {
-    .container {
     }
-  }
+  
 
   // 📱 Tablet
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -39,17 +43,17 @@
     margin: 0 auto;
   }
 
-  &__content {
-    display: flex;
-    padding-top: 54px;
-    padding-bottom: 38px;
-    padding: 54px 64px 38px 64px;
-    align-items: center;
-    gap: 36px;
-    flex: 1 0 0;
-    border-radius: 24px;
-    background: linear-gradient(145deg, #130F14 20.69%, #443149 185.46%);
-  }
+&__content {
+  display: flex;
+  padding: 54px 64px 38px 64px;
+  align-items: center;
+  gap: 36px;
+  flex: 1 0 0;
+  border-radius: 24px;
+  background: 
+    url("../../assets/Ellipse3.webp") no-repeat left 741px top 327px,
+    linear-gradient(145deg, #130F14 20.69%, #443149 185.46%);
+}
 
   &__half {
     display: flex;
@@ -124,6 +128,8 @@
     position: relative;
     overflow: visible;
     width: 400px;
+    height: 400px;
+    background: url("../../../assets/chart.webp");
 
     // 📱 Tablet
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -131,17 +137,26 @@
     }
   }
 
-  &__glow-container {
-    position: relative;
-  }
-
+&__glow-container {
+  position: relative;
+  width: 300px;
+  
   .glow {
     position: absolute;
-    right: -63px;
-    bottom: -450px;
+    width: 200px;
+    height: 200px;
+    right: 0px;
+    bottom: 0px;
     z-index: 0;
     pointer-events: none;
+    background: url("../../../assets/Ellipse.webp");
+    background-size: 300%; // 3 times bigger
+    background-repeat: no-repeat;
+    background-position: center;
   }
+}
+
+
 
   .chart {
     // margin-left: auto;

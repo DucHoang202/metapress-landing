@@ -1,4 +1,9 @@
 .footer {
+        display: flex;
+    flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
     background-color: black;
     height: auto;
 // 📱 Tablet
@@ -10,7 +15,7 @@ flex-direction: column;
 }
     .upper {
 display: flex;
-width: 91vw;
+width: calc(100% - 128px);
 height: 303px;
 // padding: 60px 64px 0 64px;
 padding-top: 64px;
@@ -83,26 +88,27 @@ aspect-ratio: 1/1;
     }
     .bottom {
         width: 100vw;
-height: auto;
-padding: 0 56px 20px 56px;
+height: 439px;
+padding: 0 16px 20px 16px;
 justify-content: space-between;
 align-items: flex-end;
 align-self: stretch;
 display: flex;
 flex-direction: column;
 .headline {
-            font-family: var(--font-apparat);
-font-size: 14.7vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-background: linear-gradient(180deg, #714C7D 18%, rgba(14, 10, 15, 0.00) 89.29%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-display: flex;
-justify-content: flex-start;
-margin-left: 0;
+  width: 100%;
+  max-width: 1249px;
+  aspect-ratio: 1249/305;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+.headline img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .end {
     display: flex;

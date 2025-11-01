@@ -1,14 +1,14 @@
 .reg_form {
     margin-top: 100px;
-    width: 100vw;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
     &__container {
         display: flex;
 max-width: 1440px;
-padding: 60px 120px;
+padding: 60px 16px;
 justify-content: space-between;
 align-items: flex-start;
     @media (max-width: 767px) {
@@ -18,23 +18,24 @@ padding: 32px 16px;
 flex-direction: column;
 align-items: flex-start;    }
 
-    @media (min-width: 768px) and (max-width: 1224px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
   
     }
     }
     &__content {
         display: flex;
 align-items: flex-start;
-gap: 179px;
-width:100%;
+gap: clamp(50px, 12.4vw,179px);
+width:calc(100% );
     @media (max-width: 767px) {
 flex-direction: column;
 width: 343px;
 gap: 24px
     }
 
-    @media (min-width: 768px) and (max-width: 1224px) {
-  
+    @media (min-width: 768px) and (max-width: 1024px) {
+  flex-direction: column;
+  gap: 32px;
     }
     }
     &__left {
@@ -43,6 +44,14 @@ max-width: 421px;
 flex-direction: column;
 align-items: flex-start;
 gap: 24px;
+    @media (max-width: 767px) {
+flex-direction: column;
+
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+       
+    }
 .title {
     font-family: var(--font-apparat);
     // width: 230px;
@@ -105,9 +114,10 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 gap: 24px;
-align-self: stretch;}
+align-self: stretch;
+}
 
-    @media (min-width: 768px) and (max-width: 1224px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
 
     }
 .item {  
@@ -144,8 +154,8 @@ align-self: stretch;}
       gap: 24px;
     }
 
-    @media (min-width: 768px) and (max-width: 1224px) {
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+width: 600px;
     }
 }
 .itemSmall {
@@ -154,7 +164,7 @@ align-self: stretch;}
       width: 311px;
     }
 
-    @media (min-width: 768px) and (max-width: 1224px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
 
     }
 }
@@ -165,8 +175,7 @@ align-self: stretch;}
 flex-direction: column;
         }
 
-    @media (min-width: 768px) and (max-width: 1224px) {
-flex-direction: column;
+    @media (min-width: 768px) and (max-width: 1024px) {
 
     }
 
@@ -187,7 +196,7 @@ height: 51px;
       width: 311px;
     }
 
-    @media (min-width: 768px) and (max-width: 1224px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
 
     }
 .text {

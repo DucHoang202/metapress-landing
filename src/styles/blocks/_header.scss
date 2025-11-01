@@ -1,4 +1,9 @@
 .header-section {
+        display: flex;
+    flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
     &__container {
           position: fixed;
   top: 0;

@@ -1,17 +1,20 @@
 .customer {
-
-
+    display: flex;
+    flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
     &__container {
         padding-top: 46px;
 display: flex;
-width: 100vw;
+width: 100%;
 padding-bottom: 64px;
 flex-direction: column;
 align-items: center;
 gap: 32px;
       @media (max-width: 812px) {
 display: flex;
-width: 100vw;
+width: 100%;
 padding: 0 16px 32px 16px;
 flex-direction: column;
 align-items: center;
@@ -25,8 +28,7 @@ font-size: 16px;
 
     }
     .rfm-marquee-container {
-        margin-right: 0;
-        margin-left: 0;
+ width: 100%;
     }
     &__margin {
         margin-right:  1px ;
@@ -68,6 +70,8 @@ text-transform: uppercase;
     &__marquee {
 margin-right: 97.691px;
         width: 100%;
+        overflow-y: hidden;
+
         @media (max-width: 1024px) {
             gap: 60px;
         }
@@ -75,48 +79,51 @@ margin-right: 97.691px;
         @media (max-width: 812px) {
 margin-right: 24px;        }
     }
-    &__line {
-                display: flex;
-        align-items: center;
-        gap: 97.691px;
-        justify-content: center;
-        width: auto;
-        height: 80px;
-        @media (max-width: 1024px) {
-            gap: 60px;
-        }
-
-        @media (max-width: 767px) {
-            gap: 24px;
-            height: 60px;
-        }
+&__line {
+    display: flex;
+    align-items: center;
+    gap: 97.691px;
+    justify-content: center;
+    width: auto;
+    height: 80px; 
+    @media (max-width: 1024px) {
+        gap: 60px;
     }
 
-    &__item {
-        display: flex;                              
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        height: 100%;
-        @media (max-width: 767px) {
-            padding: 0;
-        }
-        svg {
-            width: 100%;
-            height: 100%;
-            transform: scale(0.75);
-        }
+    @media (max-width: 767px) {
+        gap: 24px;
+        height: 60px;
+        overflow-y: hidden;
+    }
+}
+
+&__item {
+    display: flex;                              
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 100%;
+    &--invert {
+        filter: invert(1);
+    }
+    @media (max-width: 767px) {
+            &--invert {
+img {
+    height: 60px;  }  }
         img {
-            transform: scale(0.75);
+            height: 60px;
         }
     }
-        &__show {
-        svg {
-            height: 60px;
-            transform: scale(0.45);
-            bottom: -2px;
-        }
-        }
+    svg {
+
+    }
+    img {
+        max-height: 80px; 
+        width: auto; 
+        display: block;
+        object-fit: contain;
+    }
+}
 
     &__star {
         width: 56.986px;
@@ -124,15 +131,6 @@ margin-right: 24px;        }
         fill: #888;
         flex-shrink: 0;
 
-        // @media (max-width: 1024px) {
-        //     width: 45px;
-        //     height: 32px;
-        // }
-
-        // @media (max-width: 812px) {
-        //     width: 35px;
-        //     height: 25px;
-        // }
     }
 
 }

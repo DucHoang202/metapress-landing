@@ -1,4 +1,9 @@
 .footer_mobile {
+        display: flex;
+    flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
     &__container {
     display: flex;
 width: 100%;
@@ -109,15 +114,20 @@ fill: #888;
 }}
 
 &__headline {
-    font-family: var(--font-apparat);
-font-size: 58.033px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-background: linear-gradient(180deg, #FF71C9 18%, rgba(14, 10, 15, 0.00) 89.29%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  width: 100%;
+  max-width: 1249px;
+  aspect-ratio: 1249/305;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 }
 &__company {
    color: #888;

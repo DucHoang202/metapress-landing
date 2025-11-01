@@ -128,9 +128,7 @@ Linkedln
                 { arrow_gray}
             </div>
         </div>
-        <div className="footer_mobile__headline">
-            MetaPress.AI
-        </div>
+ <img className="footer_mobile__headline" src="../../../assets/MetaPress.AI.webp" alt="MetaPress.AI" />
         <div className="footer_mobile__company">
             ©2025 All Rights Reserved by MetaPress
         </div>

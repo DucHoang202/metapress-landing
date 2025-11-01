@@ -3,7 +3,6 @@
 @use "blocks/hero";
 @use "blocks/feature";
 @use "blocks/benefit";
-@use "blocks/diagram";
 @use "blocks/get-started";
 @use "blocks/customer";
 @use "blocks/question";
@@ -105,6 +104,7 @@
   // Header & Footer sizes used for viewport calculations (desktop)
   --header-h: 72px;
   --footer-h: 240px; // approximate footer height for desktop; adjusted via responsive rules
+  --scroll-bar: 16px; //Default scroll bar on most web
 }
 
 // Fonts loaded via public/fonts.css
@@ -203,13 +203,29 @@ img {
 .App main {
   flex: 1 1 auto;
   background: #010102;
+  width: calc(100vw - var(--scroll-bar)); 
+
 //   display: flex;
 //   flex-direction: column;
 //  justify-content: center;
 //  align-items: center;
  
 }
+:root {
+  --app-width: 100vw;
+}
 
+.App {
+  max-width: var(--app-width);
+  overflow-x: hidden;
+}
+
+// Alternative: if you want to constrain the entire body
+body {
+  max-width: var(--app-width);
+  overflow-x: hidden;
+  margin: 0 auto;
+}
 /* NotFound page renders Header (fixed) + main + Footer inside its own wrapper
    so apply the same layout helper for that page as well. */
 .notfound-page {

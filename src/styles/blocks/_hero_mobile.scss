@@ -1,4 +1,9 @@
 .hero_mobile {
+        display: flex;
+    flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
     &__container {
         margin-top: 101px;
         min-height: 515px;
