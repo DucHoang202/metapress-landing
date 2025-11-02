@@ -65,7 +65,7 @@ icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http:/
     rows.push(items.slice(i, i + itemsPerRow));
   }
     return (
-        <section className="feature">
+        <section className="feature" id="solution">
             <div className="feature__container">
         <div className="title">
             The Newsroom OS <br></br>Tự động hoá quy trình báo chí 

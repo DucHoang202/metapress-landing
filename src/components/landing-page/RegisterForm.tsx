@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const RegisterForm: React.FC = () => {
 return (
     <section className="reg_form">
@@ -33,7 +35,7 @@ return (
         <input type="text" className="item" placeholder="Tên doanh nghiệp*"/>
             <input type="text" className="item" placeholder="Chức vụ của bạn"/>
                 <input type="text" className="item" placeholder="Ghi chú" style={{height: '126px'}}/>
-    <div className="button">
+    <div className="button" onClick = {() => toast.info('Info Toast')}>
         <div className="text">
             Gửi thông tin
         </div>
@@ -43,6 +45,7 @@ return (
 </svg> 
         </div>
     </div>
+    <ToastContainer position= "top-right" autoClose={3000} />
         </div>
     </div>
 </div>

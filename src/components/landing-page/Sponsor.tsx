@@ -1,6 +1,5 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { useMediaQuery } from "react-responsive";
 
 
 const Sponsor: React.FC = () => {
@@ -10,7 +9,7 @@ const Sponsor: React.FC = () => {
         </svg>
     );
 
-    const isMobile = useMediaQuery({ maxWidth: 768});
+
  const MarqueeItems = () => (<div className="customer__line">
     <div className="customer__item--invert">
         <img src="../../../assets/KinhTeSaiGon.webp" />

@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react';
 
+
 function getWidthExcludesScrollbar(): number {
   return document.documentElement.clientWidth;
 }
@@ -18,7 +19,7 @@ function Home() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ maxWidth: 1023});
   const displayUnlock = useMediaQuery({ maxWidth: 1262});
-
+  
   useEffect(() => {
     const setAppWidth = () => {
       const width = getWidthExcludesScrollbar();

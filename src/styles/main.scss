@@ -204,6 +204,7 @@ img {
   flex: 1 1 auto;
   background: #010102;
   width: calc(100vw - var(--scroll-bar)); 
+  scroll-behavior: smooth;
 
 //   display: flex;
 //   flex-direction: column;

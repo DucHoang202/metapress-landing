@@ -2,7 +2,7 @@ import React from "react";
 
 const Customer: React.FC = () => {
     return (
-        <section className="testimonials">
+        <section className="testimonials" id="customer">
             <div className="testimonials__container">
                 <div className="testimonials__header">
                     <h2 className="testimonials__title">
@@ -33,7 +33,7 @@ const Customer: React.FC = () => {
                         <article className="testimonials__card">
                             <div className="testimonials__content">
                                 <h3 className="testimonials__heading">Seamless Integration, Instant Results</h3>
-                                <p className="testimonials__quote">
+                                <p className="testimonials__quote--small">
                                     Integrating NexaAI into our legacy systems was effortless. Within days we automated critical workflows, reduced errors, and freed our team to focus on strategic initiatives. Simply outstanding.
                                 </p>
                             </div>
@@ -68,7 +68,7 @@ const Customer: React.FC = () => {
                         <article className="testimonials__card">
                             <div className="testimonials__content">
                                 <h3 className="testimonials__heading">Scalable AI That Grows with Us</h3>
-                                <p className="testimonials__quote">
+                                <p className="testimonials__quote--small">
                                     As a fast-growing startup, we needed an AI partner that could scale. NexaAI's modular platform expanded alongside our business—delivering enterprise-grade features.
                                 </p>
                             </div>

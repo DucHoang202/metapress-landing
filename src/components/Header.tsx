@@ -1,18 +1,22 @@
 import React from "react";
 import Logo from "/assets/logo.webp";
+import { useNavigate } from "react-router-dom";
 const Header: React.FC = () => {
+  const navigate = useNavigate();
+ 
+
  return (<section className="header-section">
  <div className="header-section__container ">
      <div className="header-section__icon-container ">
     
-            <img src={Logo} alt="logo"></img>
+            <img src={Logo} onClick = {() => navigate("/")} alt="logo"></img>
 
      </div>
       <div className="header-section__link-container ">
-        <a className="link">Giải pháp</a>
-                <a className="link">Lợi ích</a>
-                <a className="link">Khách hàng</a>
-                <a className="link">Liên hệ</a>
+                <a className="link" href="#solution">Giải pháp</a>
+                <a className="link" href="#benefit">Lợi ích</a>
+                <a className="link" href="#customer">Khách hàng</a>
+                <a className="link" onClick = {() => navigate("/form")}>Liên hệ</a>
 
         </div>
          <button className="header-section__demo-btn ">
