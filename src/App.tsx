@@ -37,7 +37,21 @@ function Home() {
       window.removeEventListener('resize', setAppWidth);
     };
   }, []);
-
+// useEffect(() => {
+//     // Kiểm tra nếu URL có hash (vd: /#solution)
+//     if (location.hash) {
+//       // Đợi một chút để đảm bảo DOM đã render xong
+//       setTimeout(() => {
+//         const element = document.querySelector(location.hash);
+//         if (element) {
+//           element.scrollIntoView({
+//             behavior: 'smooth',
+//             block: 'start',
+//           });
+//         }
+//       }, 100);
+//     }
+//   }, [location]);
   return (
     <div className='App'>
       <Header />

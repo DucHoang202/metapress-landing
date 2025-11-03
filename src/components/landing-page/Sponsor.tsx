@@ -12,7 +12,7 @@ const Sponsor: React.FC = () => {
 
  const MarqueeItems = () => (<div className="customer__line">
     <div className="customer__item--invert">
-        <img src="../../../assets/KinhTeSaiGon.webp" />
+        <img src="../../../assets/KinhTe.webp" />
     </div>
     <div className="customer__item">
         <StarIcon/>

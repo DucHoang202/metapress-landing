@@ -104,7 +104,8 @@ margin-right: 24px;        }
     flex-shrink: 0;
     height: 100%;
     &--invert {
-        filter: invert(1);
+        //filter: invert(1);
+        mix-blend-mode: screen;
     }
     @media (max-width: 767px) {
             &--invert {

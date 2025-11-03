@@ -3,7 +3,37 @@ import Logo from "/assets/logo.webp";
 import { useNavigate } from "react-router-dom";
 const Header: React.FC = () => {
   const navigate = useNavigate();
- 
+
+  //Smooth scroll
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      //Nếu đang ở trang hiện tại, scroll luôn
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+
+      //Cập nhật URL mà không reload trang
+      window.history.pushState(null, '', targetId);
+    } else {
+    //Nếu đang ở trang khác
+    navigate('/' + targetId);
+// Đợi 100ms rồi scroll
+      setTimeout(() => {
+        const element = document.querySelector(targetId);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      }, 100);
+    }
+  }
+
 
  return (<section className="header-section">
  <div className="header-section__container ">
@@ -13,10 +43,11 @@ const Header: React.FC = () => {
 
      </div>
       <div className="header-section__link-container ">
-                <a className="link" href="#solution">Giải pháp</a>
-                <a className="link" href="#benefit">Lợi ích</a>
-                <a className="link" href="#customer">Khách hàng</a>
-                <a className="link" onClick = {() => navigate("/form")}>Liên hệ</a>
+                <a className="link" href="#solution"  onClick={(e) => handleSmoothScroll(e, '#solution')}>Giải pháp</a>
+                <a className="link" href="#benefit"
+                onClick = {(e) => handleSmoothScroll(e, '#benefit')}>Lợi ích</a>
+                <a className="link" href="#customer"  onClick = {(e) => handleSmoothScroll(e, '#customer')}>Khách hàng</a>
+                <a className="link" href="/form">Liên hệ</a>
 
         </div>
          <button className="header-section__demo-btn ">

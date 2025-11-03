@@ -108,10 +108,7 @@ flex-shrink: 0;
 
     .brand {
       position: relative;
-      // margin-left: auto;
-      // margin-right: auto;
-      bottom: 151px;
-      right: -87px;
+
 
       &__decoration {
         position: relative;
@@ -119,7 +116,8 @@ flex-shrink: 0;
         height: 573px;
         flex-shrink: 0;
         z-index: 1;
-      }
+     
+  }
 
       &__circle {
         position: absolute;
@@ -168,12 +166,16 @@ flex-shrink: 0;
 
       @media (max-width: 767px) {
         // position: relative;
-        bottom: -26px;
-        right: -7px;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
 
         &__decoration {
           width: 361.62px;
           height: 360.99px;
+              bottom: -23px;
+
         }
 
         &__circle {
@@ -200,12 +202,16 @@ flex-shrink: 0;
       }
              @media (min-width: 768px) and (max-width: 1024px) {
         position: relative;
-        bottom: 16px;
-        right: -150px;
+              display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
 
         &__decoration {
           width: 361.62px;
           height: 360.99px;
+
         }
 
         &__circle {
@@ -229,6 +235,10 @@ flex-shrink: 0;
             height: 100.8px;
           }
         }
+      }
+      @media (min-width: 1025px) {
+           bottom: 150px;
+    right: -87px;  
       }
 
     }
