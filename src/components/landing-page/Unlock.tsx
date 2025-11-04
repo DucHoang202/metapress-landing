@@ -8,33 +8,19 @@ const Unlock: React.FC = () => {
         <div className="unlock__content">
 
           <div className="unlock__half">
-            <div className="category">SUMMER DEAL SALES</div>
+            <div className="category"></div>
             <div className="title">
-              Unlock Exclusive Savings on AI-Driven Business Automation
+              Bắt đầu hành trình đổi mới tòa soạn cùng MetaPress ngay hôm nay
             </div>
             <div className="subtitle">
-              Leverage the power of AI automation to streamline operations,
-              enhance customer satisfaction, and drive exponential business
-              growth.
+             Ứng dụng AI để tòa soạn vận hành linh hoạt hơn, tiết kiệm hơn và sản xuất nội dung nhanh hơn mỗi ngày.
             </div>
             <div className="button">
-              <div className="text">Get Started</div>
+              <div className="text">Liên hệ ngay</div>
               <div className="arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M3 13L13 3M13 3H5.5M13 3V10.5"
-                    stroke="#FCF5FE"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 2 16 16" fill="none">
+  <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="#0E0A0F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
               </div>
             </div>
           </div>

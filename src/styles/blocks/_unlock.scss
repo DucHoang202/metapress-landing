@@ -110,16 +110,20 @@
       cursor: pointer;
 
       .text {
-        color: #fff;
+        color: rgba(14, 10, 15, 1);
         font-family: var(--font-apparat);
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
       }
 
       .arrow {
         width: 16px;
         height: 16px;
         aspect-ratio: 1/1;
+        svg {
+               bottom: 3px;
+
+        }
       }
     }
   }

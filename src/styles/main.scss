@@ -203,7 +203,7 @@ img {
 .App main {
   flex: 1 1 auto;
   background: #010102;
-  width: calc(100vw - var(--scroll-bar)); 
+  width: calc(100% ); 
   scroll-behavior: smooth;
 
 //   display: flex;

@@ -16,15 +16,21 @@ const Question: React.FC = () => {
     },
     {
       open: false,
-      title: "MetaPress có phù hợp với tòa soạn nhỏ không?",
+      title: "Sự khác biệt của MetaPress là gì?",
       subtitle:
-        "Có. MetaPress được thiết kế linh hoạt, có thể tùy biến theo quy mô...",
+        "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí: nhận diện xu hướng, kiểm chứng thông tin, tự động tạo bài viết, đa dạng hóa hình thức nội dung và phân phối thông minh đa kênh. Hệ thống giữ nguyên DNA đặc trưng của tòa soạn đồng thời giảm thiểu rủi ro pháp lý và sai sót thông tin đáng kể.",
     },
     {
       open: false,
-      title: "Tôi có thể tích hợp MetaPress với hệ thống sẵn có?",
+      title: "MetaPress được tính phí như thế nào?",
       subtitle:
-        "MetaPress hỗ trợ API mở, dễ dàng kết nối với CMS, CRM hoặc các nền tảng dữ liệu khác...",
+        "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí...",
+    },
+        {
+      open: false,
+      title: "Tôi cần làm gì để bắt đầu hợp tác với MetaPress?",
+      subtitle:
+        "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí...",
     },
   ]);
 
@@ -71,7 +77,6 @@ const FAQItem: React.FC<FAQItemProps> = ({ faq, index, onToggle }) => {
     }
   }, [faq.open]);
   
- console.log("Height",height);
   return (
     <li
       className="faq-item"
@@ -123,7 +128,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ faq, index, onToggle }) => {
       </div>
 
       <div
-        className="faq-answer"
+        className={`faq-answer ${faq.open ? "margin-16" : ""}`}
         style={{
           height: `${height}px`,
           opacity: faq.open ? 1 : 0,
