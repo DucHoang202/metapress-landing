@@ -1,4 +1,5 @@
 import React from "react";
+import DemoButton from "../ui/DemoButton";
 
 const Unlock: React.FC = () => {
   return (
@@ -15,14 +16,7 @@ const Unlock: React.FC = () => {
             <div className="subtitle">
              Ứng dụng AI để tòa soạn vận hành linh hoạt hơn, tiết kiệm hơn và sản xuất nội dung nhanh hơn mỗi ngày.
             </div>
-            <a className="button" href="/form">
-              <div className="text">Liên hệ ngay</div>
-              <div className="arrow">
- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 2 16 16" fill="none">
-  <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="#0E0A0F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-              </div>
-            </a>
+          <DemoButton href="/form"/>
           </div>
     <div className="unlock__half-1">
       

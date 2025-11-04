@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import  DemoButton  from "./ui/DemoButton";
 const Header: React.FC = () => {
   const navigate = useNavigate();
 
@@ -49,7 +50,7 @@ const Header: React.FC = () => {
                 <a className="link" href="/form">Liên hệ</a>
 
         </div>
-         <button className="header-section__demo-btn ">
+         {/* <button className="header-section__demo-btn ">
             <div className="text" onClick={() => window.location.href = "/form"}>
                 Liên hệ demo
                   </div>
@@ -60,8 +61,8 @@ const Header: React.FC = () => {
                 </span>
           
 
-            </button>
-
+            </button> */}
+        <DemoButton href="/form"/>
 
 
  </div>

@@ -1,10 +1,8 @@
 import React from "react";
+import DemoButton from "../ui/DemoButton";
 
 const HeroMobile: React.FC = () => {
-    const handleButtonClick = () => {
-        // Xử lý khi click button
-        console.log('Button clicked');
-    };
+
 
     return (
         <section className="hero_mobile">
@@ -28,14 +26,7 @@ const HeroMobile: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <button className="hero_mobile__button" onClick={handleButtonClick}>
-                    <div className="text">Liên hệ Demo</div>
-                    <div className="arrow">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="#0E0A0F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </div>
-                </button>
+  <DemoButton/>
             </div>
         </section>
     );

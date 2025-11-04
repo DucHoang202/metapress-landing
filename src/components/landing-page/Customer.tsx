@@ -22,7 +22,7 @@ const Customer: React.FC = () => {
                             </div>
                             <div className="testimonials__author">
                                 <div className="testimonials__avatar">
-                                    <img src="../../assets/customer.webp" alt="Carlos Ramirez" />
+                                    <img src="../../assets/image (2).webp" alt="Carlos Ramirez" />
                                 </div>
                                 <div className="testimonials__author-info">
                                     <div className="testimonials__name">Sarah Johnson</div>
@@ -39,7 +39,7 @@ const Customer: React.FC = () => {
                             </div>
                             <div className="testimonials__author">
                                 <div className="testimonials__avatar">
-                                    <img src="../../assets/customer.webp" alt="Carlos Ramirez" />
+                                    <img src="../../assets/image 7.webp" alt="Carlos Ramirez" />
                                 </div>
                                 <div className="testimonials__author-info">
                                     <div className="testimonials__name">Priya Kumar</div>
@@ -57,7 +57,7 @@ const Customer: React.FC = () => {
                             </div>
                             <div className="testimonials__author">
                                 <div className="testimonials__avatar">
-                                    <img src="../../assets/customer.webp" alt="Carlos Ramirez" />
+                                    <img src="../../assets/image 8.webp" alt="Carlos Ramirez" />
                                 </div>
                                 <div className="testimonials__author-info">
                                     <div className="testimonials__name">Ms. Minh Thư</div>
@@ -74,7 +74,7 @@ const Customer: React.FC = () => {
                             </div>
                             <div className="testimonials__author">
                                 <div className="testimonials__avatar">
-                                    <img src="../../assets/customer.webp" alt="Carlos Ramirez" />
+                                    <img src="../../assets/image.webp" alt="Carlos Ramirez" />
                                 </div>
                                 <div className="testimonials__author-info">
                                     <div className="testimonials__name">Carlos Ramirez</div>

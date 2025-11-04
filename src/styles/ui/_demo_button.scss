@@ -1,0 +1,54 @@
+    .demo-btn {
+        display: flex;
+height: 46px;
+padding: 0 20px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 6px;
+background: #FF37BB;
+box-shadow: 0 0 9px 1px #FF89D4 inset;
+cursor: pointer;
+// 📱 Mobile
+@media (max-width: 900px) {
+display: flex;
+padding: 7px 14px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 6px;
+background: #FF37BB;
+box-shadow: 0 0 9px 1px #FF89D4 inset;
+height: 34px;
+}
+.text {
+color: #FFF;
+font-family: var(--font-apparat);
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+// 📱 Mobile
+@media (max-width: 900px) {
+color: #FFF;
+font-family: var(--font-apparat);
+font-size: 14px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+}
+}
+.icon-container {
+    width: 16px;
+height: 16px;
+aspect-ratio: 1/1;
+cursor: pointer;
+svg {
+    
+}
+// 📱 Mobile
+@media (max-width: 900px) {
+display: none;
+}
+}
+    }
