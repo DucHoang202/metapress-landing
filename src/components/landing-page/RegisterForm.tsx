@@ -19,13 +19,14 @@ const RegisterForm: React.FC = () => {
             position: '',
             note: '',
     });
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value} = e.target;
         setFormData(prev => ({
             ...prev,
             [name]: value
         }));
     }
+
     const postData = async () => {
         //Validate
         if (!formData.name || !formData.email || !formData.company) {
@@ -97,7 +98,7 @@ return (
     </div>
         <input type="text" className="item" placeholder="Tên doanh nghiệp*" name="company" value={formData.company} onChange = {handleInputChange}/>
             <input type="text" className="item" placeholder="Chức vụ của bạn" name="position" value={formData.position} onChange = {handleInputChange}/>
-                <input type="text" className="item" placeholder="Ghi chú" style={{height: '126px'}} name="note" value={formData.note} onChange = {handleInputChange}/>
+                <textarea className="item" placeholder="Ghi chú" style={{height: '126px', resize: 'vertical'}} name="note" value={formData.note} onChange = {handleInputChange}/>
     <div className="button" onClick={postData}>
         <div className="text">
             Gửi thông tin
