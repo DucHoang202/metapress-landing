@@ -26,7 +26,7 @@ const HeroMobile: React.FC = () => {
                         </div>
                     </div>
                 </div>
-  <DemoButton/>
+  <DemoButton href="/form"/>
             </div>
         </section>
     );
