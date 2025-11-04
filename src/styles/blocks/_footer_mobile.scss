@@ -21,6 +21,13 @@ justify-content: center;
 align-items: flex-start;
 gap: 24px;
 align-self: stretch; 
+.r1 {
+    img {
+            width: 192.9907px;
+    height: 26px;
+    object-fit: contain;
+    }
+}
 .r2{
     color: #FFF;
 font-family: var(--font-display);

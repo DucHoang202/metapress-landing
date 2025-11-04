@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "/assets/logo.webp";
 import { useNavigate } from "react-router-dom";
 const Header: React.FC = () => {
   const navigate = useNavigate();
@@ -39,7 +38,7 @@ const Header: React.FC = () => {
  <div className="header-section__container ">
      <div className="header-section__icon-container ">
     
-            <img src={Logo} onClick = {() => navigate("/")} alt="logo"></img>
+            <img src="/assets/clean-logo.webp" onClick = {() => navigate("/")} alt="logo"></img>
 
      </div>
       <div className="header-section__link-container ">

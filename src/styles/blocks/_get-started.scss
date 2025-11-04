@@ -145,7 +145,8 @@ width: 323.79px;
   &__stats-container {
     width: 100%;
 display: flex;
-padding: 16px;
+padding-left: 16px;
+padding-right: 16px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -181,7 +182,7 @@ height:600px;
       #443149 227.36%
     );
     @media (max-width: 812px) {
-width: 343px;
+width: 100%;
 display: flex;
 padding: 24px;
 flex-direction: column;
