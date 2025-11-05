@@ -1,3 +1,6 @@
+
+
+
 @use "blocks/notfound";
 @use "blocks/header";
 @use "blocks/hero";
@@ -15,6 +18,8 @@
 @use "blocks/footer_mobile";
 @use "blocks/register_form";
 @use "ui/demo_button";
+@use "blocks/blog";
+
 
 // Inter Display
 @font-face {
