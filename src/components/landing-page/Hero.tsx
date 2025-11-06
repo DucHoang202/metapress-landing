@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
 </svg></div>
                 </div>
                 <div className="title">
-                    Hệ điều hành AI cho <br></br> tòa soạn tương lai
+                    Hệ điều hành AI <br></br> cho tòa soạn tương lai
                 </div>
                 <div className="subtitle">
                     MetaPress là nền tảng AI Multi-Agent dành riêng cho các tòa soạn, giúp tối ưu quy trình, hỗ trợ phóng viên và biên tập viên tạo nội dung nhanh, chính xác và hiệu quả hơn.

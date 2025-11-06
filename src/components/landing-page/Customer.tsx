@@ -57,7 +57,7 @@ const Customer: React.FC = () => {
                             </div>
                             <div className="testimonials__author">
                                 <div className="testimonials__avatar">
-                                    <img src="../../assets/Ms. Minh Thu.webp" style={{transform: 'scale(1.5)'}} alt="Ms. Minh Thu" />
+                                    <img src="../../assets/Ms. Minh Thu.webp" style={{transform: 'scale(1.8) translateX(10px)', }} alt="Ms. Minh Thu" />
                                 </div>
                                 <div className="testimonials__author-info">
                                     <div className="testimonials__name">Ms. Minh Thư</div>
