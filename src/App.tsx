@@ -3,7 +3,7 @@ import Header from './components/Header.tsx';
 import Footer from './components/Footer.tsx';
 import FooterMobile from './components/FooterMobile.tsx';
 
-import { Benefit, Customer, Feature, GetStarted, Hero, Question, Sponsor, Unlock, HeroMobile, Diagram3, Blog} from './components/landing-page/landing-page.ts'
+import { Benefit, Customer, Feature, GetStarted, Hero, Question, Sponsor, Unlock, HeroMobile, Diagram3, Blog, Customer3} from './components/landing-page/landing-page.ts'
 import RegisterFormLink from './components/RegisterFormLink.tsx';
 import './styles/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -36,21 +36,6 @@ function Home() {
       window.removeEventListener('resize', setAppWidth);
     };
   }, []);
-// useEffect(() => {
-//     // Kiểm tra nếu URL có hash (vd: /#solution)
-//     if (location.hash) {
-//       // Đợi một chút để đảm bảo DOM đã render xong
-//       setTimeout(() => {
-//         const element = document.querySelector(location.hash);
-//         if (element) {
-//           element.scrollIntoView({
-//             behavior: 'smooth',
-//             block: 'start',
-//           });
-//         }
-//       }, 100);
-//     }
-//   }, [location]);
   return (
     <div className='App'>
       <Header />
@@ -62,6 +47,7 @@ function Home() {
         <Diagram3/>
         <GetStarted />
         <Customer/>
+        <Customer3/>
         <Question/>
         <Blog/>
         {displayUnlock ? "" : <Unlock/>}

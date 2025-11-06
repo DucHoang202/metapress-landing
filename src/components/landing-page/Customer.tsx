@@ -17,16 +17,19 @@ const Customer: React.FC = () => {
                         <article className="testimonials__card">
                             <div className="testimonials__content">
                                 <p className="testimonials__quote">
-                                    MetaPress đã giúp tòa soạn tôi rút ngắn thời gian sản xuất tin tức, đồng thời nâng cao tính đa dạng và chất lượng sản phẩm báo chí
+               MetaPress khiến chúng tôi ngạc nhiên vì cách nền tảng này hiểu nghề báo thể thao đến vậy. Từ khâu tổng hợp dữ liệu, biên tập, đến xuất bản, mọi thứ đều được tinh gọn. Quan trọng nhất, MetaPress giúp chúng tôi có thêm thời gian đầu tư cho nội dung – tìm những góc nhìn mới, những câu chuyện có chiều sâu và nuôi dưỡng tinh thần thể thao đúng nghĩa.
+
                                 </p>
                             </div>
                             <div className="testimonials__author">
                                 <div className="testimonials__avatar">
-                                    <img src="../../assets/image (2).webp" alt="Carlos Ramirez" />
+                                    <img src="../../assets/Mr.webp" alt="Carlos Ramirez" />
                                 </div>
                                 <div className="testimonials__author-info">
-                                    <div className="testimonials__name">Sarah Johnson</div>
-                                    <div className="testimonials__position">Thời Báo Kinh Tế Sài Gòn</div>
+                                    <div className="testimonials__name">Dương Quỳnh
+</div>
+                                    <div className="testimonials__position">Trưởng nhóm nội dung Webthethao
+</div>
                                 </div>
                             </div>
                         </article>
@@ -81,7 +84,9 @@ const Customer: React.FC = () => {
                                     <div className="testimonials__position">CEO, NovaSolutions</div>
                                 </div>
                             </div>
+                            
                         </article>
+                        
                     </div>
                 </div>
          
