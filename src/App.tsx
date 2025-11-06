@@ -2,7 +2,7 @@ import NotFound from './pages/NotFound.tsx';
 import Header from './components/Header.tsx';
 import Footer from './components/Footer.tsx';
 import FooterMobile from './components/FooterMobile.tsx';
-import VietNam from './components/landing-page/vietnamese.json'
+// import VietNam from './components/landing-page/vietnamese.json'
 import { Benefit, Customer, Feature, GetStarted, Hero, Question, Sponsor, Unlock, HeroMobile, Diagram3, Blog, Customer3} from './components/landing-page/landing-page.ts'
 import RegisterFormLink from './components/RegisterFormLink.tsx';
 import './styles/main.scss';
