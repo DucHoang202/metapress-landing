@@ -12,7 +12,7 @@ const Blog: React.FC = () => {
     const items = [{
         
             image: "../../../assets/Knowledge Hub.webp",
-            title: "Việt Nam và nước cờ địa chính trị trên mặt biển: Khi các bến cảng trở thành tiền đồn chiến lược",
+            title: "Việt Nam và nước cờ địa chính trị trên mặt biển: Khi các bến cảng trở thành tiền đồn chiến lược Việt Nam và nước cờ địa chính trị trên mặt biển: Khi các bến cảng trở thành tiền đồn chiến lược",
             subtitle: "Nhiều người đã quên đi câu nói ấy, phát ra tại một hội trường nhỏ bên bờ cảng Đình Vũ cách đây hơn hai thập kỉ qua và đã"
         
     },

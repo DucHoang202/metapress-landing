@@ -12,7 +12,7 @@ const Question: React.FC = () => {
       open: false,
       title: "Tại sao chọn MetaPress?",
       subtitle:
-        "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí...",
+        "MetaPress là giải pháp AI toàn diện dành riêng cho các tòa soạn báo, giúp tự động hóa toàn bộ quy trình sản xuất tin bài từ phát hiện đề tài đến xuất bản và phân phối. Điều này giúp tòa soạn tăng tốc độ xử lý, giảm chi phí vận hành và giữ vững bản sắc báo chí riêng biệt.",
     },
     {
       open: false,
@@ -20,17 +20,26 @@ const Question: React.FC = () => {
       subtitle:
         "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí: nhận diện xu hướng, kiểm chứng thông tin, tự động tạo bài viết, đa dạng hóa hình thức nội dung và phân phối thông minh đa kênh. Hệ thống giữ nguyên DNA đặc trưng của tòa soạn đồng thời giảm thiểu rủi ro pháp lý và sai sót thông tin đáng kể.",
     },
+{
+  open: false,
+  title: "MetaPress có gì đặc biệt?",
+  subtitle: `Chuỗi quy trình báo chí tự động hóa toàn bộ, mỗi bước đều có AI Agent chuyên trách, đảm bảo quy trình nhanh - chính xác - nhất quán.\n
+Định hướng giọng điệu, phạm vi chủ đề được thiết lập rõ ràng giúp bảo toàn bản sắc tòa soạn.\n
+Đáp ứng đa dạng các định dạng nội dung: bài báo, infographic, video, dữ liệu mở rộng.`,
+},
+
+    
     {
       open: false,
       title: "MetaPress được tính phí như thế nào?",
       subtitle:
-        "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí...",
+        "Chi phí triển khai MetaPress thay đổi dựa trên quy mô tòa soạn, số lượng người dùng và các tính năng tùy chọn. Chúng tôi cung cấp các gói dịch vụ linh hoạt kèm tư vấn chi tiết nhằm tối ưu chi phí và hiệu quả vận hành cho từng khách hàng. Liên hệ để nhận báo giá phù hợp nhất với yêu cầu tòa soạn.",
     },
         {
       open: false,
       title: "Tôi cần làm gì để bắt đầu hợp tác với MetaPress?",
       subtitle:
-        "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí...",
+        "Bước đầu tiên là liên hệ với đội ngũ tư vấn của MetaPress để trao đổi về đặc thù và nhu cầu của tòa soạn. Sau đó, chúng tôi cùng phối hợp xây dựng lộ trình tích hợp AI, triển khai thử nghiệm và đào tạo nhân sự. MetaPress sẽ đồng hành hỗ trợ liên tục để đảm bảo hiệu quả sử dụng tối ưu.",
     },
   ]);
 
