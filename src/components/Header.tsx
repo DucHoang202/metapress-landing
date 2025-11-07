@@ -10,8 +10,11 @@ interface HeaderData {
     dropdown: string;
   };
 }
+interface HeaderProps {
+  DropdownComponent: React.FC; // or React.ComponentType if you want more flexibility
+}
 
-const Header: React.FC = () => {
+const Header: React.FC<HeaderProps> = ({DropdownComponent}) => {
   const navigate = useNavigate();
   const [headerData, setHeaderData] = useState<HeaderData | null>(null);
 
@@ -96,6 +99,7 @@ const Header: React.FC = () => {
             );
           })}
         </div>
+          <DropdownComponent/>
         <DemoButton href="/form" text={headerData.button.text}/>
       </div>
     </section>

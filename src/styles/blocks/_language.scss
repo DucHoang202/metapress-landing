@@ -9,6 +9,9 @@
   margin-right: 4px;
 }
 .header__dropdown {
-    position: fixed;
-    top: 150px;
+
+}
+.header__dropdown-menu {
+  display: flex;
+  flex-direction: column;
 }
