@@ -1,5 +1,5 @@
 import NotFound from './pages/NotFound.tsx';
-import Header from './components/Header.tsx';
+// import Header from './components/Header.tsx';
 import Footer from './components/Footer.tsx';
 import FooterMobile from './components/FooterMobile.tsx';
 import vietnamese from './languages/vietnamese.json';
@@ -12,7 +12,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react';
 //import { Language } from '@google/genai';
-import LanguageDropdown from './components/ui/LanguageDropdown.tsx';
+// import LanguageDropdown from './components/ui/LanguageDropdown.tsx';
 
 function loadLanguage(lang: string): void {
   let data;
@@ -75,7 +75,7 @@ function Home() {
 
   return (
     <div className='App'>
-      <Header DropdownComponent={LanguageDropdown}/>
+      {/* <Header DropdownComponent={LanguageDropdown}/> */}
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
         <Sponsor/>
