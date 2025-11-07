@@ -6,48 +6,45 @@ interface FAQ {
   subtitle: string;
 }
 
-const Question: React.FC = () => {
-  const [faqs, setFaqs] = useState<FAQ[]>([
-    {
-      open: false,
-      title: "Tại sao chọn MetaPress?",
-      subtitle:
-        "MetaPress là giải pháp AI toàn diện dành riêng cho các tòa soạn báo, giúp tự động hóa toàn bộ quy trình sản xuất tin bài từ phát hiện đề tài đến xuất bản và phân phối. Điều này giúp tòa soạn tăng tốc độ xử lý, giảm chi phí vận hành và giữ vững bản sắc báo chí riêng biệt.",
-    },
-    {
-      open: false,
-      title: "Sự khác biệt của MetaPress là gì?",
-      subtitle:
-        "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí: nhận diện xu hướng, kiểm chứng thông tin, tự động tạo bài viết, đa dạng hóa hình thức nội dung và phân phối thông minh đa kênh. Hệ thống giữ nguyên DNA đặc trưng của tòa soạn đồng thời giảm thiểu rủi ro pháp lý và sai sót thông tin đáng kể.",
-    },
-{
-  open: false,
-  title: "MetaPress có gì đặc biệt?",
-  subtitle: `Chuỗi quy trình báo chí tự động hóa toàn bộ, mỗi bước đều có AI Agent chuyên trách, đảm bảo quy trình nhanh - chính xác - nhất quán.\n
-Định hướng giọng điệu, phạm vi chủ đề được thiết lập rõ ràng giúp bảo toàn bản sắc tòa soạn.\n
-Đáp ứng đa dạng các định dạng nội dung: bài báo, infographic, video, dữ liệu mở rộng.`,
-},
+interface QuestionData {
+  section: string;
+  title: string;
+  faq: Array<{
+    title: string;
+    subtitle: string;
+  }>;
+}
 
-    
-    {
-      open: false,
-      title: "MetaPress được tính phí như thế nào?",
-      subtitle:
-        "Chi phí triển khai MetaPress thay đổi dựa trên quy mô tòa soạn, số lượng người dùng và các tính năng tùy chọn. Chúng tôi cung cấp các gói dịch vụ linh hoạt kèm tư vấn chi tiết nhằm tối ưu chi phí và hiệu quả vận hành cho từng khách hàng. Liên hệ để nhận báo giá phù hợp nhất với yêu cầu tòa soạn.",
-    },
-        {
-      open: false,
-      title: "Tôi cần làm gì để bắt đầu hợp tác với MetaPress?",
-      subtitle:
-        "Bước đầu tiên là liên hệ với đội ngũ tư vấn của MetaPress để trao đổi về đặc thù và nhu cầu của tòa soạn. Sau đó, chúng tôi cùng phối hợp xây dựng lộ trình tích hợp AI, triển khai thử nghiệm và đào tạo nhân sự. MetaPress sẽ đồng hành hỗ trợ liên tục để đảm bảo hiệu quả sử dụng tối ưu.",
-    },
-  ]);
+const Question: React.FC = () => {
+  const [faqs, setFaqs] = useState<FAQ[]>([]);
+  const [title, setTitle] = useState<string>("");
+
+  useEffect(() => {
+    const languageData = (window as any).language;
+    if (languageData?.data) {
+      const questionData = languageData.data.find(
+        (item: any) => item.section === "question"
+      ) as QuestionData;
+
+      if (questionData?.faq) {
+        setTitle(questionData.title); // ✅ store title in state
+
+        const formattedFaqs: FAQ[] = questionData.faq.map((item) => ({
+          open: false,
+          title: item.title,
+          subtitle: item.subtitle,
+        }));
+
+        setFaqs(formattedFaqs);
+      }
+    }
+  }, []);
 
   const toggleFAQ = (index: number) => {
     setFaqs((prevFaqs) =>
       prevFaqs.map((faq, i) => ({
         ...faq,
-        open: i === index ? !faq.open : false, // chỉ mở 1 câu tại 1 thời điểm
+        open: i === index ? !faq.open : false,
       }))
     );
   };
@@ -56,7 +53,7 @@ const Question: React.FC = () => {
     <section className="question">
       <div className="container">
         <div className="content">
-          <div className="title">Các câu hỏi thường gặp</div>
+          <div className="title">{title}</div>
         </div>
         <div className="content">
           <ul className="faq-list">
@@ -85,20 +82,35 @@ const FAQItem: React.FC<FAQItemProps> = ({ faq, index, onToggle }) => {
       setHeight(faq.open ? contentRef.current.scrollHeight : 0);
     }
   }, [faq.open]);
-  
+
+  const formatSubtitle = (text: string) => {
+    const lines = text.split("\n");
+    return lines.map((line, i) => (
+      <React.Fragment key={i}>
+        {line}
+        {i < lines.length - 1 && <br />}
+      </React.Fragment>
+    ));
+  };
+
   return (
     <li
       className="faq-item"
       onClick={() => onToggle(index)}
-      style={{ cursor: "pointer", background:  faq.open ?"linear-gradient(150deg, #0E0A0F 17.18%, #443149 227.36%" : "", }}
+      style={{
+        cursor: "pointer",
+        background: faq.open
+          ? "linear-gradient(150deg, #0E0A0F 17.18%, #443149 227.36%)"
+          : "",
+      }}
     >
       <div className="faq-container">
         <div className="faq-question">{faq.title}</div>
 
         <div className="icon">
           {faq.open ? (
-            // icon khi mở
-                        <svg
+            // minus icon
+            <svg
               width="36"
               height="36"
               viewBox="0 0 36 36"
@@ -113,11 +125,9 @@ const FAQItem: React.FC<FAQItemProps> = ({ faq, index, onToggle }) => {
                 strokeLinejoin="round"
               />
             </svg>
-
-         
           ) : (
-            // icon khi đóng
-   <svg
+            // plus icon
+            <svg
               width="36"
               height="36"
               viewBox="0 0 36 36"
@@ -146,7 +156,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ faq, index, onToggle }) => {
         }}
       >
         <div className="faq-answer-text" ref={contentRef}>
-          {faq.subtitle}
+          {formatSubtitle(faq.subtitle)}
         </div>
       </div>
     </li>

@@ -1,0 +1,219 @@
+{
+  "language": "zh",
+  "data": [
+    {
+      "section": "header",
+      "links": [
+        "解决方案",
+        "优势",
+        "客户",
+        "联系"
+      ],
+      "button": {
+        "text": "申请演示"
+      }
+    },
+    {
+      "section": "hero",
+      "status": "New",
+      "name": "The Newsroom OS",
+      "title": "面向未来新闻编辑部的AI操作系统",
+      "subtitle": "MetaPress是一款专为新闻编辑部打造的AI多智能体平台，可优化工作流程，帮助记者与编辑更快速、更精准、更高效地创作内容。",
+      "button": "申请演示"
+    },
+    {
+      "section": "customer",
+      "title": "信任源自 <br> 真实的运营成效",
+      "subtitle": "每一条客户反馈都是MetaPress带来运营效能的真实见证。",
+      "testimonials": [
+        [
+          {
+            "heading": "",
+            "quote": "MetaPress让我们惊讶于它对体育新闻行业的深刻理解。从数据汇总、编辑到发布，一切都变得精简高效。最重要的是，MetaPress让我们有更多时间专注于内容——挖掘新视角、讲述更有深度的故事，并传递真正的体育精神。",
+            "name": "杨琼（Dương Quỳnh）",
+            "position": "Webthethao内容组负责人"
+          },
+          {
+            "heading": "无缝集成，立即见效",
+            "quote": "将NexaAI整合到我们的旧系统中几乎毫无障碍。几天内我们就实现了关键流程自动化，减少了错误，并让团队专注于战略项目。非常出色。",
+            "name": "Priya Kumar",
+            "position": "运营副总裁，Meridian Financial"
+          }
+        ],
+        [
+          {
+            "heading": "",
+            "quote": "作为一名从事金融分析内容创作的人，我原以为AI帮不上忙，但我错了。MetaPress就像我的得力助手，帮助我将混乱的思绪整理成清晰、有吸引力的故事。在频道刚上线的第一个视频中，借助MetaPress的支持，我们的视频获得了极高的观看量和数千小时观看时长，使频道在首个视频后就成为YouTube合作伙伴。",
+            "name": "明书女士（Ms. Minh Thư）",
+            "position": "《Thư's Show》主持人——财经与商业新闻频道"
+          },
+          {
+            "heading": "可扩展的AI，与我们共同成长",
+            "quote": "作为一家快速成长的初创企业，我们需要一个可以与业务一同扩展的AI伙伴。NexaAI的模块化平台伴随我们成长，提供企业级功能。",
+            "name": "Carlos Ramirez",
+            "position": "NovaSolutions首席执行官"
+          }
+        ]
+      ]
+    },
+    {
+      "section": "feature",
+      "title": "The Newsroom OS",
+      "subtitle": "基于专用的AI多智能体架构，灵活协同以处理新闻生产中的各项业务流程。",
+      "featureList": [
+        {
+          "title": "主题发现",
+          "subtitle": "跨平台新闻扫描"
+        },
+        {
+          "title": "趋势与风险预警",
+          "subtitle": "实时趋势监控"
+        },
+        {
+          "title": "自动生成草稿",
+          "subtitle": "AI推荐提纲与标题"
+        },
+        {
+          "title": "SEO与多平台优化",
+          "subtitle": "分析与同步发布"
+        }
+      ]
+    },
+    {
+      "section": "benefit",
+      "title": "效果清晰，影响立竿见影",
+      "content": {
+        "visionLabel": "我们的愿景",
+        "visionDescription": "作为一名智能助手，MetaPress深刻理解新闻工作的本质，捕捉记者的想法，简化流程，优化高质量内容的生产，实现更快、更准、更高效的创作。"
+      }
+    },
+    {
+      "section": "diagram3",
+      "content": [
+        {
+          "title": "保持品牌与编辑部DNA",
+          "subtitle": "明确内容方向与主题范围，确保遵守新闻规范与法律要求，同时保持编辑部独有的DNA。"
+        },
+        {
+          "title": "多样且快速的内容生产",
+          "subtitle": "一篇内容——多种形式，从文章到信息图、视频或扩展数据，跨平台传播。"
+        },
+        {
+          "title": "节省成本，优化资源",
+          "subtitle": "自动化整个生产链，每个环节都有专属AI智能体负责，确保流程快速、精准且一致。"
+        },
+        {
+          "title": "快速部署，立即见效",
+          "subtitle": "从需求收集到项目验收，我们仅需2至4周即可完成部署并交付成果。"
+        }
+      ]
+    },
+    {
+      "section": "get-started",
+      "title": "当科技真正解决新闻人的痛点",
+      "subtitle": "基于对新闻业务的深入理解，MetaPress的AI掌握编辑部思维，帮助您简化流程、优化运营并提升内容质量。",
+      "button": "申请演示",
+      "stats": [
+        {
+          "title": "250+",
+          "subtitle": "每日使用的记者与新闻工作者"
+        },
+        {
+          "title": "50+",
+          "subtitle": "合作的新闻编辑部与媒体机构"
+        },
+        {
+          "title": "10,000+",
+          "subtitle": "每月经AI优化的文章数量"
+        }
+      ]
+    },
+    {
+      "section": "customer",
+      "title": "信任源自真实的运营成效",
+      "subtitle": "每一条客户反馈都是MetaPress带来运营效能的真实见证。",
+      "testimonials": [
+        {
+          "quote": "MetaPress让我们惊讶于它对体育新闻行业的深刻理解。从数据汇总、编辑到发布，一切都变得精简高效。最重要的是，MetaPress让我们有更多时间专注于内容——挖掘新视角、讲述更有深度的故事，并传递真正的体育精神。",
+          "name": "杨琼（Dương Quỳnh）",
+          "position": "Webthethao内容组负责人"
+        },
+        {
+          "heading": "无缝集成，立即见效",
+          "quote": "将NexaAI整合到我们的旧系统中几乎毫无障碍。几天内我们就实现了关键流程自动化，减少了错误，并让团队专注于战略项目。非常出色。",
+          "name": "Priya Kumar",
+          "position": "运营副总裁，Meridian Financial"
+        },
+        {
+          "quote": "作为一名从事金融分析内容创作的人，我原以为AI帮不上忙，但我错了。MetaPress就像我的得力助手，帮助我将混乱的思绪整理成清晰、有吸引力的故事。在频道刚上线的第一个视频中，借助MetaPress的支持，我们的视频获得了极高的观看量和数千小时观看时长，使频道在首个视频后就成为YouTube合作伙伴。",
+          "name": "明书女士（Ms. Minh Thư）",
+          "position": "《Thư's Show》主持人——财经与商业新闻频道"
+        },
+        {
+          "heading": "可扩展的AI，与我们共同成长",
+          "quote": "作为一家快速成长的初创企业，我们需要一个可以与业务一同扩展的AI伙伴。NexaAI的模块化平台伴随我们成长，提供企业级功能。",
+          "name": "Carlos Ramirez",
+          "position": "NovaSolutions首席执行官"
+        }
+      ]
+    },
+    {
+      "section": "question",
+      "faq": [
+        {
+          "title": "为什么选择MetaPress？",
+          "subtitle": "MetaPress是一款专为新闻编辑部打造的全面AI解决方案，自动化整个新闻生产流程——从选题发现到发布与分发。这使编辑部能够加快工作节奏、降低运营成本，并保持独特的新闻风格。"
+        },
+        {
+          "title": "MetaPress的差异化优势是什么？",
+          "subtitle": "与传统仅用于内容管理的CMS系统不同，MetaPress在新闻生产的每个环节都深度整合AI：趋势识别、信息核实、自动写作、多样化内容形式与智能多渠道分发。它既能保持编辑部的独特DNA，又能大幅减少法律与信息风险。"
+        },
+        {
+          "title": "MetaPress有什么特别之处？",
+          "subtitle": "新闻生产流程全自动化，每一步都有专属AI智能体负责，确保快速、精准和一致。\n明确的语气与主题范围设定，保证新闻品牌的独特性。\n支持多种内容形式：文章、信息图、视频与数据报道。"
+        },
+        {
+          "title": "MetaPress的收费方式？",
+          "subtitle": "MetaPress的费用根据编辑部规模、用户数量及所选功能而定。我们提供灵活的服务方案及详细咨询，以帮助客户优化成本并提升运营效率。请联系我们获取最合适的报价。"
+        },
+        {
+          "title": "如何开始与MetaPress合作？",
+          "subtitle": "第一步，请联系MetaPress顾问团队，讨论编辑部的特点与需求。随后，我们将共同制定AI整合计划，进行试点部署与人员培训。MetaPress将持续提供支持，确保使用效果最佳化。"
+        }
+      ]
+    },
+    {
+      "section": "unlock",
+      "category": "",
+      "title": "立即开启与MetaPress的新闻创新之旅",
+      "subtitle": "借助AI，让编辑部运营更灵活、更节省、更高效地生产内容。",
+      "button": "立即联系"
+    },
+    {
+      "section": "footer",
+      "subtitle": "面向未来新闻编辑部的AI操作系统",
+      "links": [
+        { "text": "解决方案" },
+        { "text": "价格" },
+        { "text": "资源" },
+        { "text": "关于我们" },
+        { "text": "联系" }
+      ],
+      "socials": [
+        { "text": "Instagram" },
+        { "text": "YouTube" },
+        { "text": "Twitter" },
+        { "text": "LinkedIn" }
+      ],
+      "contact": {
+        "email": "contact@metapress.ai",
+        "phone": "+91 9876543210"
+      },
+      "bottom": {
+        "company": "©2025 MetaPress版权所有",
+        "terms": "服务条款",
+        "privacy": "隐私政策"
+      }
+    }
+  ]
+}
