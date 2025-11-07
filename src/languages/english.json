@@ -13,6 +13,16 @@
         "text": "Request Demo"
       }
     },
+{
+  "section": "blog",
+  "title": "Blog",
+  "subtitle": "MetaPress Knowledge",
+  "description": "The latest news on AI, digital transformation, and technology in journalism — automatically produced by MetaPress for our readers every day.",
+  "button": {
+    "text": "Read more"
+  }
+},
+
     {
       "section": "hero",
       "status": "New",
