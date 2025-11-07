@@ -75,8 +75,8 @@ function Home() {
 
   return (
     <div className='App'>
-      <Header />
       <LanguageDropdown/>
+      <Header />
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
         <Sponsor/>
