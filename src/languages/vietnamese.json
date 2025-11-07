@@ -36,38 +36,29 @@
   "testimonials": [
     {
       "quote": "MetaPress khiến chúng tôi ngạc nhiên vì cách nền tảng này hiểu nghề báo thể thao đến vậy. Từ khâu tổng hợp dữ liệu, biên tập, đến xuất bản, mọi thứ đều được tinh gọn. Quan trọng nhất, MetaPress giúp chúng tôi có thêm thời gian đầu tư cho nội dung – tìm những góc nhìn mới, những câu chuyện có chiều sâu và nuôi dưỡng tinh thần thể thao đúng nghĩa.",
-      "author": {
         "name": "Dương Quỳnh",
-        "position": "Trưởng nhóm nội dung Webthethao",
-        "avatar": "/assets/Mr.webp"
-      }
+        "position": "Trưởng nhóm nội dung Webthethao"
+   
+      
     },
     {
       "heading": "Seamless Integration, Instant Results",
       "quote": "Integrating NexaAI into our legacy systems was effortless. Within days we automated critical workflows, reduced errors, and freed our team to focus on strategic initiatives. Simply outstanding.",
-      "author": {
         "name": "Priya Kumar",
-        "position": "VP of Operations, Meridian Financial",
-        "avatar": "/assets/image 7.webp"
-      }
+        "position": "VP of Operations, Meridian Financial"
+      
     },
     {
       "quote": "Là người làm nội dung phân tích tài chính, một lĩnh vực hết sức đặc thù, tôi từng nghĩ AI sẽ chẳng giúp gì được đâu. Nhưng tôi đã nhầm. Metapress như một trợ lý giỏi của tôi, giúp tôi sắp xếp những suy nghĩ, ý tưởng đang lộn xộn thành một câu chuyện ngay ngắn, hấp dẫn. Ngay từ video đầu tiên khi kênh vừa ra mắt, nhờ sự hỗ trợ của Metapress, kênh của tôi đã đạt lượng view khủng với thời gian xem hàng nghìn giờ, giúp kênh trở thành đối tác của YouTube ngay sau video đầu tiên.",
-      "author": {
         "name": "Ms. Minh Thư",
-        "position": "Host, Thư's Show - kênh tin tức tài chính & kinh doanh",
-        "avatar": "/assets/Ms. Minh Thu.webp",
-        "style": { "transform": "scale(1.8) translateX(10px)" }
-      }
+        "position": "Host, Thư's Show - kênh tin tức tài chính & kinh doanh"
+      
     },
     {
       "heading": "Scalable AI That Grows with Us",
       "quote": "As a fast-growing startup, we needed an AI partner that could scale. NexaAI's modular platform expanded alongside our business—delivering enterprise-grade features.",
-      "author": {
         "name": "Carlos Ramirez",
-        "position": "CEO, NovaSolutions",
-        "avatar": "/assets/image.webp"
-      }
+        "position": "CEO, NovaSolutions"      
     }
   ]
 },

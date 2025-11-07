@@ -53,12 +53,7 @@ const Customer: React.FC = () => {
     ? (customerData.testimonials as Testimonial[][]).flat()
     : (customerData.testimonials as Testimonial[]);
 
-  // Breakpoint configuration cho Masonry
-  const breakpointColumns = {
-    default: 2,  // 2 cột mặc định
-    1100: 2,     // 2 cột cho màn hình >= 1100px
-    700: 1,      // 1 cột cho màn hình < 700px
-  };
+
 
   return (
     <section className="testimonials" id="customer">
@@ -74,7 +69,6 @@ const Customer: React.FC = () => {
         </div>
         
         <Masonry
-          breakpointCols={breakpointColumns}
           className="testimonials__grid"
           columnClassName="testimonials__column"
         >
