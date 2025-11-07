@@ -10,10 +10,10 @@ interface Language {
   flag: string;
 }
 
-interface LanguageDropdownProps {
-  currentLang?: string;
-  onChange?: (lang: string) => void;
-}
+// interface LanguageDropdownProps {
+//   currentLang?: string;
+//   onChange?: (lang: string) => void;
+// }
 
 const languages: Language[] = [
   { code: "vi", name: "Tiếng Việt", flag: "🇻🇳" },
@@ -48,16 +48,12 @@ function loadLanguage(lang: string): void {
   (window as any).language = data;
 }
 
-const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
-  currentLang: propLang,
-  onChange: propOnChange,
-}) => {
+const LanguageDropdown: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const [internalLang, setInternalLang] = useState(() => {
-    if (propLang) return propLang;
     return localStorage.getItem("language") || "vi";
   });
 
@@ -65,24 +61,30 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
     loadLanguage(internalLang);
   }, []);
 
-  const currentLang = propLang || internalLang;
-  const currentLanguage = 
-  languages.find((lang) => lang.code === currentLang) || languages[0];
+  const currentLang = internalLang;
+  const currentLanguage =
+    languages.find((lang) => lang.code === currentLang) || languages[0];
 
   const handleLanguageChange = (langCode: string) => {
     loadLanguage(langCode);
-    localStorage.setItemm("language", langCode);
+    localStorage.setItem("language", langCode);
+    setInternalLang(langCode);
     setOpen(false);
     setSearch("");
-    window.dispatchEvent(new CustomEvent("languageChange", {detail: langCode}));
+    window.dispatchEvent(new CustomEvent("languageChange", { detail: langCode }));
   };
-  //lọc ngôn ngữ theo text nhập
-  const filteredLanguages = languages.filter((lang) => lang.name.toLowerCase().includes(search.toLowerCase()));
 
+  // Lọc ngôn ngữ theo text nhập
+  const filteredLanguages = languages.filter((lang) =>
+    lang.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  // Đóng dropdown khi click ra ngoài
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
-        dropdownRef.current && !dropdownRef.current.contains(event.target as Node)
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
       ) {
         setOpen(false);
         setSearch("");
@@ -91,13 +93,17 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
   return (
     <div className="header__dropdown" ref={dropdownRef}>
-    <button className="header_dropdown-button" onClick={() => setOpen((prev) => !prev)}>
-      {currentLanguage.flag} {currentLanguage.name}
+      <button
+        className="header__dropdown-button"
+        onClick={() => setOpen((prev) => !prev)}
+      >
+        {currentLanguage.flag} {currentLanguage.name}
       </button>
-      {
-        open && (
+
+      {open && (
         <div
           className="header__dropdown-menu"
           style={{
@@ -125,18 +131,19 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
               outline: "none",
             }}
           />
-          <div style={{maxHeight: "150px", overflowY: "auto"}}>
+
+          <div style={{ maxHeight: "150px", overflowY: "auto" }}>
             {filteredLanguages.length > 0 ? (
               filteredLanguages.map((lang) => (
-                <button key={lang.code} onClick={() => handleLanguageChange(lang.code)}
-                className={`header__dropdown-item
-                ${
-                  currentLang === lang.code
-                  ?
-                  "header__dropdown-item-active"
-                  : ""
-                }`}
-                                  style={{
+                <button
+                  key={lang.code}
+                  onClick={() => handleLanguageChange(lang.code)}
+                  className={`header__dropdown-item ${
+                    currentLang === lang.code
+                      ? "header__dropdown-item--active"
+                      : ""
+                  }`}
+                  style={{
                     textAlign: "left",
                     padding: "6px 8px",
                     background:
@@ -146,23 +153,20 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
                     width: "100%",
                     borderRadius: "6px",
                   }}
-              >
-                {lang.flag} {lang.name}
-              </button>
+                >
+                  {lang.flag} {lang.name}
+                </button>
               ))
             ) : (
-                       <div style={{ padding: "6px", color: "#888" }}>
+              <div style={{ padding: "6px", color: "#888" }}>
                 Không tìm thấy
               </div>
-            
             )}
-            </div>
-          </div>  
-        )
-      }
+          </div>
+        </div>
+      )}
     </div>
-
-  )
-}
+  );
+};
 
 export default LanguageDropdown;
