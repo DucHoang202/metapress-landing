@@ -275,13 +275,13 @@ aspect-ratio: 280.00/183.00;
     }
 }
 &__button {
-    width: 180px;
+    width: calc(100% - 32px);
+
 }
 &__text {
 .title .subtitle {
     width: 240px;
-}
-}
+}}
 }
 @media (min-width: 1024px) {
     &__carousel {

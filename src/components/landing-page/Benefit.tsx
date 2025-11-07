@@ -1,51 +1,24 @@
-import React, { useEffect, useState } from "react";
-
-interface BenefitData {
-  section: string;
-  title: string;
-  content: {
-    visionLabel: string;
-    visionDescription: string;
-  };
-}
+import React from "react";
 
 const Benefit: React.FC = () => {
-  const [benefitData, setBenefitData] = useState<BenefitData | null>(null);
-
-  useEffect(() => {
-    // Lấy dữ liệu từ (window as any).language
-    const languageData = (window as any).language;
-    if (languageData?.data) {
-      // Tìm section có section === "benefit"
-      const benefit = languageData.data.find((item: any) => item.section === "benefit");
-      if (benefit) {
-        setBenefitData(benefit);
-      }
-    }
-  }, []);
-
-  // Hiển thị loading hoặc fallback nếu chưa có dữ liệu
-  if (!benefitData) {
-    return null;
-  }
-
-  return (
-    <section className="benefit" id="benefit">
-      <div className="benefit__container">
-        <div className="title">
-          {benefitData.title}
-        </div>
+    return (<section className="benefit" id="benefit">
+        <div className="benefit__container">
+            <div className="title">
+            Lợi ích rõ ràng, tác động tức thì    
+            </div>
         <div className="benefit__image">
-          <div className="vision">
-            <div className="vision__label">{benefitData.content.visionLabel}</div>
-            <p className="vision__description">
-              {benefitData.content.visionDescription}
-            </p>
-          </div>
+            <div className="vision">
+  
+
+                        <div className="vision__label">CHÚNG TÔI HƯỚNG TỚI</div>
+                        <p className="vision__description">
+     Như một trợ lý thông minh đồng hành, MetaPress thấu hiểu công việc báo chí, nắm bắt ý tưởng phóng viên, tinh gọn quy trình và tối ưu sản xuất nội dung chất lượng, nhanh, chính xác
+                        </p>
+                    </div>
+            </div>
         </div>
-      </div>
-    </section>
-  );
-};
+
+    </section>)
+}
 
 export default Benefit;

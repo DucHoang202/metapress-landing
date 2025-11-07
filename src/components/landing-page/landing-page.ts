@@ -12,4 +12,3 @@ export { default as HeroMobile} from "./HeroMobile.tsx";
 export { default as Diagram3} from "./Diagram3.tsx";
 export { default as RegisterForm} from "./RegisterForm.tsx";
 export { default as Blog } from "./Blog.tsx";
-export { default as Customer3 } from "./Customer3.tsx";
