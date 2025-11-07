@@ -100,7 +100,7 @@ padding: 0;
     &__column {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         gap: 24px;
         flex: 1;
@@ -278,5 +278,7 @@ font-size: clamp(20px, 5.3vw ,22px);
       font-size: 18px;
     }
   }
-  
+
+
+        
 }

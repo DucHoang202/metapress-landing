@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Masonry from "react-masonry-css";
 
 interface Testimonial {
   heading?: string;
@@ -47,13 +48,17 @@ const Customer: React.FC = () => {
     return null;
   }
 
-  // Xử lý cấu trúc testimonials (có thể là mảng 2 chiều hoặc mảng 1 chiều)
-  const testimonialColumns = Array.isArray(customerData.testimonials[0]) 
-    ? (customerData.testimonials as Testimonial[][])
-    : [
-        (customerData.testimonials as Testimonial[]).filter((_, i) => i % 2 === 0),
-        (customerData.testimonials as Testimonial[]).filter((_, i) => i % 2 === 1)
-      ];
+  // Flatten testimonials thành mảng 1 chiều để Masonry xử lý
+  const allTestimonials = Array.isArray(customerData.testimonials[0]) 
+    ? (customerData.testimonials as Testimonial[][]).flat()
+    : (customerData.testimonials as Testimonial[]);
+
+  // Breakpoint configuration cho Masonry
+  const breakpointColumns = {
+    default: 2,  // 2 cột mặc định
+    1100: 2,     // 2 cột cho màn hình >= 1100px
+    700: 1,      // 1 cột cho màn hình < 700px
+  };
 
   return (
     <section className="testimonials" id="customer">
@@ -67,38 +72,40 @@ const Customer: React.FC = () => {
             {customerData.subtitle}
           </p>
         </div>
-        <div className="testimonials__grid">
-          {testimonialColumns.map((column, colIndex) => (
-            <div key={colIndex} className="testimonials__column">
-              {column.map((testimonial, index) => (
-                <article key={index} className="testimonials__card">
-                  <div className="testimonials__content">
-                    {testimonial.heading && (
-                      <h3 className="testimonials__heading">{testimonial.heading}</h3>
-                    )}
-                    <p className={testimonial.heading ? "testimonials__quote--small" : "testimonials__quote"}>
-                      {testimonial.quote}
-                    </p>
-                  </div>
-                  <div className="testimonials__author">
-                    <div className="testimonials__avatar">
-                      <img 
-                        src={getAvatar(testimonial.name).src} 
-                        alt={testimonial.name}
-                        style={getAvatar(testimonial.name).style}
-                      />
-                    </div>
-                    <div className="testimonials__author-info">
-                      <div className="testimonials__name">{testimonial.name}</div>
-                      <div className="testimonials__position">{testimonial.position}</div>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
+        
+        <Masonry
+          breakpointCols={breakpointColumns}
+          className="testimonials__grid"
+          columnClassName="testimonials__column"
+        >
+          {allTestimonials.map((testimonial, index) => (
+            <article key={index} className="testimonials__card">
+              <div className="testimonials__content">
+                {testimonial.heading && (
+                  <h3 className="testimonials__heading">{testimonial.heading}</h3>
+                )}
+                <p className={testimonial.heading ? "testimonials__quote--small" : "testimonials__quote"}>
+                  {testimonial.quote}
+                </p>
+              </div>
+              <div className="testimonials__author">
+                <div className="testimonials__avatar">
+                  <img 
+                    src={getAvatar(testimonial.name).src} 
+                    alt={testimonial.name}
+                    style={getAvatar(testimonial.name).style}
+                  />
+                </div>
+                <div className="testimonials__author-info">
+                  <div className="testimonials__name">{testimonial.name}</div>
+                  <div className="testimonials__position">{testimonial.position}</div>
+                </div>
+              </div>
+            </article>
           ))}
-        </div>
+        </Masonry>
       </div>
+
     </section>
   );
 };
