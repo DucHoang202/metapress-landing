@@ -158,6 +158,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
                     cursor: "pointer",
                     width: "100%",
                     borderRadius: "6px",
+                    zIndex: 3001,
                   }}
                 >
                   {lang.flag} {lang.name}

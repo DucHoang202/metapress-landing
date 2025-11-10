@@ -33,7 +33,7 @@ const Customer: React.FC = () => {
   const getAvatarConfig = (name: string) => {
     const avatarMap: { [key: string]: { src: string; style?: React.CSSProperties } } = {
       'Dương Quỳnh': { src: '../../assets/Mr.webp' },
-      'Nguyễn Đức Đông': { src: '../../assets/image 7.webp' },
+      'Phạm Nguyên Lập': { src: '../../assets/kryp_boss.webp',  style: { transform: 'scale(1.6) translateY(5px)' } },
       'Ms. Minh Thư': { 
         src: '../../assets/Ms. Minh Thu.webp',
         style: { transform: 'scale(1.8) translateX(10px)' }

@@ -7,12 +7,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 interface BlogPost {
-  image: string;
   title: string;
-  subtitle: string;
+  excerpt: string;
+  date: string;
+  thumb: string | null;
+  link: string;
 }
 
-interface BlogData {
+interface BlogSectionData {
   section: string;
   title: string;
   subtitle: string;
@@ -20,69 +22,49 @@ interface BlogData {
   button: {
     text: string;
   };
-  posts?: BlogPost[];
 }
 
 const Blog: React.FC = () => {
   const swiperRef = useRef<any>(null);
   const cardTitleRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [blogData, setBlogData] = useState<BlogData | null>(null);
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+  const [blogSectionData, setBlogSectionData] = useState<BlogSectionData | null>(null);
 
-  try {
-
-  } catch (error) {
-
-  }
-  // Dữ liệu mặc định nếu không có posts trong JSON
-  const defaultPosts: BlogPost[] = [
-    {
-      image: "../../../assets/Knowledge Hub.webp",
-      title: "Việt Nam và nước cờ địa chính trị trên mặt biển: Khi các bến cảng trở thành tiền đồn chiến lược",
-      subtitle: "Nhiều người đã quên đi câu nói ấy, phát ra tại một hội trường nhỏ bên bờ cảng Đình Vũ cách đây hơn hai thập kỉ qua và đã"
-    },
-    {
-      image: "../../../assets/Knowledge Hub (1).webp",
-      title: "Từ tăng trưởng nóng đến tái cấu trúc thị trường ",
-      subtitle: "Sau hơn một thập kỷ mở rộng ồ ạt, thị trường thực phẩm – đồ uống (F&B) Việt Nam bước vào giai đoạn 2024"
-    },
-    {
-      image: "../../../assets/Knowledge Hub (2).webp",
-      title: "Nghệ thuật đặt câu hỏi phỏng vấn cùng AI",
-      subtitle: "Hub kiến thức chuyên môn đầu tiên tại Việt Nam dành cho Solo Expert về Kinh Doanh Tri Thức."
-    },
-    {
-      image: "../../../assets/Knowledge Hub.webp",
-      title: "Việt Nam và nước cờ địa chính trị trên mặt biển: Khi các bến cảng trở thành tiền đồn chiến lược",
-      subtitle: "Nhiều người đã quên đi câu nói ấy, phát ra tại một hội trường nhỏ bên bờ cảng Đình Vũ cách đây hơn hai thập kỉ qua và đã"
-    },
-    {
-      image: "../../../assets/Knowledge Hub (1).webp",
-      title: "Từ tăng trưởng nóng đến tái cấu trúc thị trường ",
-      subtitle: "Sau hơn một thập kỷ mở rộng ồ ạt, thị trường thực phẩm – đồ uống (F&B) Việt Nam bước vào giai đoạn 2024"
-    },
-    {
-      image: "../../../assets/Knowledge Hub (2).webp",
-      title: "Nghệ thuật đặt câu hỏi phỏng vấn cùng AI",
-      subtitle: "Hub kiến thức chuyên môn đầu tiên tại Việt Nam dành cho Solo Expert về Kinh Doanh Tri Thức."
+  const fetchData = async () => {
+    try {
+      const res = await fetch('https://metapress.ai/blog/wp-json/wp/v2/posts?per_page=10&_embed&_fields=id,link,title,excerpt,date,_embedded.wp:featuredmedia');
+      const data = await res.json();
+      const posts = data.map((p: any) => ({
+        title: p.title.rendered,
+        date: new Date(p.date).toLocaleDateString('vi-VN'),
+        excerpt: p.excerpt.rendered.replace(/<[^>]+>/g, '').substring(0, 120) + '...',
+        thumb: p._embedded?.['wp:featuredmedia']?.[0]?.source_url || null,
+        link: p.link
+      }));
+      console.log('Fetched posts:', posts);
+      setBlogPosts(posts);
+    } catch (error) {
+      console.error('Error fetching blog posts:', error);
     }
-  ];
-
+  };
 
   useEffect(() => {
-    // Lấy dữ liệu từ (window as any).language
+    // Lấy dữ liệu section từ (window as any).language
     const languageData = (window as any).language;
     if (languageData?.data) {
-      // Tìm section có section === "blog"
       const blog = languageData.data.find((item: any) => item.section === "blog");
       if (blog) {
-        setBlogData(blog);
+        setBlogSectionData(blog);
       }
     }
+
+    // Fetch blog posts từ WordPress API
+    fetchData();
   }, []);
 
-  const items = blogData?.posts || defaultPosts;
-
   useEffect(() => {
+    if (!blogPosts.length) return;
+
     const adjustHeights = () => {
       // Reset heights
       cardTitleRefs.current.forEach(ref => {
@@ -106,16 +88,14 @@ const Blog: React.FC = () => {
     // Đợi font load
     if (document.fonts && document.fonts.ready) {
       document.fonts.ready.then(() => {
-        // Delay một chút để layout ổn định
         setTimeout(adjustHeights, 50);
       });
     } else {
-      // Fallback nếu browser không support Font Loading API
       setTimeout(adjustHeights, 100);
     }
-  }, [items]);
+  }, [blogPosts]);
 
-  if (!blogData) {
+  if (!blogSectionData || !blogPosts.length) {
     return null;
   }
 
@@ -124,11 +104,11 @@ const Blog: React.FC = () => {
       <div className="blog__container">
         <div className="blog__header">
           <div className="blog__left">
-            <div className="blog__title">{blogData.title}</div>
-            <div className="blog__subtitle">{blogData.subtitle}</div>
+            <div className="blog__title">{blogSectionData.title}</div>
+            <div className="blog__subtitle">{blogSectionData.subtitle}</div>
           </div>
           <div className="blog__right">
-            {blogData.description}
+            {blogSectionData.description}
           </div>
         </div>
         <div className="blog__carousel">
@@ -163,27 +143,38 @@ const Blog: React.FC = () => {
               },
             }}
           >
-            {items.map((item, index) => (
+            {blogPosts.map((post, index) => (
               <SwiperSlide key={index} className="blog__card-container">
-                <div className={`blog__card ${index === 0 ? "first" : index === items.length - 1 ? "last" : ""}`}>
+                <a 
+                  href={post.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={`blog__card ${index === 0 ? "first" : index === blogPosts.length - 1 ? "last" : ""}`}
+                >
                   <div className="blog__image">
-                    <img src={item.image} alt={item.title} />
+                    <img 
+                      src={post.thumb || '../../../assets/Knowledge Hub.webp'} 
+                      alt={post.title}
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = '../../../assets/Knowledge Hub.webp';
+                      }}
+                    />
                   </div>
                   <div className="blog__text">
                     <div className="title" ref={(el) => {cardTitleRefs.current[index] = el;}}>
-                      {item.title}
+                      {post.title}
                     </div>
-                    <div className="subtitle">{item.subtitle}</div>
+                    <div className="subtitle">{post.excerpt}</div>
                   </div>
-                </div>
+                </a>
               </SwiperSlide>
             ))}
           </Swiper>
 
           {/* Dots pagination hiển thị ở đây */}
           <div className="blog__pagination"></div>
-          <div className="blog__button" onClick={() => window.location.href = "/form"}>
-            <div className="text">{blogData.button.text}</div>
+          <div className="blog__button" onClick={() => window.location.href = "https://metapress.ai/blog"}>
+            <div className="text">{blogSectionData.button.text}</div>
             <div className="arrow">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="#0E0A0F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
