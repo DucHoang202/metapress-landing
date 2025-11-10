@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Masonry from "react-masonry-css";
 
 interface Testimonial {
   heading?: string;
@@ -12,7 +11,7 @@ interface CustomerData {
   section: string;
   title: string;
   subtitle: string;
-  testimonials: Testimonial[][] | Testimonial[];
+  testimonials: Testimonial[];
 }
 
 const Customer: React.FC = () => {
@@ -30,16 +29,15 @@ const Customer: React.FC = () => {
     }
   }, []);
 
-  // Map avatar cho mỗi testimonial dựa trên tên
-  const getAvatar = (name: string) => {
+  // Map avatar và style cho mỗi người dựa trên tên
+  const getAvatarConfig = (name: string) => {
     const avatarMap: { [key: string]: { src: string; style?: React.CSSProperties } } = {
       'Dương Quỳnh': { src: '../../assets/Mr.webp' },
-      'Nguyễn Đức Đông': { src: '../../assets/kryp_boss.webp', style: { transform: 'scale(1.6) translateY(5px)' }},
+      'Nguyễn Đức Đông': { src: '../../assets/image 7.webp' },
       'Ms. Minh Thư': { 
         src: '../../assets/Ms. Minh Thu.webp',
         style: { transform: 'scale(1.8) translateX(10px)' }
       },
-   
     };
     return avatarMap[name] || { src: '../../assets/default.webp' };
   };
@@ -48,17 +46,9 @@ const Customer: React.FC = () => {
     return null;
   }
 
-  // Flatten testimonials thành mảng 1 chiều để Masonry xử lý
-  const allTestimonials = Array.isArray(customerData.testimonials[0]) 
-    ? (customerData.testimonials as Testimonial[][]).flat()
-    : (customerData.testimonials as Testimonial[]);
-
-  // Breakpoint configuration cho Masonry
-  const breakpointColumns = {
-    default: 2,  // 2 cột mặc định
-    1100: 2,     // 2 cột cho màn hình >= 1100px
-    700: 1,      // 1 cột cho màn hình < 700px
-  };
+  // Chia testimonials thành 2 cột (chẵn và lẻ)
+  const column1 = customerData.testimonials.filter((_, i) => i % 2 === 0);
+  const column2 = customerData.testimonials.filter((_, i) => i % 2 === 1);
 
   return (
     <section className="testimonials" id="customer">
@@ -72,40 +62,69 @@ const Customer: React.FC = () => {
             {customerData.subtitle}
           </p>
         </div>
-        
-        <Masonry
-          breakpointCols={breakpointColumns}
-          className="testimonials__grid"
-          columnClassName="testimonials__column"
-        >
-          {allTestimonials.map((testimonial, index) => (
-            <article key={index} className="testimonials__card">
-              <div className="testimonials__content">
-                {testimonial.heading && (
-                  <h3 className="testimonials__heading">{testimonial.heading}</h3>
-                )}
-                <p className={testimonial.heading ? "testimonials__quote--small" : "testimonials__quote"}>
-                  {testimonial.quote}
-                </p>
-              </div>
-              <div className="testimonials__author">
-                <div className="testimonials__avatar">
-                  <img 
-                    src={getAvatar(testimonial.name).src} 
-                    alt={testimonial.name}
-                    style={getAvatar(testimonial.name).style}
-                  />
-                </div>
-                <div className="testimonials__author-info">
-                  <div className="testimonials__name">{testimonial.name}</div>
-                  <div className="testimonials__position">{testimonial.position}</div>
-                </div>
-              </div>
-            </article>
-          ))}
-        </Masonry>
+        <div className="testimonials__grid">
+          <div className="testimonials__column">
+            {column1.map((testimonial, index) => {
+              const avatarConfig = getAvatarConfig(testimonial.name);
+              return (
+                <article key={index} className="testimonials__card">
+                  <div className="testimonials__content">
+                    {testimonial.heading && (
+                      <h3 className="testimonials__heading">{testimonial.heading}</h3>
+                    )}
+                    <p className={testimonial.heading ? "testimonials__quote--small" : "testimonials__quote"}>
+                      {testimonial.quote}
+                    </p>
+                  </div>
+                  <div className="testimonials__author">
+                    <div className="testimonials__avatar">
+                      <img 
+                        src={avatarConfig.src} 
+                        alt={testimonial.name}
+                        style={avatarConfig.style}
+                      />
+                    </div>
+                    <div className="testimonials__author-info">
+                      <div className="testimonials__name">{testimonial.name}</div>
+                      <div className="testimonials__position">{testimonial.position}</div>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+          <div className="testimonials__column">
+            {column2.map((testimonial, index) => {
+              const avatarConfig = getAvatarConfig(testimonial.name);
+              return (
+                <article key={index} className="testimonials__card">
+                  <div className="testimonials__content">
+                    {testimonial.heading && (
+                      <h3 className="testimonials__heading">{testimonial.heading}</h3>
+                    )}
+                    <p className={testimonial.heading ? "testimonials__quote--small" : "testimonials__quote"}>
+                      {testimonial.quote}
+                    </p>
+                  </div>
+                  <div className="testimonials__author">
+                    <div className="testimonials__avatar">
+                      <img 
+                        src={avatarConfig.src} 
+                        alt={testimonial.name}
+                        style={avatarConfig.style}
+                      />
+                    </div>
+                    <div className="testimonials__author-info">
+                      <div className="testimonials__name">{testimonial.name}</div>
+                      <div className="testimonials__position">{testimonial.position}</div>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
       </div>
-
     </section>
   );
 };
