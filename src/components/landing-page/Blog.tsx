@@ -32,7 +32,7 @@ const Blog: React.FC = () => {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('https://metapress.ai/blog/wp-json/wp/v2/posts?per_page=10&_embed&_fields=id,link,title,excerpt,date,_embedded.wp:featuredmedia');
+      const res = await fetch('https://metapress.ai/blog/wp-json/wp/v2/posts?_embed&per_page=3');
       const data = await res.json();
       const posts = data.map((p: any) => ({
         title: p.title.rendered,

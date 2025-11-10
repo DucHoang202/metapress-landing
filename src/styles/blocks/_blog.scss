@@ -94,6 +94,14 @@
         align-self: stretch;
         aspect-ratio: 384.00/250.97;
         display: block;
+        img {
+width: auto !important;
+// align-self: stretch;
+display: block !important;
+aspect-ratio: 280.00/183.00 !important;
+object-fit: cover !important;
+height: 242.69px;
+}
     }
     &__card {
         overflow: hidden;
@@ -243,21 +251,7 @@ letter-spacing: -0.48px;
 &__right {
     width: 100%;
 }
-&__image {
-        height: 183.002px;
-max-width: 474.564px;
-max-height: 310.164px;
-   align-self: stretch;
-   width: 100%;
 
-img {
-width: auto;
-height: 100%;
-align-self: stretch;
-display: block;
-aspect-ratio: 280.00/183.00;
-}
-}
     .last {
         margin-right: 16px;
     }

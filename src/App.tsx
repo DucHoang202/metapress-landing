@@ -19,6 +19,7 @@ function Home() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ maxWidth: 1023});
   const displayUnlock = useMediaQuery({ maxWidth: 1262});
+  const formatHeader = useMediaQuery({ maxWidth: 1035});
   
   useEffect(() => {
     const setAppWidth = () => {
@@ -41,7 +42,7 @@ function Home() {
 
 
  <LanguageDropdown/>
- { isTablet ? <HeaderMobile/> : <Header/> }
+ { formatHeader ? <HeaderMobile/> : <Header/> }
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
         <Sponsor/>
