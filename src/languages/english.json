@@ -22,40 +22,40 @@
       "button": "Request Demo"
     },
     {
-      "section": "customer",
-      "title": "Trust Built <br> on Real Operational Efficiency",
-      "subtitle": "Every testimonial is proof of the operational efficiency that MetaPress delivers.",
-      "testimonials": [
-        [
-          {
-            "heading": "",
-            "quote": "MetaPress amazed us with how well it understands the sports journalism profession. From data aggregation, editing, to publishing — everything has become streamlined. Most importantly, MetaPress gives us more time to focus on content — exploring new perspectives, telling deeper stories, and nurturing the true spirit of sports journalism.",
-            "name": "Dương Quỳnh",
-            "position": "Content Team Lead, Webthethao"
-          },
-          {
-            "heading": "Seamless Integration, Instant Results",
-            "quote": "Integrating NexaAI into our legacy systems was effortless. Within days we automated critical workflows, reduced errors, and freed our team to focus on strategic initiatives. Simply outstanding.",
-            "name": "Priya Kumar",
-            "position": "VP of Operations, Meridian Financial"
-          }
-        ],
-        [
-          {
-            "heading": "",
-            "quote": "As someone creating financial analysis content — a highly specialized field — I used to think AI couldn’t help at all. But I was wrong. MetaPress acts like a talented assistant, helping me organize scattered ideas into clear, engaging stories. From the very first video on my new channel, with MetaPress’s support, it reached massive views and watch hours, turning my channel into a YouTube Partner right after the first release.",
-            "name": "Ms. Minh Thư",
-            "position": "Host, Thư's Show – Financial & Business News Channel"
-          },
-          {
-            "heading": "Scalable AI That Grows with Us",
-            "quote": "As a fast-growing startup, we needed an AI partner that could scale. NexaAI's modular platform expanded alongside our business—delivering enterprise-grade features.",
-            "name": "Carlos Ramirez",
-            "position": "CEO, NovaSolutions"
-          }
-        ]
-      ]
+  "section": "blog",
+  "title": "Blog",
+  "subtitle": "MetaPress Insights",
+  "description": "The latest updates on AI, digital transformation, and technology in journalism — automatically produced by MetaPress for our readers every day.",
+  "button": {
+    "text": "Read more"
+  }
+},
+
+{
+  "section": "customer",
+  "title": "Trust Built <br> on Real Operational Results",
+  "subtitle": "Each story is a testament to the operational efficiency that MetaPress delivers.",
+  "testimonials": [
+    {
+      "heading": "",
+      "quote": "MetaPress amazed us with how deeply it understands the world of sports journalism. From data aggregation to editing and publishing, everything is streamlined. Most importantly, MetaPress gives us more time to focus on the content itself — to find new perspectives, tell deeper stories, and nurture the true spirit of sports.",
+      "name": "Dương Quỳnh",
+      "position": "Content Team Lead, Webthethao"
     },
+    {
+      "heading": "",
+      "quote": "What we appreciate most about MetaPress is its deep understanding of our industry. It truly understands the crypto and blockchain world better than any platform we’ve used. MetaPress keeps up with the speed of crypto news while helping our team manage a massive flow of market updates and research every day — faster and with better quality than ever before.",
+      "name": "Nguyễn Đức Đông",
+      "position": "Content Director, Kryptonomy"
+    },
+    {
+      "heading": "",
+      "quote": "As someone who creates financial analysis content — a highly specialized field — I used to think AI couldn’t really help. But I was wrong. MetaPress acts like a skilled assistant, helping me organize messy thoughts and ideas into a coherent, engaging story. Right from the first video when my channel launched, thanks to MetaPress’s support, it achieved massive views and thousands of watch hours, allowing my channel to become a YouTube Partner after just one video.",
+      "name": "Ms. Minh Thư",
+      "position": "Host, Thư's Show – Financial & Business News Channel"
+    }
+  ]
+},
 {
   "section": "feature",
   "title": "The Newsroom OS",
@@ -202,31 +202,61 @@
       "subtitle": "Empower your newsroom with AI — operate more flexibly, save more, and produce faster every day.",
       "button": "Contact Now"
     },
-    {
-      "section": "footer",
-      "subtitle": "The AI Operating System for the Newsroom of the Future",
-      "links": [
-        { "text": "Solutions" },
-        { "text": "Pricing" },
-        { "text": "Resources" },
-        { "text": "About" },
-        { "text": "Contact" }
-      ],
-      "socials": [
-        { "text": "Instagram" },
-        { "text": "YouTube" },
-        { "text": "Twitter" },
-        { "text": "LinkedIn" }
-      ],
-      "contact": {
-        "email": "contact@metapress.ai",
-        "phone": "+91 9876543210"
-      },
-      "bottom": {
-        "company": "©2025 All Rights Reserved by MetaPress",
-        "terms": "Terms of Service",
-        "privacy": "Privacy Policy"
-      }
-    }
+{
+  "section": "footer",
+  "subtitle": "The AI Operating System for the Newsroom of the Future",
+  "links": [
+    { "text": "Solutions" },
+    { "text": "Pricing" },
+    { "text": "Resources" },
+    { "text": "About Us" },
+    { "text": "Contact" }
+  ],
+  "socials": [
+    { "text": "Instagram" },
+    { "text": "YouTube" },
+    { "text": "Twitter" },
+    { "text": "LinkedIn" }
+  ],
+  "contact": {
+    "email": "contact@metapress.ai",
+    "phone": "+91 9876543210"
+  },
+  "bottom": {
+    "company": "©2025 All Rights Reserved by MetaPress",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  }
+},
+{
+  "section": "register_form",
+  "title": "Contact MetaPress",
+  "subtitle": "Apply AI to make your newsroom more flexible, cost-effective, and capable of producing content faster every day.",
+  "contact": {
+    "hotline_label": "Hotline",
+    "hotline_value": "094 104 9400",
+    "email_label": "Email",
+    "email_value": "contact@metapress.ai"
+  },
+  "form": {
+    "placeholders": {
+      "name": "Full Name*",
+      "email": "Email*",
+      "phone": "Phone Number",
+      "company": "Company Name*",
+      "position": "Your Position",
+      "note": "Note"
+    },
+    "button": "Submit"
+  },
+  "toast": {
+    "error_required": "Please fill in all required fields",
+    "error_email": "Invalid email format",
+    "error_submit": "An error occurred while submitting!",
+    "success_submit": "Information submitted successfully!"
+  }
+}
+
+
   ]
 }
