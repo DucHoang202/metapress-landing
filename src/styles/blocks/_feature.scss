@@ -14,6 +14,8 @@ padding-bottom: 64px;
 flex-direction: column;
 align-items: center;
 gap: 16px;
+padding-left: 16px;
+padding-right: 16px;
 
     @media (max-width: 767px) {
 padding-top: 32px;
@@ -68,16 +70,13 @@ padding: 32px 0;
 flex-direction: column;
 align-items: flex-start;
 gap: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
+
 @media (min-width: 768px) and (max-width: 1023px) {
     gap: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
+
 }
 @media (max-width: 767px) {
-    padding-left: 16px;
-    padding-right: 16px;
+
     gap: 24px;
 }
 @media (min-width: 1024px) {

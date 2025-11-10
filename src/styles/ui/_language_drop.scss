@@ -18,9 +18,12 @@
   & > * {
     pointer-events: auto;
   }
-  @media (max-width: 1024px) {
+  @media (min-width: 574px) and ( max-width: 1024px) {
     top: 20px;
     padding-right: 210px;
+}
+@media (max-width: 574px) {
+  display: none !important;
 }
 
 }
@@ -29,7 +32,14 @@
 }
 .header__dropdown {
   display: inline-block;
+  &__language-placeholder {
+    width: 116px;
+    @media (max-width: 574px) {
+  display: none !important;
 
+}
+
+  }
   &-button {
     background: #f5f5f5;
     border: none;
@@ -41,7 +51,7 @@
     margin-left: auto;
     height: 46px;
     border-radius: 6px;
-  @media (max-width: 1024px) {
+  @media (min-width: 574px) and ( max-width: 1024px)   {
             font-family: var(--font-apparat);
             font-size: 14px;
             height: 34px;

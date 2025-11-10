@@ -1,4 +1,7 @@
 .header-mobile {
+    position: fixed;
+    z-index: 9998;
+    width: 100%;
     &__container {
         display: flex;
         width: 100%;
@@ -45,7 +48,6 @@
         border: none;
         cursor: pointer;
         transition: all 0.3s ease;
-
         &:hover {
             box-shadow: 0 0 12px 2px #FF89D4 inset;
             transform: scale(1.02);
@@ -58,8 +60,8 @@
     
     &-right {
         display: flex;
-        gap: 24px;
         align-items: center;
+        gap: 24px;
     }
     
     &__burger-menu {
@@ -174,7 +176,7 @@
 }
 
 /* Responsive */
-@media (max-width: 375px) {
+@media (max-width: 574px) {
     .header-mobile {
         &__icon-container {
             width: 150px;

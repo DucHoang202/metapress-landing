@@ -94,6 +94,7 @@ const HeaderMobile: React.FC = () => {
           />
         </div>
         <div className="header-mobile-right">
+          <div className="header-mobile__language-placeholder"></div>
           <button
             className="header-mobile__demo-button"
             onClick={handleDemoClick}
