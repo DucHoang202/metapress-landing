@@ -41,7 +41,7 @@ function Home() {
 
 
  <LanguageDropdown/>
- { isTablet ? <Header/> : <HeaderMobile/> }
+ { isTablet ? <HeaderMobile/> : <Header/> }
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
         <Sponsor/>

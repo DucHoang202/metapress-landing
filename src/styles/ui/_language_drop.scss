@@ -10,14 +10,24 @@
 }
 .header__dropdown {
     position: fixed;
-    top: 150px;
+    top: 27px;
+        z-index: 9999;
+  pointer-events: none;
+  padding-right: calc(245px + 32px);
+  width: 100%;
+  & > * {
+    pointer-events: auto;
+  }
+  @media (max-width: 1024px) {
+    top: 20px;
+    padding-right: 210px;
+}
 
 }
 .header__dropdown__button-container {
   width: 163px;
 }
 .header__dropdown {
-  position: relative;
   display: inline-block;
 
   &-button {
@@ -28,6 +38,15 @@
     display: flex;
     align-items: center;
     gap: 6px;
+    margin-left: auto;
+    height: 46px;
+    border-radius: 6px;
+  @media (max-width: 1024px) {
+            font-family: var(--font-apparat);
+            font-size: 14px;
+            height: 34px;
+
+}
   }
 
   &-menu {

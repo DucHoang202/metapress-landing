@@ -71,7 +71,7 @@ gap: 32px;
     padding-left: 16px;
     padding-right: 16px;
 @media (min-width: 768px) and (max-width: 1023px) {
-    gap: 32px;
+    gap: 24px;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -88,8 +88,8 @@ gap: 32px;
     width: 100% ;
     display: flex;
 gap: 32px;
-@media (min-width: 768px) and (max-width: 1023px) {
-    gap: 32px;
+@media(max-width: 1023px) {
+    gap: 24px;
 }
 
 .item {
