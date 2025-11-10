@@ -48,10 +48,15 @@ const HeroMobile: React.FC = () => {
                 </svg>
               </div>
             </div>
-            <div className="title">{heroData.title}</div>
+            <div className="title" dangerouslySetInnerHTML={{ __html: heroData.title }} />
             <div className="subtitle">{heroData.subtitle}</div>
+    
           </div>
-        </div>
+       <div className="hero-mobile__image">
+  <img src="../../../assets/hero-bot.svg" alt="Hero Image" />
+</div>
+</div>
+
         <button className="hero_mobile__button" onClick={handleButtonClick}>
           <div className="text">{heroData.button}</div>
           <div className="arrow">

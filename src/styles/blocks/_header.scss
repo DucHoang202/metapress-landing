@@ -34,6 +34,9 @@ flex-wrap: wrap;
 height: 74px;
 }
     }
+    .header-section__right {
+        display: flex;
+    }
     &__icon-container {
  display: flex;
 padding-right: 12.866px;

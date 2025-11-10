@@ -96,9 +96,11 @@ const Header: React.FC = () => {
             );
           })}
         </div>
+        <div className="header-section__right">
         <div className="header__dropdown__button-container">
           </div>
         <DemoButton href="/form" text={headerData.button.text}/>
+      </div>
       </div>
     </section>
   );
