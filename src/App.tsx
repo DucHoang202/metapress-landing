@@ -9,7 +9,7 @@ import './styles/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react';
-
+import LanguageDropdown from './components/ui/LanguageDropdown.tsx';
 
 function getWidthExcludesScrollbar(): number {
   return document.documentElement.clientWidth;
@@ -40,7 +40,7 @@ function Home() {
     <div className='App'>
 
 
- {/* <LanguageDropdown/> */}
+ <LanguageDropdown/>
  <Header/>
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
