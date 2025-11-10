@@ -12,13 +12,14 @@ padding-bottom: 64px;
 flex-direction: column;
 align-items: center;
 gap: 32px;
-      @media (max-width: 812px) {
+      @media (max-width: 768px) {
 display: flex;
 width: 100%;
 padding: 0 16px 32px 16px;
 flex-direction: column;
 align-items: center;
 gap: 24px;
+margin-top: 64px;
     }
 @media (min-width: 768px) and (max-width: 1023px) {
 }

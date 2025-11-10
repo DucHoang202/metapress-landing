@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import vietnamese from "../../languages/vietnamese.json";
 import english from "../../languages/english.json";
-// import french from "../../languages/french.json";
-// import german from "../../languages/german.json";
+import french from "../../languages/french.json";
+import german from "../../languages/german.json";
 
 interface Language {
   code: string;
@@ -34,11 +34,11 @@ function loadLanguage(lang: string): void {
       break;
     case "fr":
       // data = french;
-      data = english; // fallback tạm thời
+      data = french; // fallback tạm thời
       break;
     case "de":
       // data = german;
-      data = english; // fallback tạm thời
+      data = german; // fallback tạm thời
       break;
     default:
       data = english;
