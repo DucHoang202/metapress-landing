@@ -101,7 +101,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
   }, []);
 
   return (
-    <div className="header__dropdown" ref={dropdownRef}>
+ <div className="header__dropdown" ref={dropdownRef}>
       <button
         className="header__dropdown-button"
         onClick={() => setOpen((prev) => !prev)}
@@ -110,35 +110,16 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
       </button>
 
       {open && (
-        <div
-          className="header__dropdown-menu"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            background: "white",
-            border: "1px solid #ccc",
-            borderRadius: "8px",
-            padding: "8px",
-            position: "absolute",
-            zIndex: 1000,
-            minWidth: "160px",
-          }}
-        >
+        <div className="header__dropdown-menu">
           <input
             type="text"
             placeholder="Tìm ngôn ngữ..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            style={{
-              padding: "6px 8px",
-              borderRadius: "6px",
-              border: "1px solid #ccc",
-              marginBottom: "6px",
-              outline: "none",
-            }}
+            className="header__dropdown-search"
           />
 
-          <div style={{ maxHeight: "150px", overflowY: "auto" }}>
+          <div className="header__dropdown-list">
             {filteredLanguages.length > 0 ? (
               filteredLanguages.map((lang) => (
                 <button
@@ -149,25 +130,12 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
                       ? "header__dropdown-item--active"
                       : ""
                   }`}
-                  style={{
-                    textAlign: "left",
-                    padding: "6px 8px",
-                    background:
-                      currentLang === lang.code ? "#e6f0ff" : "transparent",
-                    border: "none",
-                    cursor: "pointer",
-                    width: "100%",
-                    borderRadius: "6px",
-                    zIndex: 3001,
-                  }}
                 >
                   {lang.flag} {lang.name}
                 </button>
               ))
             ) : (
-              <div style={{ padding: "6px", color: "#888" }}>
-                Không tìm thấy
-              </div>
+              <div className="header__dropdown-empty">Không tìm thấy</div>
             )}
           </div>
         </div>
