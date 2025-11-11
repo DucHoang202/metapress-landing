@@ -40,8 +40,10 @@ function Home() {
   return (
     <div className='App'>
 
+<LanguageDropdown/>
+ {/* { formatHeader ? <HeaderMobile/> : <Header DropdownComponent={LanguageDropdown}/> } */}
+  { formatHeader ? <HeaderMobile/> : <Header /> }
 
- { formatHeader ? <HeaderMobile/> : <Header DropdownComponent={LanguageDropdown}/> }
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
         <Sponsor/>

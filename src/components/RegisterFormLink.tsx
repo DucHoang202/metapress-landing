@@ -9,7 +9,8 @@ function RegisterFormLink() {
     return (
         <div className="App">
             <LanguageDropdown/>
-<Header DropdownComponent={LanguageDropdown}/>
+            <Header/>
+{/* <Header DropdownComponent={LanguageDropdown}/> */}
             <main>
                 <RegisterForm/>
             </main>
