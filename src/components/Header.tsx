@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import DemoButton from "./ui/DemoButton";
-import LanguageDropdown from "./ui/LanguageDropdown";
+//import LanguageDropdown from "./ui/LanguageDropdown";
 interface HeaderData {
   section: string;
   links: string[];
@@ -104,8 +104,7 @@ const Header: React.FC = () => {
         <div className="header-section__right">
         <div className="header__dropdown__button-container">
           </div>
-          {/* <DropdownComponent/> */}
-          <LanguageDropdown/>
+          {/* <LanguageDropdown/> */}
         <DemoButton href="/form" text={headerData.button.text}/>
       </div>
       </div>
