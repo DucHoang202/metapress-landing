@@ -5,6 +5,7 @@ interface SponsorData {
     title: string,
 }
 const Sponsor: React.FC = () => {
+    console.log("Rendering Sponsor component");
     const [title, setTitle] = useState<SponsorData | null>(null);
     useEffect(() => {
         const languageData = (window as any).language;
