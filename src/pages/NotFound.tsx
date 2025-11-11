@@ -1,13 +1,12 @@
 import React from 'react';
 import Header from '../components/Header.tsx';
 import Footer from '../components/Footer.tsx';
-
+import LanguageDropdown from '../components/ui/LanguageDropdown.tsx';
 const NotFound: React.FC = () => {
   return (
     
     <div className="notfound-page">
-      <Header />
-      <main>
+<Header DropdownComponent={LanguageDropdown}/>      <main>
         <section className="section-tight">
           <div className="container">
             <div className="notfound__inner">

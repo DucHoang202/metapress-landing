@@ -41,8 +41,7 @@ function Home() {
     <div className='App'>
 
 
- <LanguageDropdown/>
- { formatHeader ? <HeaderMobile/> : <Header/> }
+ { formatHeader ? <HeaderMobile/> : <Header DropdownComponent={LanguageDropdown}/> }
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
         <Sponsor/>

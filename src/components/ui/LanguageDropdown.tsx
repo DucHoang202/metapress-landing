@@ -33,11 +33,9 @@ function loadLanguage(lang: string): void {
       data = english;
       break;
     case "fr":
-      // data = french;
-      data = french; // fallback tạm thời
+      data = french; 
       break;
     case "de":
-      // data = german;
       data = german; // fallback tạm thời
       break;
     default:
