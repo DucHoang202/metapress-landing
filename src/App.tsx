@@ -40,11 +40,10 @@ function Home() {
   return (
     <div className='App'>
 
-<div className="header-wrapper">
 { formatHeader ? <HeaderMobile/> : <Header/> }
+<header>
   <LanguageDropdown />
-</div>
-
+</header>
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
         <Sponsor/>

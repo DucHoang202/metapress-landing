@@ -1,4 +1,4 @@
-.header-wrapper { position: relative; }
+.header-wrapper { position: fixed; }
 .header__dropdown-item--active {
   background-color: rgba(59, 130, 246, 0.1);
   color: #3b82f6;
@@ -15,7 +15,7 @@
         z-index: 9999;
   pointer-events: none;
   padding-right: calc(245px + 32px);
-  width: auto;
+  width: 100%;
   & > * {
     pointer-events: auto;
   }
