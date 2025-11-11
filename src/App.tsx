@@ -43,7 +43,6 @@ function Home() {
 
 
  { formatHeader ? <HeaderMobile/> : <Header/> }
-  <LanguageDropdown/>
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
         <Sponsor/>
