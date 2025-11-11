@@ -9,7 +9,7 @@ import './styles/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react';
-//import LanguageDropdown from './components/ui/LanguageDropdown.tsx';
+import LanguageDropdown from './components/ui/LanguageDropdown.tsx';
 import HeaderMobile from './components/HeaderMobile.tsx';
 function getWidthExcludesScrollbar(): number {
   return document.documentElement.clientWidth;
@@ -40,9 +40,11 @@ function Home() {
   return (
     <div className='App'>
 
+<div className="header-wrapper">
+{ formatHeader ? <HeaderMobile/> : <Header/> }
+  <LanguageDropdown />
+</div>
 
-
- { formatHeader ? <HeaderMobile/> : <Header/> }
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
         <Sponsor/>

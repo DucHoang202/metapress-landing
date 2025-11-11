@@ -95,7 +95,11 @@ const Footer: React.FC = () => {
       />
     </svg>
   );
-
+                        const arrow_gray = (            <div className="arrow">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+  <path d="M2.25 9.75L9.75 2.25M9.75 2.25H4.125M9.75 2.25V7.875" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>);
   return (
     <section className="footer">
       <div className="upper">
@@ -150,11 +154,11 @@ const Footer: React.FC = () => {
           <div className="policy">
             <div className="item">
               <div className="text">{data.bottom.terms}</div>
-              <div className="arrow">{arrow}</div>
+              <div className="arrow">{arrow_gray}</div>
             </div>
             <div className="item">
               <div className="text">{data.bottom.privacy}</div>
-              <div className="arrow">{arrow}</div>
+              <div className="arrow">{arrow_gray}</div>
             </div>
           </div>
         </div>
