@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 
+import vietnamese from "../../languages/vietnamese.json";
+import english from "../../languages/english.json";
+// import french from "../../languages/french.json";
+// import german from "../../languages/german.json";
+
 interface Language {
   code: string;
   name: string;
@@ -13,7 +18,37 @@ const languages: Language[] = [
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
 ];
 
-const LanguageDropdown: React.FC = () => {
+
+function loadLanguage(lang: string): void {
+  let data;
+
+  switch (lang) {
+    case "vi":
+      data = vietnamese;
+      break;
+    case "en":
+      data = english;
+      break;
+    case "fr":
+      // data = french;
+      data = english; // fallback tạm thời
+      break;
+    case "de":
+      // data = german;
+      data = english; // fallback tạm thời
+      break;
+    default:
+      data = english;
+      break;
+  }
+
+  (window as any).language = data;
+}
+
+const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
+  currentLang: propLang,
+  onChange: propOnChange,
+}) => {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [currentLang, setCurrentLang] = useState(() => {
