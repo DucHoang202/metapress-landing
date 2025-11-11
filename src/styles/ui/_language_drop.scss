@@ -9,30 +9,13 @@
   content: "✓ ";
   margin-right: 4px;
 }
-.header__dropdown {
-    position: fixed;
-    top: 27px;
-        z-index: 9999;
-  pointer-events: none;
-  padding-right: calc(245px + 32px);
-  width: 100%;
-  & > * {
-    pointer-events: auto;
-  }
-  @media (min-width: 574px) and ( max-width: 1024px) {
-    top: 20px;
-    padding-right: 210px;
-}
-@media (max-width: 574px) {
-  display: none !important;
-}
 
-}
 .header__dropdown__button-container {
   width: 148px;
 }
 .header__dropdown {
-  display: inline-block;
+  // display: inline-block;
+  margin-right: 24px;
   &__language-placeholder {
     width: 116px;
     @media (max-width: 574px) {
