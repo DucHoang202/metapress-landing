@@ -151,18 +151,16 @@ const Header: React.FC = () => {
     }
   };
 
-  const getLinkConfig = (linkText: string) => {
-    const linkMap: { [key: string]: { href: string; target: string } } = {
-      Solutions: { href: "#solution", target: "#solution" },
-      "Giải pháp": { href: "#solution", target: "#solution" },
-      Benefits: { href: "#benefit", target: "#benefit" },
-      "Lợi ích": { href: "#benefit", target: "#benefit" },
-      Customers: { href: "#customer", target: "#customer" },
-      "Khách hàng": { href: "#customer", target: "#customer" },
-      Contact: { href: "/form", target: "" },
-      "Liên hệ": { href: "/form", target: "" },
-    };
-    return linkMap[linkText] || { href: "#", target: "" };
+  const getLinkConfig = (index: number) => {
+    // Map theo thứ tự: 0-Solutions, 1-Benefits, 2-Customers, 3-Blog, 4-Contact
+    const linkConfigs = [
+      { href: "#solution", target: "#solution" },
+      { href: "#benefit", target: "#benefit" },
+      { href: "#customer", target: "#customer" },
+      { href: "#blog", target: "#blog" },
+      { href: "/form", target: "" },
+    ];
+    return linkConfigs[index] || { href: "#", target: "" };
   };
 
   const currentLanguage =
@@ -187,7 +185,7 @@ const Header: React.FC = () => {
 
         <div className="header-section__link-container">
           {headerData.links.map((linkText, index) => {
-            const { href, target } = getLinkConfig(linkText);
+            const { href, target } = getLinkConfig(index);
             return (
               <a
                 key={index}

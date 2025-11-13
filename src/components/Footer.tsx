@@ -37,9 +37,9 @@ const Footer: React.FC = () => {
     subtitle: "The AI Operating System for the Newsroom of the Future",
     links: [
       { text: "Solutions" },
-      { text: "Pricing" },
-      { text: "Resources" },
-      { text: "About Us" },
+      { text: "Benefits" },
+      { text: "Customers" },
+      { text: "Blog" },
       { text: "Contact" },
     ],
     socials: [
@@ -76,6 +76,68 @@ const Footer: React.FC = () => {
     }
   }, []);
 
+  // Listen for language changes
+  useEffect(() => {
+    const handleLanguageChange = () => {
+      const languageData = (window as any).language;
+      if (languageData?.data) {
+        const footer = languageData.data.find(
+          (item: any) => item.section === "footer"
+        );
+        if (footer) {
+          setFooterData(footer);
+        }
+      }
+    };
+
+    window.addEventListener("languageChange", handleLanguageChange);
+    return () => window.removeEventListener("languageChange", handleLanguageChange);
+  }, []);
+
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
+    e.preventDefault();
+
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+      window.history.pushState(null, "", targetId);
+    } else {
+      // Nếu không tìm thấy element, chuyển hướng đến trang
+      window.location.href = "/" + targetId;
+    }
+  };
+
+  const handleNavigation = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (href.startsWith("#")) {
+      handleSmoothScroll(e, href);
+    } else {
+      // Đối với các link như /form
+      e.preventDefault();
+      window.location.href = href;
+    }
+  };
+
+  const getLinkConfig = (index: number) => {
+    // Map theo thứ tự: 0-Solutions, 1-Benefits, 2-Customers, 3-Blog, 4-Contact
+    const linkConfigs = [
+      { href: "#solution", target: "#solution" },  // index 0
+      { href: "#benefit", target: "#benefit" },    // index 1
+      { href: "#customer", target: "#customer" },  // index 2
+      { href: "#blog", target: "#blog" },          // index 3
+      { href: "/form", target: "" },               // index 4
+    ];
+    return linkConfigs[index] || { href: "#", target: "" };
+  };
+
   const data = footerData || defaultData;
 
   const arrow = (
@@ -95,11 +157,15 @@ const Footer: React.FC = () => {
       />
     </svg>
   );
-                        const arrow_gray = (            <div className="arrow">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-  <path d="M2.25 9.75L9.75 2.25M9.75 2.25H4.125M9.75 2.25V7.875" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                    </div>);
+  
+  const arrow_gray = (
+    <div className="arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+        <path d="M2.25 9.75L9.75 2.25M9.75 2.25H4.125M9.75 2.25V7.875" stroke="#888" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </div>
+  );
+
   return (
     <section className="footer">
       <div className="upper">
@@ -111,17 +177,25 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="right">
-          {/* Links */}
+          {/* Links - CỘT ĐẦU TIÊN với navigation */}
           <div className="col">
-            {data.links.map((link, i) => (
-              <a key={i} className="item" href="#">
-                <div className="text">{link.text}</div>
-                <div className="arrow">{arrow}</div>
-              </a>
-            ))}
+            {data.links.map((link, i) => {
+              const { href } = getLinkConfig(i);
+              return (
+                <a 
+                  key={i} 
+                  className="item" 
+                  href={href}
+                  onClick={(e) => handleNavigation(e, href)}
+                >
+                  <div className="text">{link.text}</div>
+                  <div className="arrow">{arrow}</div>
+                </a>
+              );
+            })}
           </div>
 
-          {/* Socials */}
+          {/* Socials - Không có navigation */}
           <div className="col">
             {data.socials.map((social, i) => (
               <a key={i} className="item" href="#">
@@ -131,7 +205,7 @@ const Footer: React.FC = () => {
             ))}
           </div>
 
-          {/* Contact */}
+          {/* Contact - Không có navigation */}
           <div className="col">
             <div className="item">
               <div className="text">{data.contact.email}</div>

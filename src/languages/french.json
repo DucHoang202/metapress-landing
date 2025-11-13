@@ -7,6 +7,7 @@
         "Solutions",
         "Avantages",
         "Clients",
+        "Blog",
         "Contact"
       ],
       "button": {
@@ -206,9 +207,9 @@
       "subtitle": "Le système d’exploitation IA pour la salle de rédaction du futur",
       "links": [
         { "text": "Solutions" },
-        { "text": "Tarification" },
-        { "text": "Ressources" },
-        { "text": "À propos" },
+        { "text": "Avantages" },
+        { "text": "Clients" },
+        { "text": "Blog" },
         { "text": "Contact" }
       ],
       "socials": [

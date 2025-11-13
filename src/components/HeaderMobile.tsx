@@ -153,18 +153,16 @@ const HeaderMobile: React.FC = () => {
     }
   };
 
-  const getLinkConfig = (linkText: string) => {
-    const linkMap: { [key: string]: { href: string; target: string } } = {
-      Solutions: { href: "#solution", target: "#solution" },
-      "Giải pháp": { href: "#solution", target: "#solution" },
-      Benefits: { href: "#benefit", target: "#benefit" },
-      "Lợi ích": { href: "#benefit", target: "#benefit" },
-      Customers: { href: "#customer", target: "#customer" },
-      "Khách hàng": { href: "#customer", target: "#customer" },
-      Contact: { href: "/form", target: "" },
-      "Liên hệ": { href: "/form", target: "" },
-    };
-    return linkMap[linkText] || { href: "#", target: "" };
+  const getLinkConfig = (index: number) => {
+    // Map theo thứ tự: 0-Solutions, 1-Benefits, 2-Customers, 3-Blog, 4-Contact
+    const linkConfigs = [
+      { href: "#solution", target: "#solution" },
+      { href: "#benefit", target: "#benefit" },
+      { href: "#customer", target: "#customer" },
+      { href: "#blog", target: "#blog" },
+      { href: "/form", target: "" },
+    ];
+    return linkConfigs[index] || { href: "#", target: "" };
   };
 
   const handleStateChange = (state: { isOpen: boolean }) => {
@@ -217,30 +215,8 @@ const HeaderMobile: React.FC = () => {
                 </div>
               }
             >
-              {/* Navigation Links */}
-              {headerData?.links.map((linkText, index) => {
-                const { href, target } = getLinkConfig(linkText);
-                return (
-                  <a
-                    key={index}
-                    className="menu-item"
-                    href={href}
-                    onClick={
-                      target
-                        ? (e) => handleSmoothScroll(e, target)
-                        : () => {
-                            navigate(href);
-                            closeMenu();
-                          }
-                    }
-                  >
-                    {linkText}
-                  </a>
-                );
-              })}
-
               {/* Language Dropdown inside Burger Menu */}
-              <div className="menu-item menu-item--language" ref={dropdownRef}>
+              <div className="menu-item menu-item--language" ref={dropdownRef} style={{ marginLeft: 0}}>
                 <button
                   className="header__dropdown-button"
                   onClick={() => setLangDropdownOpen((prev) => !prev)}
@@ -250,14 +226,6 @@ const HeaderMobile: React.FC = () => {
 
                 {langDropdownOpen && (
                   <div className="header__dropdown-menu">
-                    <input
-                      type="text"
-                      placeholder="Tìm ngôn ngữ..."
-                      value={search}
-                      onChange={(e) => setSearch(e.target.value)}
-                      className="header__dropdown-search"
-                    />
-
                     <div className="header__dropdown-list">
                       {filteredLanguages.length > 0 ? (
                         filteredLanguages.map((lang) => (
@@ -280,6 +248,28 @@ const HeaderMobile: React.FC = () => {
                   </div>
                 )}
               </div>
+
+              {/* Navigation Links */}
+              {headerData?.links.map((linkText, index) => {
+                const { href, target } = getLinkConfig(index);
+                return (
+                  <a
+                    key={index}
+                    className="menu-item"
+                    href={href}
+                    onClick={
+                      target
+                        ? (e) => handleSmoothScroll(e, target)
+                        : () => {
+                            navigate(href);
+                            closeMenu();
+                          }
+                    }
+                  >
+                    {linkText}
+                  </a>
+                );
+              })}
             </Menu>
           </div>
         </div>

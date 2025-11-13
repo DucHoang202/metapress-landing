@@ -8,13 +8,17 @@
       "Giải pháp", 
     "Lợi ích", 
      "Khách hàng",
+      "Tri thức",
        "Liên hệ"
     ],
     "button": {
       "text": "Liên hệ demo"
     }
   },
-
+{
+  "section": "sponsor",
+  "title": "Được tin tưởng bởi"
+},
 
     {
       "section": "hero",
@@ -172,9 +176,9 @@
   "subtitle": "Hệ điều hành AI cho tòa soạn tương lai",
   "links": [
     { "text": "Giải pháp" },
-    { "text": "Bảng giá" },
-    { "text": "Tài nguyên" },
-    { "text": "Về chúng tôi" },
+    { "text": "Lợi ích" },
+    { "text": "Khách hàng" },
+    { "text": "Tri thức" },
     { "text": "Liên hệ" }
   ],
   "socials": [

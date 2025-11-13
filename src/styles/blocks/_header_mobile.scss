@@ -125,7 +125,7 @@
     padding: 1.2em 0;
     text-decoration: none;
     color: #FFF;
-    font-family: SVN-Apparat;
+    font-family: SVN-var(--font-apparat);
     font-size: 16px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -133,7 +133,7 @@
 
     &:hover {
         color: #FF37BB;
-        padding-left: 8px;
+        // padding-left: 8px;
     }
 
     &:last-child {

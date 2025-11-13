@@ -7,6 +7,7 @@
         "Solutions",
         "Benefits",
         "Customers",
+        "Blog",
         "Contact"
       ],
       "button": {
@@ -208,9 +209,9 @@
   "subtitle": "The AI Operating System for the Newsroom of the Future",
   "links": [
     { "text": "Solutions" },
-    { "text": "Pricing" },
-    { "text": "Resources" },
-    { "text": "About Us" },
+    { "text": "Benefits" },
+    { "text": "Customers" },
+    { "text": "Blog" },
     { "text": "Contact" }
   ],
   "socials": [

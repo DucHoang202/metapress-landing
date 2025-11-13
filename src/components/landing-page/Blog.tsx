@@ -100,7 +100,7 @@ const Blog: React.FC = () => {
   }
 
   return (
-    <section className="blog">
+    <section className="blog" id="blog">
       <div className="blog__container">
         <div className="blog__header">
           <div className="blog__left">
