@@ -212,13 +212,13 @@ const Header: React.FC = () => {
 
               {open && (
                 <div className="header__dropdown-menu">
-                  <input
+                  {/* <input
                     type="text"
                     placeholder="Tìm ngôn ngữ..."
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     className="header__dropdown-search"
-                  />
+                  /> */}
 
                   <div className="header__dropdown-list">
                     {filteredLanguages.length > 0 ? (

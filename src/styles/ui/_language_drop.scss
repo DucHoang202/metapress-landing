@@ -46,16 +46,23 @@
   }
 
   &-menu {
+    position: absolute;
     display: flex;
     flex-direction: column;
     background: white;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 8px;
-    //position: absolute;
     z-index: 1000;
     width: auto;
     right: 67px;
+    @media (max-width: 1024px) {
+      right: 16px;
+    }
+    @media (min-width: 1024px) {
+      right: 143px;
+      width: 250px;
+    }
   }
 
   &-search {
