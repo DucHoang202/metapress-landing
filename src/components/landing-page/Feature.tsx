@@ -73,9 +73,7 @@ const Feature: React.FC = () => {
   return (
     <section className="feature" id="solution">
       <div className="feature__container">
-        <div className="title">
-   { featureData.title }
-        </div>
+        <div className="title" dangerouslySetInnerHTML={{ __html: featureData.title }} />
         <div className="subtitle">
    { featureData.subtitle }
 

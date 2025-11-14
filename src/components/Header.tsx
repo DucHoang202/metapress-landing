@@ -5,7 +5,7 @@ import vietnamese from "../languages/vietnamese.json";
 import english from "../languages/english.json";
 import french from "../languages/french.json";
 import german from "../languages/german.json";
-
+import japanese from "../languages/japanese.json";
 interface HeaderData {
   section: string;
   links: string[];
@@ -26,7 +26,9 @@ const languages: Language[] = [
   { code: "en", name: "English", flag: "🇬🇧" },
   { code: "fr", name: "Français", flag: "🇫🇷" },
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  { code: "ja", name: "日本語 (Japanese)", flag: "🇯🇵" }
 ];
+
 
 function loadLanguage(lang: string): void {
   let data;
@@ -43,6 +45,9 @@ function loadLanguage(lang: string): void {
       break;
     case "de":
       data = german;
+      break;
+    case "ja":
+      data = japanese;
       break;
     default:
       data = english;

@@ -23,7 +23,11 @@ interface BlogSectionData {
     text: string;
   };
 }
-
+function decodeHTML(str: string) {
+  const txt = document.createElement("textarea");
+  txt.innerHTML = str;
+  return txt.value;
+}
 const Blog: React.FC = () => {
   const swiperRef = useRef<any>(null);
   const cardTitleRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -162,9 +166,9 @@ const Blog: React.FC = () => {
                   </div>
                   <div className="blog__text">
                     <div className="title" ref={(el) => {cardTitleRefs.current[index] = el;}}>
-                      {post.title}
+                      {decodeHTML(post.title)}
                     </div>
-                    <div className="subtitle">{post.excerpt}</div>
+                    <div className="subtitle">{decodeHTML(post.excerpt)}</div>
                   </div>
                 </a>
               </SwiperSlide>

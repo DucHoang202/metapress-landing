@@ -30,7 +30,7 @@
     },
     {
       "section": "feature",
-      "title": "The Newsroom OS",
+      "title": "The Newsroom OS <br> Tự động hoá quy trình báo chí ",
       "subtitle": "Vận hành trên kiến trúc AI Multi-agent chuyên biệt, linh hoạt điều phối để xử lý mọi quy trình nghiệp vụ trong sản xuất báo chí.",
 "featureList": [
   {
@@ -116,13 +116,13 @@
   "testimonials": [
     {
       "quote": "MetaPress khiến chúng tôi ngạc nhiên vì cách nền tảng này hiểu nghề báo thể thao đến vậy. Từ khâu tổng hợp dữ liệu, biên tập, đến xuất bản, mọi thứ đều được tinh gọn. Quan trọng nhất, MetaPress giúp chúng tôi có thêm thời gian đầu tư cho nội dung – tìm những góc nhìn mới, những câu chuyện có chiều sâu và nuôi dưỡng tinh thần thể thao đúng nghĩa.",
-      "name": "Dương Quỳnh",
+      "name": "Mr. Dương Quỳnh",
       "position": "Trưởng nhóm nội dung Webthethao"
     },
     {
       "heading": "",
       "quote": "Điều chúng tôi đánh giá cao nhất ở MetaPress là sự am hiểu sâu sắc về ngành của chúng tôi. Nền tảng này thực sự hiểu rõ thế giới tiền điện tử và blockchain hơn bất kỳ nền tảng nào mà chúng tôi từng sử dụng. MetaPress bắt kịp tốc độ của tin tức crypto, đồng thời giúp đội ngũ của chúng tôi xử lý khối lượng lớn thông tin thị trường và nghiên cứu mỗi ngày, nhanh hơn và chất lượng hơn bao giờ hết.",
-      "name": "Phạm Nguyên Lập",
+      "name": "Mr. Phạm Nguyên Lập",
       "position": "Giám đốc nội dung Kryptonomy"
     },
     {

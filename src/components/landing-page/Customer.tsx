@@ -35,13 +35,14 @@ const Customer: React.FC = () => {
     const avatarMap: { [key: string]: { src: string; style?: React.CSSProperties } } = {
       'Dương Quỳnh': { src: '../../assets/Mr.webp' },
  
-      'Ms. Minh Thư': { 
+      'Minh Thư': { 
         src: '../../assets/Ms. Minh Thu.webp',
         style: { transform: 'scale(1.8) translateX(10px)' }
       },
   'Phạm Nguyên Lập': { src: '../../assets/kryp_boss.webp',  style: { transform: 'scale(1.6) translateY(5px)' } },
     };
-    return avatarMap[name] || { src: '../../assets/default.webp' };
+    const foundKey = Object.keys(avatarMap).find(key => name.toLowerCase().includes(key.toLowerCase()));
+    return foundKey ? avatarMap[foundKey] : { src: '../../assets/default.webp' };
   };
 
   if (!customerData) {

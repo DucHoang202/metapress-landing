@@ -16,7 +16,9 @@
 .header__dropdown {
   // display: inline-block;
   margin-right: 24px;
-  
+      justify-content: flex-end;
+    display: flex;
+    width:auto;
   &__language-placeholder {
     width: 116px;
     @media (max-width: 574px) {
@@ -62,6 +64,7 @@
     @media (min-width: 1024px) {
       right: 143px;
       width: 250px;
+      top: 70px;
     }
   }
 
