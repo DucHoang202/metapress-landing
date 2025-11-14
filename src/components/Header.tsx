@@ -162,7 +162,7 @@ const Header: React.FC = () => {
       { href: "#solution", target: "#solution" },
       { href: "#benefit", target: "#benefit" },
       { href: "#customer", target: "#customer" },
-      { href: "#blog", target: "#blog" },
+      { href: "/blog", target: "" },
       { href: "/form", target: "" },
     ];
     return linkConfigs[index] || { href: "#", target: "" };
