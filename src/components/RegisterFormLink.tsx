@@ -3,14 +3,13 @@ import Header from "./Header";
 import RegisterForm from "./landing-page/RegisterForm";
 import { useMediaQuery } from 'react-responsive';
 import FooterMobile from "./FooterMobile";
+import HeaderMobile from "./HeaderMobile";
 // import LanguageDropdown from "./ui/LanguageDropdown";
 function RegisterFormLink() {
     const isTablet = useMediaQuery({ maxWidth: 1023});
     return (
         <div className="App">
-            {/* <LanguageDropdown/> */}
-            <Header/>
-{/* <Header DropdownComponent={LanguageDropdown}/> */}
+{ isTablet ? <HeaderMobile/> : <Header/>}
             <main>
                 <RegisterForm/>
             </main>

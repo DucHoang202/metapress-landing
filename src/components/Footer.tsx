@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
       { href: "#solution", target: "#solution" },  // index 0
       { href: "#benefit", target: "#benefit" },    // index 1
       { href: "#customer", target: "#customer" },  // index 2
-      { href: "#blog", target: "#blog" },          // index 3
+      { href: "/blog", target: "" },          // index 3
       { href: "/form", target: "" },               // index 4
     ];
     return linkConfigs[index] || { href: "#", target: "" };
