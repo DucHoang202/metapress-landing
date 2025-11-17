@@ -7,9 +7,11 @@ import HeaderMobile from "./HeaderMobile";
 // import LanguageDropdown from "./ui/LanguageDropdown";
 function RegisterFormLink() {
     const isTablet = useMediaQuery({ maxWidth: 1023});
+      const formatHeader = useMediaQuery({ maxWidth: 1250});
+
     return (
         <div className="App">
-{ isTablet ? <HeaderMobile/> : <Header/>}
+{ formatHeader ? <HeaderMobile/> : <Header/>}
             <main>
                 <RegisterForm/>
             </main>

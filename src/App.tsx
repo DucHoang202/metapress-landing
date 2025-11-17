@@ -17,7 +17,7 @@ function Home() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ maxWidth: 1023});
   const displayUnlock = useMediaQuery({ maxWidth: 1262});
-  const formatHeader = useMediaQuery({ maxWidth: 1035});
+  const formatHeader = useMediaQuery({ maxWidth: 1250});
   
   useEffect(() => {
     const setAppWidth = () => {
