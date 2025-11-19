@@ -138,12 +138,20 @@ font-style: normal;
 font-weight: 450;
 line-height: 115%; /* 55.2px */
 letter-spacing: -0.96px;
-width: 300px;
+width: 350px;
 @media (max-width: 767px) {
   align-items: left;
+  width: auto;
+justify-content: center;
+align-items: center;
+text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
  align-items: left;
+ width: auto;
+justify-content: center;
+align-items: center;
+text-align: center;
 
 }
 .faq-question {

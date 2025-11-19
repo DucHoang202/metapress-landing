@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 interface DiagramContent {
   title: string;
@@ -12,7 +13,7 @@ interface Diagram3Data {
 
 const Diagram3: React.FC = () => {
   const [diagram3Data, setDiagram3Data] = useState<Diagram3Data | null>(null);
-
+  const isDesktop = useMediaQuery({ minWidth: 0});
   useEffect(() => {
     // Lấy dữ liệu từ (window as any).language
     const languageData = (window as any).language;
@@ -42,6 +43,7 @@ const Diagram3: React.FC = () => {
               {item1?.subtitle}
             </div>
           </div>
+          {isDesktop ? (
           <div className="brand">
             <div className="brand__decoration">
               <div className="brand__circle brand__circle--outer"></div>
@@ -52,7 +54,12 @@ const Diagram3: React.FC = () => {
                 </svg>
               </div>
             </div>
-          </div>
+          </div> )
+           : (
+            <div className="diagram3__pink_circle">
+              <img src="/assets/Frame 74.webp"/>
+            </div> 
+          )}
         </div>
 
         <div className="diagram3__2">
