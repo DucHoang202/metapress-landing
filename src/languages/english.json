@@ -189,7 +189,9 @@
     { "text": "Instagram" },
     { "text": "YouTube" },
     { "text": "Twitter" },
-    { "text": "LinkedIn" }
+    { "text": "LinkedIn" },
+    { "text": "Facebook" }
+
   ],
   "contact": {
     "email": "contact@metapress.ai",
