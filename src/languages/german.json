@@ -18,7 +18,7 @@
       "section": "hero",
       "status": "Neu",
       "name": "Das Newsroom OS",
-      "title": "Das KI-Betriebssystem für den Newsroom der Zukunft",
+      "title": "Das erste KI-System, das auf Journalismus und Content-Produktion spezialisiert ist",
       "subtitle": "MetaPress ist eine KI-Multi-Agenten-Plattform, die speziell für Redaktionen entwickelt wurde. Sie optimiert Arbeitsabläufe und hilft Journalisten und Redakteuren, Inhalte schneller, präziser und effizienter zu erstellen.",
       "button": "Demo anfordern"
     },
@@ -177,19 +177,38 @@
       "section": "footer",
       "subtitle": "Das KI-Betriebssystem für den Newsroom der Zukunft",
       "links": [
-        { "text": "Lösungen" },
-        { "text": "Vorteile" },
-        { "text": "Kunden" },
-        { "text": "Blog" },
-        { "text": "Kontakt" }
+        {
+          "text": "Lösungen"
+        },
+        {
+          "text": "Vorteile"
+        },
+        {
+          "text": "Kunden"
+        },
+        {
+          "text": "Blog"
+        },
+        {
+          "text": "Kontakt"
+        }
       ],
       "socials": [
-        { "text": "Instagram" },
-        { "text": "YouTube" },
-        { "text": "Twitter" },
-        { "text": "LinkedIn" },
-        { "text": "Facebook" }
-      
+        {
+          "text": "Instagram"
+        },
+        {
+          "text": "YouTube"
+        },
+        {
+          "text": "Twitter"
+        },
+        {
+          "text": "LinkedIn"
+        },
+        {
+          "text": "Facebook"
+        }
       ],
       "contact": {
         "email": "contact@metapress.ai",

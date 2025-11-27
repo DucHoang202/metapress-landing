@@ -18,7 +18,7 @@
       "section": "hero",
       "status": "新着",
       "name": "The Newsroom OS",
-      "title": "未来のニュースルームのためのAIオペレーティングシステム",
+      "title": "報道とコンテンツ制作に特化した初のAIシステム",
       "subtitle": "MetaPressはニュースルーム向けに特化して設計されたAIマルチエージェントプラットフォームで、ワークフローを最適化し、記者や編集者がより速く、より正確に、より効率的にコンテンツを制作できるよう支援します。",
       "button": "デモを申し込む"
     },
@@ -31,33 +31,31 @@
         "text": "もっと読む"
       }
     },
-{
-  "section": "customer",
-  "title": "実際の運用成果にもとづく信頼",
-  "subtitle": "すべてのストーリーが、MetaPressがもたらす業務効率の証です。",
-  "testimonials": [
     {
-      "heading": "",
-      "quote": "MetaPressがスポーツジャーナリズムを深く理解していることに驚きました。データ収集から編集、公開まで、すべてが効率化されています。何より、MetaPressのおかげで私たちは“内容そのもの”に集中する時間が増え、新しい視点を見つけ、より深いストーリーを伝え、スポーツの精神を育むことができています。",
-      "name": "Dương Quỳnh 氏",
-      "position": "コンテンツチームリード, Webthethao"
+      "section": "customer",
+      "title": "実際の運用成果にもとづく信頼",
+      "subtitle": "すべてのストーリーが、MetaPressがもたらす業務効率の証です。",
+      "testimonials": [
+        {
+          "heading": "",
+          "quote": "MetaPressがスポーツジャーナリズムを深く理解していることに驚きました。データ収集から編集、公開まで、すべてが効率化されています。何より、MetaPressのおかげで私たちは“内容そのもの”に集中する時間が増え、新しい視点を見つけ、より深いストーリーを伝え、スポーツの精神を育むことができています。",
+          "name": "Dương Quỳnh 氏",
+          "position": "コンテンツチームリード, Webthethao"
+        },
+        {
+          "heading": "",
+          "quote": "MetaPressの最も優れた点は、私たちの業界を深く理解していることです。このプラットフォームは、暗号資産とブロックチェーンの世界を他のどのツールよりも正確に理解しています。MetaPressは暗号ニュースのスピードについていきながら、膨大な市場情報や調査データを毎日より速く、より高品質で処理できるよう私たちを支えてくれます。",
+          "name": "Phạm Nguyên Lập 氏",
+          "position": "コンテンツディレクター, Kryptonomy"
+        },
+        {
+          "heading": "",
+          "quote": "金融分析という高度に専門的な分野でコンテンツを制作する者として、AIが本当に役立つとは思っていませんでした。しかし、それは間違いでした。MetaPressは優れたアシスタントのように、複雑なアイデアや思考を整理し、分かりやすく魅力的なストーリーにまとめてくれます。チャンネル開設後の最初の動画から大量の視聴回数と長時間視聴を獲得し、たった1本の動画でYouTubeパートナープログラムに参加できました。",
+          "name": "Minh Thư 氏",
+          "position": "ホスト, Thư's Show – Financial & Business News Channel"
+        }
+      ]
     },
-    {
-      "heading": "",
-      "quote": "MetaPressの最も優れた点は、私たちの業界を深く理解していることです。このプラットフォームは、暗号資産とブロックチェーンの世界を他のどのツールよりも正確に理解しています。MetaPressは暗号ニュースのスピードについていきながら、膨大な市場情報や調査データを毎日より速く、より高品質で処理できるよう私たちを支えてくれます。",
-      "name": "Phạm Nguyên Lập 氏",
-      "position": "コンテンツディレクター, Kryptonomy"
-    },
-    {
-      "heading": "",
-      "quote": "金融分析という高度に専門的な分野でコンテンツを制作する者として、AIが本当に役立つとは思っていませんでした。しかし、それは間違いでした。MetaPressは優れたアシスタントのように、複雑なアイデアや思考を整理し、分かりやすく魅力的なストーリーにまとめてくれます。チャンネル開設後の最初の動画から大量の視聴回数と長時間視聴を獲得し、たった1本の動画でYouTubeパートナープログラムに参加できました。",
-      "name": "Minh Thư 氏",
-      "position": "ホスト, Thư's Show – Financial & Business News Channel"
-    }
-  ]
-},
-
-
     {
       "section": "feature",
       "title": "The Newsroom OS <br> ジャーナリズムのワークフローを自動化する",
@@ -89,12 +87,10 @@
         }
       ]
     },
-
     {
       "section": "sponsor",
       "title": "導入企業"
     },
-
     {
       "section": "benefit",
       "title": "明確なメリット、即効性のあるインパクト",
@@ -103,7 +99,6 @@
         "visionDescription": "MetaPressはインテリジェントアシスタントとして、記者の仕事を理解し、アイデアを捉え、ワークフローを効率化し、高品質なコンテンツ制作をより速く、より正確に行えるよう支援します。"
       }
     },
-
     {
       "section": "diagram3",
       "content": [
@@ -125,7 +120,6 @@
         }
       ]
     },
-
     {
       "section": "get-started",
       "title": "テクノロジーが記者の“本当の課題”を解決するとき",
@@ -146,7 +140,6 @@
         }
       ]
     },
-
     {
       "section": "question",
       "title": "よくある質問",
@@ -173,7 +166,6 @@
         }
       ]
     },
-
     {
       "section": "unlock",
       "category": "",
@@ -181,24 +173,42 @@
       "subtitle": "AIの力で柔軟に運営し、コストを削減し、より速くコンテンツを制作しましょう。",
       "button": "今すぐお問い合わせ"
     },
-
     {
       "section": "footer",
       "subtitle": "未来のニュースルームのためのAIオペレーティングシステム",
       "links": [
-        { "text": "ソリューション" },
-        { "text": "メリット" },
-        { "text": "顧客" },
-        { "text": "ブログ" },
-        { "text": "お問い合わせ" }
+        {
+          "text": "ソリューション"
+        },
+        {
+          "text": "メリット"
+        },
+        {
+          "text": "顧客"
+        },
+        {
+          "text": "ブログ"
+        },
+        {
+          "text": "お問い合わせ"
+        }
       ],
       "socials": [
-        { "text": "Instagram" },
-        { "text": "YouTube" },
-        { "text": "Twitter" },
-        { "text": "LinkedIn" },
-        { "text": "Facebook" }
-
+        {
+          "text": "Instagram"
+        },
+        {
+          "text": "YouTube"
+        },
+        {
+          "text": "Twitter"
+        },
+        {
+          "text": "LinkedIn"
+        },
+        {
+          "text": "Facebook"
+        }
       ],
       "contact": {
         "email": "contact@metapress.ai",
@@ -210,7 +220,6 @@
         "privacy": "プライバシーポリシー"
       }
     },
-
     {
       "section": "register_form",
       "title": "MetaPressへのお問い合わせ",
