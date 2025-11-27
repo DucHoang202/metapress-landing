@@ -1,30 +1,28 @@
 {
   "language": "vi",
   "data": [
-    
-  {
-    "section": "header",
-    "links": [
-      "Giải pháp", 
-    "Lợi ích", 
-     "Khách hàng",
-      "Tri thức",
-       "Liên hệ"
-    ],
-    "button": {
-      "text": "Liên hệ demo"
-    }
-  },
-{
-  "section": "sponsor",
-  "title": "Được tin tưởng bởi"
-},
-
+    {
+      "section": "header",
+      "links": [
+        "Giải pháp",
+        "Lợi ích",
+        "Khách hàng",
+        "Tri thức",
+        "Liên hệ"
+      ],
+      "button": {
+        "text": "Liên hệ demo"
+      }
+    },
+    {
+      "section": "sponsor",
+      "title": "Được tin tưởng bởi"
+    },
     {
       "section": "hero",
       "status": "New",
       "name": "The Newsroom OS",
-      "title": "Hệ điều hành AI <br> cho tòa soạn tương lai",
+      "title": "Hệ thống AI đầu tiên chuyên biệt cho <br> báo chí và sản xuất nội dung",
       "subtitle": "MetaPress là nền tảng AI Multi-Agent dành riêng cho các tòa soạn, giúp tối ưu quy trình, hỗ trợ phóng viên và biên tập viên tạo nội dung nhanh, chính xác và hiệu quả hơn.",
       "button": "Liên hệ demo"
     },
@@ -32,209 +30,221 @@
       "section": "feature",
       "title": "The Newsroom OS <br> Tự động hoá quy trình báo chí ",
       "subtitle": "Vận hành trên kiến trúc AI Multi-agent chuyên biệt, linh hoạt điều phối để xử lý mọi quy trình nghiệp vụ trong sản xuất báo chí.",
-"featureList": [
-  {
-    "title": "Phát hiện đề tài",
-    "subtitle": "Quét tin đa nền tảng, nhận diện chủ đề nóng."
-  },
-  {
-    "title": "Cảnh báo xu hướng & rủi ro",
-    "subtitle": "Cảnh báo trend, khủng hoảng, rủi ro truyền thông."
-  },
-  {
-    "title": "Biên tập & gợi ý đề tài",
-    "subtitle": "Gợi ý đề tài, góc nhìn, đặt framing tiêu chuẩn."
-  },
-  {
-    "title": "Sinh nội dung bài viết",
-    "subtitle": "Tạo nội dung chuyên sâu theo hướng biên tập hoặc dữ liệu reporter đưa vào."
-  },
-  {
-    "title": "Kiểm chứng & chuẩn hóa",
-    "subtitle": "Kiểm duyệt thông tin, rà soát vấn đề nhạy cảm, đảm bảo chuẩn mực báo chí."
-  },
-  {
-    "title": "Tối ưu & xuất bản",
-    "subtitle": "Phân tích & tối ưu hiển thị nội dung, SEO và phân phối đa kênh (Website, Social, Video)."
-  }
-]
-
+      "featureList": [
+        {
+          "title": "Phát hiện đề tài",
+          "subtitle": "Quét tin đa nền tảng, nhận diện chủ đề nóng."
+        },
+        {
+          "title": "Cảnh báo xu hướng & rủi ro",
+          "subtitle": "Cảnh báo trend, khủng hoảng, rủi ro truyền thông."
+        },
+        {
+          "title": "Biên tập & gợi ý đề tài",
+          "subtitle": "Gợi ý đề tài, góc nhìn, đặt framing tiêu chuẩn."
+        },
+        {
+          "title": "Sinh nội dung bài viết",
+          "subtitle": "Tạo nội dung chuyên sâu theo hướng biên tập hoặc dữ liệu reporter đưa vào."
+        },
+        {
+          "title": "Kiểm chứng & chuẩn hóa",
+          "subtitle": "Kiểm duyệt thông tin, rà soát vấn đề nhạy cảm, đảm bảo chuẩn mực báo chí."
+        },
+        {
+          "title": "Tối ưu & xuất bản",
+          "subtitle": "Phân tích & tối ưu hiển thị nội dung, SEO và phân phối đa kênh (Website, Social, Video)."
+        }
+      ]
     },
     {
-  "section": "benefit",
-  "title": "Lợi ích rõ ràng, tác động tức thì",
-  "content": {
-    "visionLabel": "CHÚNG TÔI HƯỚNG TỚI",
-    "visionDescription": "Như một trợ lý thông minh đồng hành, MetaPress thấu hiểu công việc báo chí, nắm bắt ý tưởng phóng viên, tinh gọn quy trình và tối ưu sản xuất nội dung chất lượng, nhanh, chính xác."
-  }
-},
-{
-  "section": "diagram3",
-  "content": [
-    {
-      "title": "Giữ vững thương hiệu, DNA tòa soạn",
-      "subtitle": "Định hướng nội dung và phạm vi chủ đề rõ ràng, đảm bảo tuân thủ luật pháp và chuẩn mực báo chí nhưng vẫn giữ DNA tòa soạn."
+      "section": "benefit",
+      "title": "Lợi ích rõ ràng, tác động tức thì",
+      "content": {
+        "visionLabel": "CHÚNG TÔI HƯỚNG TỚI",
+        "visionDescription": "Như một trợ lý thông minh đồng hành, MetaPress thấu hiểu công việc báo chí, nắm bắt ý tưởng phóng viên, tinh gọn quy trình và tối ưu sản xuất nội dung chất lượng, nhanh, chính xác."
+      }
     },
     {
-      "title": "Sản xuất nội dung đa dạng, nhanh chóng",
-      "subtitle": "Một nội dung – nhiều định dạng từ bài báo đến infographic, video hay dữ liệu mở rộng, lan tỏa đa kênh."
+      "section": "diagram3",
+      "content": [
+        {
+          "title": "Giữ vững thương hiệu, DNA tòa soạn",
+          "subtitle": "Định hướng nội dung và phạm vi chủ đề rõ ràng, đảm bảo tuân thủ luật pháp và chuẩn mực báo chí nhưng vẫn giữ DNA tòa soạn."
+        },
+        {
+          "title": "Sản xuất nội dung đa dạng, nhanh chóng",
+          "subtitle": "Một nội dung – nhiều định dạng từ bài báo đến infographic, video hay dữ liệu mở rộng, lan tỏa đa kênh."
+        },
+        {
+          "title": "Tiết kiệm chi phí, tối ưu nguồn lực",
+          "subtitle": "Tự động hóa toàn bộ chuỗi sản xuất, mỗi bước đều có AI Agent chuyên trách, đảm bảo quy trình nhanh, chính xác và nhất quán."
+        },
+        {
+          "title": "Triển khai nhanh chóng, hiệu quả tức thì",
+          "subtitle": "Chúng tôi tự tin triển khai giải pháp tới khách hàng chỉ từ 2 - 4 tuần từ khi lấy yêu cầu đến nghiệm thu dự án."
+        }
+      ]
     },
     {
-      "title": "Tiết kiệm chi phí, tối ưu nguồn lực",
-      "subtitle": "Tự động hóa toàn bộ chuỗi sản xuất, mỗi bước đều có AI Agent chuyên trách, đảm bảo quy trình nhanh, chính xác và nhất quán."
+      "section": "get-started",
+      "title": "Khi công nghệ giải quyết được vấn đề <br> của người làm báo",
+      "subtitle": "Được thiết kế từ hiểu biết sâu sắc về nghiệp vụ báo chí, AI của MetaPress nắm bắt tư duy tòa soạn, giúp bạn tinh gọn quy trình, tối ưu vận hành và nâng tầm chất lượng nội dung.",
+      "button": "Liên hệ Demo",
+      "stats": [
+        {
+          "title": "250+",
+          "subtitle": "Phóng viên, nhà báo sử dụng hàng ngày"
+        },
+        {
+          "title": "50+",
+          "subtitle": "Tòa soạn và cơ quan báo chí hợp tác"
+        },
+        {
+          "title": "10.000+",
+          "subtitle": "Bài viết được tối ưu bằng AI mỗi tháng"
+        }
+      ]
     },
     {
-      "title": "Triển khai nhanh chóng, hiệu quả tức thì",
-      "subtitle": "Chúng tôi tự tin triển khai giải pháp tới khách hàng chỉ từ 2 - 4 tuần từ khi lấy yêu cầu đến nghiệm thu dự án."
+      "section": "customer",
+      "title": "Niềm tin được xây dựng từ hiệu quả vận hành thực tế",
+      "subtitle": "Mỗi lời chia sẻ là một minh chứng cho hiệu quả vận hành mà MetaPress mang lại.",
+      "testimonials": [
+        {
+          "quote": "MetaPress khiến chúng tôi ngạc nhiên vì cách nền tảng này hiểu nghề báo thể thao đến vậy. Từ khâu tổng hợp dữ liệu, biên tập, đến xuất bản, mọi thứ đều được tinh gọn. Quan trọng nhất, MetaPress giúp chúng tôi có thêm thời gian đầu tư cho nội dung – tìm những góc nhìn mới, những câu chuyện có chiều sâu và nuôi dưỡng tinh thần thể thao đúng nghĩa.",
+          "name": "Mr. Dương Quỳnh",
+          "position": "Trưởng nhóm nội dung Webthethao"
+        },
+        {
+          "heading": "",
+          "quote": "Điều chúng tôi đánh giá cao nhất ở MetaPress là sự am hiểu sâu sắc về ngành của chúng tôi. Nền tảng này thực sự hiểu rõ thế giới tiền điện tử và blockchain hơn bất kỳ nền tảng nào mà chúng tôi từng sử dụng. MetaPress bắt kịp tốc độ của tin tức crypto, đồng thời giúp đội ngũ của chúng tôi xử lý khối lượng lớn thông tin thị trường và nghiên cứu mỗi ngày, nhanh hơn và chất lượng hơn bao giờ hết.",
+          "name": "Mr. Phạm Nguyên Lập",
+          "position": "Giám đốc nội dung Kryptonomy"
+        },
+        {
+          "quote": "Là người làm nội dung phân tích tài chính, một lĩnh vực hết sức đặc thù, tôi từng nghĩ AI sẽ chẳng giúp gì được đâu. Nhưng tôi đã nhầm. Metapress như một trợ lý giỏi của tôi, giúp tôi sắp xếp những suy nghĩ, ý tưởng đang lộn xộn thành một câu chuyện ngay ngắn, hấp dẫn. Ngay từ video đầu tiên khi kênh vừa ra mắt, nhờ sự hỗ trợ của Metapress, kênh của tôi đã đạt lượng view khủng với thời gian xem hàng nghìn giờ, giúp kênh trở thành đối tác của YouTube ngay sau video đầu tiên.",
+          "name": "Ms. Minh Thư",
+          "position": "Host, Thư's Show - kênh tin tức tài chính & kinh doanh"
+        }
+      ]
+    },
+    {
+      "section": "question",
+      "title": "Các câu hỏi thường gặp",
+      "faq": [
+        {
+          "title": "Tại sao chọn MetaPress?",
+          "subtitle": "MetaPress là giải pháp AI toàn diện dành riêng cho các tòa soạn báo, giúp tự động hóa toàn bộ quy trình sản xuất tin bài từ phát hiện đề tài đến xuất bản và phân phối. Điều này giúp tòa soạn tăng tốc độ xử lý, giảm chi phí vận hành và giữ vững bản sắc báo chí riêng biệt."
+        },
+        {
+          "title": "Sự khác biệt của MetaPress là gì?",
+          "subtitle": "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí: nhận diện xu hướng, kiểm chứng thông tin, tự động tạo bài viết, đa dạng hóa hình thức nội dung và phân phối thông minh đa kênh. Hệ thống giữ nguyên DNA đặc trưng của tòa soạn đồng thời giảm thiểu rủi ro pháp lý và sai sót thông tin đáng kể."
+        },
+        {
+          "title": "MetaPress có gì đặc biệt?",
+          "subtitle": "Chuỗi quy trình báo chí tự động hóa toàn bộ, mỗi bước đều có AI Agent chuyên trách, đảm bảo quy trình nhanh - chính xác - nhất quán.\nĐịnh hướng giọng điệu, phạm vi chủ đề được thiết lập rõ ràng giúp bảo toàn bản sắc tòa soạn.\nĐáp ứng đa dạng các định dạng nội dung: bài báo, infographic, video, dữ liệu mở rộng."
+        },
+        {
+          "title": "MetaPress được tính phí như thế nào?",
+          "subtitle": "Chi phí triển khai MetaPress thay đổi dựa trên quy mô tòa soạn, số lượng người dùng và các tính năng tùy chọn. Chúng tôi cung cấp các gói dịch vụ linh hoạt kèm tư vấn chi tiết nhằm tối ưu chi phí và hiệu quả vận hành cho từng khách hàng. Liên hệ để nhận báo giá phù hợp nhất với yêu cầu tòa soạn."
+        },
+        {
+          "title": "Tôi cần làm gì để bắt đầu hợp tác với MetaPress?",
+          "subtitle": "Bước đầu tiên là liên hệ với đội ngũ tư vấn của MetaPress để trao đổi về đặc thù và nhu cầu của tòa soạn. Sau đó, chúng tôi cùng phối hợp xây dựng lộ trình tích hợp AI, triển khai thử nghiệm và đào tạo nhân sự. MetaPress sẽ đồng hành hỗ trợ liên tục để đảm bảo hiệu quả sử dụng tối ưu."
+        }
+      ]
+    },
+    {
+      "section": "unlock",
+      "category": "",
+      "title": "Bắt đầu hành trình đổi mới tòa soạn cùng MetaPress ngay hôm nay",
+      "subtitle": "Ứng dụng AI để tòa soạn vận hành linh hoạt hơn, tiết kiệm hơn và sản xuất nội dung nhanh hơn mỗi ngày.",
+      "button": "Liên hệ ngay"
+    },
+    {
+      "section": "blog",
+      "title": "Blog",
+      "subtitle": "Tri thức MetaPress",
+      "description": "Những bản tin mới nhất về AI, chuyển đổi số và công nghệ trong lĩnh vực báo chí, được MetaPress tự động sản xuất tới quý vị bạn đọc hàng ngày",
+      "button": {
+        "text": "Xem thêm"
+      }
+    },
+    {
+      "section": "footer",
+      "subtitle": "Hệ điều hành AI cho tòa soạn tương lai",
+      "links": [
+        {
+          "text": "Giải pháp"
+        },
+        {
+          "text": "Lợi ích"
+        },
+        {
+          "text": "Khách hàng"
+        },
+        {
+          "text": "Tri thức"
+        },
+        {
+          "text": "Liên hệ"
+        }
+      ],
+      "socials": [
+        {
+          "text": "Instagram"
+        },
+        {
+          "text": "YouTube"
+        },
+        {
+          "text": "Twitter"
+        },
+        {
+          "text": "LinkedIn"
+        },
+        {
+          "text": "Facebook"
+        }
+      ],
+      "contact": {
+        "email": "contact@metapress.ai",
+        "phone": "+91 9876543210"
+      },
+      "bottom": {
+        "company": "©2025 Bản quyền thuộc về MetaPress",
+        "terms": "Điều khoản dịch vụ",
+        "privacy": "Chính sách bảo mật"
+      }
+    },
+    {
+      "section": "register_form",
+      "title": "Liên hệ với MetaPress",
+      "subtitle": "Ứng dụng AI để tòa soạn vận hành linh hoạt hơn, tiết kiệm hơn và sản xuất nội dung nhanh hơn mỗi ngày.",
+      "contact": {
+        "hotline_label": "Hotline",
+        "hotline_value": "094 104 9400",
+        "email_label": "Email",
+        "email_value": "contact@metapress.ai"
+      },
+      "form": {
+        "placeholders": {
+          "name": "Họ và tên*",
+          "email": "Email*",
+          "phone": "Số điện thoại",
+          "company": "Tên doanh nghiệp*",
+          "position": "Chức vụ của bạn",
+          "note": "Ghi chú"
+        },
+        "button": "Gửi thông tin"
+      },
+      "toast": {
+        "error_required": "Vui lòng điền đầy đủ thông tin bắt buộc",
+        "error_email": "Email không đúng cú pháp",
+        "error_submit": "Bị lỗi khi gửi!",
+        "success_submit": "Gửi thông tin thành công!"
+      }
     }
-  ]
-},
-{
-  "section": "get-started",
-  "title": "Khi công nghệ giải quyết được vấn đề <br> của người làm báo",
-  "subtitle": "Được thiết kế từ hiểu biết sâu sắc về nghiệp vụ báo chí, AI của MetaPress nắm bắt tư duy tòa soạn, giúp bạn tinh gọn quy trình, tối ưu vận hành và nâng tầm chất lượng nội dung.",
-  "button": "Liên hệ Demo",
-  "stats": [
-    {
-      "title": "250+",
-      "subtitle": "Phóng viên, nhà báo sử dụng hàng ngày"
-    },
-    {
-      "title": "50+",
-      "subtitle": "Tòa soạn và cơ quan báo chí hợp tác"
-    },
-    {
-      "title": "10.000+",
-      "subtitle": "Bài viết được tối ưu bằng AI mỗi tháng"
-    }
-  ]
-},
-{
-  "section": "customer",
-  "title": "Niềm tin được xây dựng từ hiệu quả vận hành thực tế",
-  "subtitle": "Mỗi lời chia sẻ là một minh chứng cho hiệu quả vận hành mà MetaPress mang lại.",
-  "testimonials": [
-    {
-      "quote": "MetaPress khiến chúng tôi ngạc nhiên vì cách nền tảng này hiểu nghề báo thể thao đến vậy. Từ khâu tổng hợp dữ liệu, biên tập, đến xuất bản, mọi thứ đều được tinh gọn. Quan trọng nhất, MetaPress giúp chúng tôi có thêm thời gian đầu tư cho nội dung – tìm những góc nhìn mới, những câu chuyện có chiều sâu và nuôi dưỡng tinh thần thể thao đúng nghĩa.",
-      "name": "Mr. Dương Quỳnh",
-      "position": "Trưởng nhóm nội dung Webthethao"
-    },
-    {
-      "heading": "",
-      "quote": "Điều chúng tôi đánh giá cao nhất ở MetaPress là sự am hiểu sâu sắc về ngành của chúng tôi. Nền tảng này thực sự hiểu rõ thế giới tiền điện tử và blockchain hơn bất kỳ nền tảng nào mà chúng tôi từng sử dụng. MetaPress bắt kịp tốc độ của tin tức crypto, đồng thời giúp đội ngũ của chúng tôi xử lý khối lượng lớn thông tin thị trường và nghiên cứu mỗi ngày, nhanh hơn và chất lượng hơn bao giờ hết.",
-      "name": "Mr. Phạm Nguyên Lập",
-      "position": "Giám đốc nội dung Kryptonomy"
-    },
-    {
-      "quote": "Là người làm nội dung phân tích tài chính, một lĩnh vực hết sức đặc thù, tôi từng nghĩ AI sẽ chẳng giúp gì được đâu. Nhưng tôi đã nhầm. Metapress như một trợ lý giỏi của tôi, giúp tôi sắp xếp những suy nghĩ, ý tưởng đang lộn xộn thành một câu chuyện ngay ngắn, hấp dẫn. Ngay từ video đầu tiên khi kênh vừa ra mắt, nhờ sự hỗ trợ của Metapress, kênh của tôi đã đạt lượng view khủng với thời gian xem hàng nghìn giờ, giúp kênh trở thành đối tác của YouTube ngay sau video đầu tiên.",
-      "name": "Ms. Minh Thư",
-      "position": "Host, Thư's Show - kênh tin tức tài chính & kinh doanh"
-    }
-
-  ]
-},
-{
-    "section": "question",
-    "title": "Các câu hỏi thường gặp",
-    "faq":
-    [
-  {
-    "title": "Tại sao chọn MetaPress?",
-    "subtitle": "MetaPress là giải pháp AI toàn diện dành riêng cho các tòa soạn báo, giúp tự động hóa toàn bộ quy trình sản xuất tin bài từ phát hiện đề tài đến xuất bản và phân phối. Điều này giúp tòa soạn tăng tốc độ xử lý, giảm chi phí vận hành và giữ vững bản sắc báo chí riêng biệt."
-  },
-  {
-    "title": "Sự khác biệt của MetaPress là gì?",
-    "subtitle": "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí: nhận diện xu hướng, kiểm chứng thông tin, tự động tạo bài viết, đa dạng hóa hình thức nội dung và phân phối thông minh đa kênh. Hệ thống giữ nguyên DNA đặc trưng của tòa soạn đồng thời giảm thiểu rủi ro pháp lý và sai sót thông tin đáng kể."
-  },
-  {
-    "title": "MetaPress có gì đặc biệt?",
-    "subtitle": "Chuỗi quy trình báo chí tự động hóa toàn bộ, mỗi bước đều có AI Agent chuyên trách, đảm bảo quy trình nhanh - chính xác - nhất quán.\nĐịnh hướng giọng điệu, phạm vi chủ đề được thiết lập rõ ràng giúp bảo toàn bản sắc tòa soạn.\nĐáp ứng đa dạng các định dạng nội dung: bài báo, infographic, video, dữ liệu mở rộng."
-  },
-  {
-    "title": "MetaPress được tính phí như thế nào?",
-    "subtitle": "Chi phí triển khai MetaPress thay đổi dựa trên quy mô tòa soạn, số lượng người dùng và các tính năng tùy chọn. Chúng tôi cung cấp các gói dịch vụ linh hoạt kèm tư vấn chi tiết nhằm tối ưu chi phí và hiệu quả vận hành cho từng khách hàng. Liên hệ để nhận báo giá phù hợp nhất với yêu cầu tòa soạn."
-  },
-  {
-    "title": "Tôi cần làm gì để bắt đầu hợp tác với MetaPress?",
-    "subtitle": "Bước đầu tiên là liên hệ với đội ngũ tư vấn của MetaPress để trao đổi về đặc thù và nhu cầu của tòa soạn. Sau đó, chúng tôi cùng phối hợp xây dựng lộ trình tích hợp AI, triển khai thử nghiệm và đào tạo nhân sự. MetaPress sẽ đồng hành hỗ trợ liên tục để đảm bảo hiệu quả sử dụng tối ưu."
-  }
-]
-
-},
-
-  {
-    "section": "unlock",
-    "category": "",
-    "title": "Bắt đầu hành trình đổi mới tòa soạn cùng MetaPress ngay hôm nay",
-    "subtitle": "Ứng dụng AI để tòa soạn vận hành linh hoạt hơn, tiết kiệm hơn và sản xuất nội dung nhanh hơn mỗi ngày.",
-    "button": "Liên hệ ngay"
-  },
-  { "section": "blog", "title": "Blog", "subtitle": "Tri thức MetaPress", "description": "Những bản tin mới nhất về AI, chuyển đổi số và công nghệ trong lĩnh vực báo chí, được MetaPress tự động sản xuất tới quý vị bạn đọc hàng ngày", "button": { "text": "Xem thêm" } },
-
-{
-  "section": "footer",
-  "subtitle": "Hệ điều hành AI cho tòa soạn tương lai",
-  "links": [
-    { "text": "Giải pháp" },
-    { "text": "Lợi ích" },
-    { "text": "Khách hàng" },
-    { "text": "Tri thức" },
-    { "text": "Liên hệ" }
-  ],
-  "socials": [
-    { "text": "Instagram" },
-    { "text": "YouTube" },
-    { "text": "Twitter" },
-    { "text": "LinkedIn" },
-    { "text": "Facebook" }
-
-  ],
-  "contact": {
-    "email": "contact@metapress.ai",
-    "phone": "+91 9876543210"
-  },
-  "bottom": {
-    "company": "©2025 Bản quyền thuộc về MetaPress",
-    "terms": "Điều khoản dịch vụ",
-    "privacy": "Chính sách bảo mật"
-  }
-},
-{
-  "section": "register_form",
-  "title": "Liên hệ với MetaPress",
-  "subtitle": "Ứng dụng AI để tòa soạn vận hành linh hoạt hơn, tiết kiệm hơn và sản xuất nội dung nhanh hơn mỗi ngày.",
-  "contact": {
-    "hotline_label": "Hotline",
-    "hotline_value": "094 104 9400",
-    "email_label": "Email",
-    "email_value": "contact@metapress.ai"
-  },
-  "form": {
-    "placeholders": {
-      "name": "Họ và tên*",
-      "email": "Email*",
-      "phone": "Số điện thoại",
-      "company": "Tên doanh nghiệp*",
-      "position": "Chức vụ của bạn",
-      "note": "Ghi chú"
-    },
-    "button": "Gửi thông tin"
-  },
-  "toast": {
-    "error_required": "Vui lòng điền đầy đủ thông tin bắt buộc",
-    "error_email": "Email không đúng cú pháp",
-    "error_submit": "Bị lỗi khi gửi!",
-    "success_submit": "Gửi thông tin thành công!"
-  }
-}
-
-
-
-
-
-
-
-
-
   ]
 }

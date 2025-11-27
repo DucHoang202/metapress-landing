@@ -1,45 +1,47 @@
 .hero_mobile {
-        display: flex;
+    display: flex;
     flex-direction: column;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
     &__container {
         margin-top: 101px;
         min-height: 515px;
         margin-left: 0;
         width: 100%;
-        background-image: 
-            url("../../../assets/hero-top.svg"),;
+        background-image:
+            url("../../../assets/hero-top.svg"), ;
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 375px auto;
         padding-bottom: 0;
         height: auto;
-        
-    }
-.hero-mobile__image {
-  width: 100%;
-  height: 106.24px;
-  overflow: hidden; // ẩn phần bị tràn
-  display: flex;
-  justify-content: center;
-  align-items: start; // giữ ảnh bắt đầu từ trên cùng
 
-  img {
-    width: 375px;
-    height: auto;
-    object-fit: cover;
-    transform: translateY(-110px); // dịch ảnh lên 50px để cắt phần trên
-  }
-}
+    }
+
+    .hero-mobile__image {
+        width: 100%;
+        height: 106.24px;
+        overflow: hidden; // ẩn phần bị tràn
+        display: flex;
+        justify-content: center;
+        align-items: start; // giữ ảnh bắt đầu từ trên cùng
+
+        img {
+            width: 375px;
+            height: auto;
+            object-fit: cover;
+            transform: translateY(-110px); // dịch ảnh lên 50px để cắt phần trên
+        }
+    }
 
 
 
 
     .content {
         height: auto;
-        
+
         .hero-mobile__content {
             width: calc(100% - 32px);
             height: auto;
@@ -58,7 +60,7 @@
                 gap: 8px;
                 border-radius: 122px;
                 background: rgba(255, 255, 255, 0.10);
-                
+
                 .new {
                     display: flex;
                     padding: 2px 12px;
@@ -75,7 +77,7 @@
                     font-weight: 400;
                     line-height: normal;
                 }
-                
+
                 .text {
                     color: #FFF;
                     font-family: var(--font-apparat);
@@ -85,7 +87,7 @@
                     line-height: normal;
                 }
             }
-            
+
             .title {
                 margin: 0;
                 width: auto;
@@ -103,13 +105,13 @@
                 -webkit-text-fill-color: transparent;
                 height: auto;
             }
-            
+
             .subtitle {
                 width: 100%;
                 color: #AFB3CA;
                 text-align: center;
                 font-family: var(--font-apparat);
-                font-size: 13px;
+                font-size: 12px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -132,12 +134,12 @@
         transition: all 0.3s ease;
         width: fit-content;
         height: 46px;
-        
+
         &:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(255, 233, 218, 0.4);
         }
-        
+
         .text {
             color: #0E0A0F;
             font-family: var(--font-apparat);
@@ -146,16 +148,16 @@
             font-weight: 500;
             line-height: normal;
         }
-        
+
         .arrow {
             width: 16px;
             height: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            
+
             svg {
- margin-top: 2px;
+                margin-top: 2px;
             }
         }
     }
