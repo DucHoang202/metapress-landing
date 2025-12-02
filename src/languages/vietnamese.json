@@ -23,7 +23,7 @@
       "status": "New",
       "name": "The Newsroom OS",
       "title": "Hệ thống AI đầu tiên <br> chuyên biệt cho nghiệp vụ báo chí",
-      "subtitle": "Metapress là hệ thống AI Multi-Agent chuyên sâu vào các nghiệp vụ báo chí và sản xuất nội dung, giúp việc sản xuất sản phẩm báo chí và truyền thông trở nên hoàn hảo và nhanh chóng.",
+      "subtitle": "MetaPress là hệ thống AI Multi-Agent chuyên sâu vào các nghiệp vụ báo chí và sản xuất nội dung, giúp việc sản xuất sản phẩm báo chí và truyền thông trở nên hoàn hảo và nhanh chóng.",
       "button": "Liên hệ demo"
     },
     {
@@ -123,7 +123,7 @@
           "position": "Giám đốc nội dung Kryptonomy"
         },
         {
-          "quote": "Là người làm nội dung phân tích tài chính, một lĩnh vực hết sức đặc thù, tôi từng nghĩ AI sẽ chẳng giúp gì được đâu. Nhưng tôi đã nhầm. Metapress như một trợ lý giỏi của tôi, giúp tôi sắp xếp những suy nghĩ, ý tưởng đang lộn xộn thành một câu chuyện ngay ngắn, hấp dẫn. Ngay từ video đầu tiên khi kênh vừa ra mắt, nhờ sự hỗ trợ của Metapress, kênh của tôi đã đạt lượng view khủng với thời gian xem hàng nghìn giờ, giúp kênh trở thành đối tác của YouTube ngay sau video đầu tiên.",
+          "quote": "Là người làm nội dung phân tích tài chính, một lĩnh vực hết sức đặc thù, tôi từng nghĩ AI sẽ chẳng giúp gì được đâu. Nhưng tôi đã nhầm. MetaPress như một trợ lý giỏi của tôi, giúp tôi sắp xếp những suy nghĩ, ý tưởng đang lộn xộn thành một câu chuyện ngay ngắn, hấp dẫn. Ngay từ video đầu tiên khi kênh vừa ra mắt, nhờ sự hỗ trợ của MetaPress, kênh của tôi đã đạt lượng view khủng với thời gian xem hàng nghìn giờ, giúp kênh trở thành đối tác của YouTube ngay sau video đầu tiên.",
           "name": "Ms. Minh Thư",
           "position": "Host, Thư's Show - kênh tin tức tài chính & kinh doanh"
         }
@@ -209,7 +209,7 @@
         }
       ],
       "contact": {
-        "email": "contact@metapress.ai",
+        "email": "contact@MetaPress.ai",
         "phone": "+91 9876543210"
       },
       "bottom": {
@@ -226,7 +226,7 @@
         "hotline_label": "Hotline",
         "hotline_value": "094 104 9400",
         "email_label": "Email",
-        "email_value": "contact@metapress.ai"
+        "email_value": "contact@MetaPress.ai"
       },
       "form": {
         "placeholders": {

@@ -211,7 +211,7 @@
         }
       ],
       "contact": {
-        "email": "contact@metapress.ai",
+        "email": "contact@MetaPress.ai",
         "phone": "+91 9876543210"
       },
       "bottom": {
@@ -228,7 +228,7 @@
         "hotline_label": "Hotline",
         "hotline_value": "094 104 9400",
         "email_label": "Email",
-        "email_value": "contact@metapress.ai"
+        "email_value": "contact@MetaPress.ai"
       },
       "form": {
         "placeholders": {
